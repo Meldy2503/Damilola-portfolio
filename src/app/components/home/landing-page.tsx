@@ -3,7 +3,7 @@ import React from 'react'
 
 const LandingPage = () => {
   return (
-    <Box h='100vh' bg='red'>LandingPage</Box>
+    <Box h='100vh' bg='brand.100'>LandingPage</Box>
   )
 }
 

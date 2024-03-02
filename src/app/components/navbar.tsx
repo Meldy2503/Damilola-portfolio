@@ -1,24 +1,22 @@
-
-
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import {
-  Box,
-  Drawer,
-  DrawerBody,
-  DrawerContent,
-  Flex,
-  HStack,
-  Icon,
-  Text,
-  useDisclosure,
+    Box,
+    Drawer,
+    DrawerBody,
+    DrawerContent,
+    Flex,
+    Icon,
+    useDisclosure
 } from "@chakra-ui/react";
+import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
-import { FaPlay } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Logo from "../assets/logo.svg";
+import { Button } from "../utils/button";
 import { menuData } from "../utils/constants";
 
 const Navbar = () => {
@@ -28,27 +26,13 @@ const Navbar = () => {
     setCurrentMenu(link);
   };
 
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <Box
       w="100%"
       py="1.5rem"
       position={"fixed"}
       top={"0px"}
-      bg={scrolled ? "brand.150" : "transparent"}
+      bg="brand.100"
       zIndex={500}
     >
       <Flex
@@ -57,28 +41,23 @@ const Navbar = () => {
         mx="auto"
         justify={"space-between"}
         align={"center"}
-        color="brand.100"
+        color="brand.200"
       >
-        <HStack>
-          <FaPlay
-            style={{
-              fontSize: "3rem",
-              color: "#ff5621",
-              cursor: "pointer",
-            }}
-          />
-          <Text fontSize={{ base: "2rem", md: "2.5rem" }} fontWeight={"800"}>
-            Mildred
-          </Text>
-        </HStack>
-        <Flex gap="3rem" display={{ base: "none", md: "flex" }}>
+        <Image src={Logo} alt="logo" height={35} width={35} />
+        <Flex
+          gap="5rem"
+          display={{ base: "none", lg: "flex" }}
+          align={"center"}
+        >
           {menuData.map((link) => {
             return (
               <Box
                 key={link.id}
-                color={currentMenu === link.id ? "brand.250" : "brand.100"}
+                borderBottom={
+                  currentMenu === link.id ? "3px solid #ffffff" : "none"
+                }
                 _hover={{
-                  color: "brand.250",
+                  borderBottom: "3px solid brand.200",
                 }}
                 onClick={() => {
                   handlecurrentMenu(link.id);
@@ -88,17 +67,26 @@ const Navbar = () => {
               </Box>
             );
           })}
+          <Button
+            path="/"
+            color="brand.200"
+            bg="brand.100"
+            px="2.5rem"
+            border="1.5px solid #ffffff"
+          >
+            Lets Talk
+          </Button>
         </Flex>
-        <Box onClick={onOpen} display={{ base: "block", md: "none" }}>
+        <Box onClick={onOpen} display={{ base: "block", lg: "none" }}>
           <Icon
             as={isOpen ? AiOutlineClose : GiHamburgerMenu}
-            boxSize={12}
+            boxSize={10}
             cursor={"pointer"}
           />
         </Box>
       </Flex>
       <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
-        <DrawerContent mt="6rem" pb="3rem" pt="1rem" bg="brand.150">
+        <DrawerContent mt="6rem" pb="3rem" pt="1rem" bg="brand.100">
           <DrawerBody>
             <Flex direction="column" rowGap={"3rem"} align={"center"} mt="2rem">
               {menuData.map((menu) => {
@@ -106,10 +94,13 @@ const Navbar = () => {
                   <Box
                     key={menu.id}
                     border="none"
+                    borderBottom={
+                      currentMenu === menu.id ? "3px solid #ffffff" : "none"
+                    }
                     _hover={{
-                      color: "brand.250",
+                      borderBottom: "3px solid brand.200",
                     }}
-                    color={currentMenu === menu.id ? "brand.250" : "brand.100"}
+                    color="brand.200"
                   >
                     <Link
                       href={menu.id}
@@ -123,6 +114,15 @@ const Navbar = () => {
                   </Box>
                 );
               })}
+              <Button
+                path="/"
+                color="brand.200"
+                bg="brand.100"
+                px="2.5rem"
+                border="1.5px solid #ffffff"
+              >
+                Lets Talk
+              </Button>{" "}
             </Flex>
           </DrawerBody>
         </DrawerContent>

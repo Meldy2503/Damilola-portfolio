@@ -20,8 +20,5 @@ export const menuData = [
       name: "About Me",
       id: "#aboutMe",
     },
-    {
-      name: "Lets Talk",
-      id: "#letsTalk",
-    },
+    
   ];
