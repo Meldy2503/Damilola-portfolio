@@ -1,10 +1,10 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Layout from "./components/home/layout";
+import { Box } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-   <div>
-    <h1>dami</h1>
-   </div>
+    <Box>
+      <Layout />
+    </Box>
   );
 }
