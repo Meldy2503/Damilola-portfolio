@@ -36,3 +36,7 @@ a {
 
 }
 
+.linear-bg {
+  background: linear-gradient(152deg, #ffe6df, #f6efff);
+}
+
