@@ -1,14 +1,8 @@
 
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./provider";
 
-const nunito = Nunito({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400"],
-});
 
 export const metadata: Metadata = {
   title: "Damilola",
@@ -23,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
+      <body>
         <Providers>{children}</Providers>
       </body>
     </html>

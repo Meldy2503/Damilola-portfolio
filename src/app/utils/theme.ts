@@ -1,9 +1,21 @@
 import { extendTheme } from "@chakra-ui/react";
-import { Mulish } from "@next/font/google";
+import localFont from "@next/font/local";
+import { Nunito } from "next/font/google";
 
-const nextFont = Mulish({
-  weight: ["700"],
+const nunito = Nunito({
   subsets: ["latin"],
+  display: "swap",
+  weight: ["400"],
+});
+
+const avenirNext = localFont({
+  src: [
+    {
+      path: "../assets/fonts/AvenirNextLTPro-Regular.otf",
+      weight: "400",
+    },
+  ],
+  variable: "--font-poppins",
 });
 
 const theme = extendTheme({
@@ -13,12 +25,13 @@ const theme = extendTheme({
       150: "#F2F2F2",
       200: "#ffffff",
       250: "#000000",
-     
+      300: "rgb(255, 255, 255, 0.75)",
+      350: "rgb(255, 255, 255, 0.3)",
     },
   },
   fonts: {
-    body: nextFont.style.fontFamily,
-    heading: nextFont.style.fontFamily,
+    body: nunito.style.fontFamily,
+    heading: avenirNext.style.fontFamily,
   },
 });
 

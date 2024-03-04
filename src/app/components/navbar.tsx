@@ -3,19 +3,19 @@
 import { useState } from "react";
 
 import {
-    Box,
-    Drawer,
-    DrawerBody,
-    DrawerContent,
-    Flex,
-    Icon,
-    useDisclosure
+  Box,
+  Drawer,
+  DrawerBody,
+  DrawerContent,
+  Flex,
+  Icon,
+  useDisclosure,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/images/logo.svg";
 import { Button } from "../utils/button";
 import { menuData } from "../utils/constants";
 
@@ -36,7 +36,7 @@ const Navbar = () => {
       zIndex={500}
     >
       <Flex
-        w="95%"
+        width={{ base: "95%", md: "90%" }}
         maxW={"1280px"}
         mx="auto"
         justify={"space-between"}
