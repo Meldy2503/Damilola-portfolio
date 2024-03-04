@@ -27,4 +27,12 @@ a {
   text-decoration: none;
 }
 
+.shadow {
+  box-shadow: 0px 4.480370044708252px 112.0092544555664px 0px #0000000D;
+
+}
+.btn {
+  box-shadow: 0px 2.137679100036621px 23.05931854248047px 0px #0000001F;
+
+}
 

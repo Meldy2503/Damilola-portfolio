@@ -16,6 +16,7 @@ interface BtnProps {
   color?: string;
   bg?: string;
   border?: string;
+  fontWeight?: string;
 }
 
 export const Button = ({
@@ -30,19 +31,20 @@ export const Button = ({
   color, 
   bg,
   border,
+  fontWeight
 }: BtnProps) => {
   return (
     <Box
-      className={ClassName}
+      className={ClassName ?? 'btn'}
       zIndex={100}
       cursor="pointer"
       textAlign="center"
       fontSize={fontSize ?? "1.6rem"}
-      fontWeight={500}
+      fontWeight= {fontWeight ?? 600}
       transition={"all .3s ease-in"}
       borderRadius={borderRadius ?? "3rem"}
-      py={py ?? ".65rem"}
-      px={px ?? "3rem"}
+      py={py ?? ".5rem"}
+      px={px ?? "1rem"}
       onClick={onClick}
       w="fit-content"
       color={color ?? "brand.250"}

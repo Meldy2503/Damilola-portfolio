@@ -72,6 +72,7 @@ const Navbar = () => {
             color="brand.200"
             bg="brand.100"
             px="2.5rem"
+            fontWeight="500"
             border="1.5px solid #ffffff"
           >
             Lets Talk
@@ -118,7 +119,7 @@ const Navbar = () => {
                 path="/"
                 color="brand.200"
                 bg="brand.100"
-                px="2.5rem"
+                py=".7rem"
                 border="1.5px solid #ffffff"
               >
                 Lets Talk
