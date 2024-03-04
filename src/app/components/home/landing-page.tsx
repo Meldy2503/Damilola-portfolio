@@ -35,6 +35,7 @@ const LandingPage = () => {
           position: "absolute",
           bottom: isMobile ? "0" : "-5rem",
           left: "0",
+          opacity: "0.7"
         }}
       />
       <Flex

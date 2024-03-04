@@ -5,7 +5,7 @@ import { Providers } from "./provider";
 
 
 export const metadata: Metadata = {
-  title: "Damilola",
+  title: "Damilola B",
   description: "Welcome to my space",
 };
 

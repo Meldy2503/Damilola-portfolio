@@ -4,8 +4,9 @@ import project2 from "../assets/images/project4.png";
 import project3 from "../assets/images/project3.webp";
 import project11 from "../assets/images/project11.svg";
 import project22 from "../assets/images/project22.svg";
-
-// import project1 from "../assets/images/project1-img";
+import expert1 from "../assets/images/expert1.webp";
+import expert2 from "../assets/images/expert2.webp";
+import expert3 from "../assets/images/expert3.webp";
 
 export const menuData = [
   {
@@ -75,7 +76,6 @@ export const processData = [
   },
 ];
 
-
 export const projectData = [
   {
     img: project1,
@@ -86,30 +86,71 @@ export const projectData = [
     text: "Stock button is an E-commerce Inventory App designed to facilitate seamless and efficient management of the business's inventory in relation to its online retail operations. This app serves as a digital tool that enables the business (Stock Button) to monitor, control, and optimize their product stock levels, sales, and order fulfilment processes. ",
   },
   {
-    img:project2,
+    img: project2,
     title: "Pyyr Reward",
     iconColor: "#6345B3",
-
     heading: "A web app enabling purchase of gift vouchers from leading brands",
     text: "Pyyr Rewards is a web-based loyalty platform designed to elevate customer loyalty. Within this platform, businesses or service providers, directly acquire digital gift vouchers from brands. These vouchers are then electronically awarded to customers who are part of a loyalty program.",
   },
   {
-    img:project3,
+    img: project3,
     title: "Igetguy",
     iconColor: "#E46509",
-
     heading: "A service based mobile app that connects artisans to end-users ",
     text: "I Get Guy is a service rendering app designed to bridge the gap between skilled artisans providing services and end-users urgently seeking experienced service providers in specific localities.",
   },
   {
-    img:project4,
+    img: project4,
     icon: project22,
     iconColor: "#DC93BD",
-
-
     title: "Dobble",
     heading: "A web-based procurement software for organisations.",
     text: "Dobble is an innovative web-based procurement solution meticulously designed for organizations to streamline their expenditure management. It facilitates the seamless processing of operational requests and needs from staff members, contributing to the efficient operation of the business ensuring that the company operates within its budgetary limits, promoting financial prudence and effective spending practices.",
   },
- 
+];
+
+export const expertiseData = [
+  {
+    img: expert3,
+    title: "UX Strategy",
+    text: "I find the sweet spots between what users want in order to make their lives easier and what the business needs to accomplish in order to survive and prosper. As a UX Strategist, i thrive in identifying the gap and the overlaps between these two goals and how design can serve both of these masters",
+    tags: [
+      "Collaboration",
+      "Mind Mapping",
+      "Ideation",
+      "User-Centricity",
+      "Communication",
+      "Adaptability",
+      "Innovation",
+    ],
+  },
+  {
+    img: expert1,
+    title: "UI Design",
+    text: "I utilize my strong visual design skills, including an understanding of color theory, typography, and layout to create visually appealing and cohesive designs while using the understanding of user flows, information architecture, to create seamless transitions between different elements of a user interface.",
+    tags: [
+      "Typography",
+      "Color Theory",
+      "Interaction Design",
+      "UI Elements",
+      "Iconography",
+      "Prototyping",
+      "Wireframing",
+    ],
+  },
+
+  {
+    img: expert2,
+    title: "UX Research ",
+    text: "I utilize a range of research methodologies such as interviews, surveys, usability testing, card sorting, and competitive analysis to develop empathy maps that highlight user pain points and behaviors, identify industry trends and standards, and pinpoint potential business advantages. This process enhances the desirability of the solution by incorporating a comprehensive understanding of user needs, competitive landscapes, and strategic opportunities",
+    tags: [
+      "Empathy Map",
+      "User Journey",
+      "User Personas",
+      "User Surveys",
+      "Interviews",
+      "Double Diamond Method",
+      "Brainstorming",
+    ],
+  },
 ];

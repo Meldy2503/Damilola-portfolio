@@ -19,6 +19,7 @@ const Process = () => {
         style={{ position: "absolute", bottom: "-4rem", left: "0" }}
       />
 
+     
       <Title color="brand.200" >
         Learn about my process
       </Title>
