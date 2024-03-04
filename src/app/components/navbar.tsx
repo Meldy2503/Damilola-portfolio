@@ -71,7 +71,7 @@ const Navbar = () => {
             path="/"
             color="brand.200"
             bg="brand.100"
-            px="2.5rem"
+            px="2rem"
             fontWeight="500"
             border="1.5px solid #ffffff"
           >
@@ -81,7 +81,7 @@ const Navbar = () => {
         <Box onClick={onOpen} display={{ base: "block", lg: "none" }}>
           <Icon
             as={isOpen ? AiOutlineClose : GiHamburgerMenu}
-            boxSize={10}
+            boxSize={12}
             cursor={"pointer"}
           />
         </Box>
@@ -115,15 +115,17 @@ const Navbar = () => {
                   </Box>
                 );
               })}
+
               <Button
                 path="/"
                 color="brand.200"
                 bg="brand.100"
-                py=".7rem"
+                px="2.5rem"
+                fontWeight="500"
                 border="1.5px solid #ffffff"
               >
                 Lets Talk
-              </Button>{" "}
+              </Button>
             </Flex>
           </DrawerBody>
         </DrawerContent>
