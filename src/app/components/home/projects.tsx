@@ -8,14 +8,12 @@ import {
   Box,
   Flex,
   Heading,
-  Icon,
   Text,
-  useMediaQuery,
+  useMediaQuery
 } from "@chakra-ui/react";
 import Image from "next/image";
 import textPattern1 from "../../assets/images/text-pattern1.svg";
 import textPattern2 from "../../assets/images/text-pattern2.svg";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 const Projects = () => {
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
@@ -118,9 +116,12 @@ const Projects = () => {
                 </Heading>
 
                 <Text mb="2rem">{project.text}</Text>
-                <Button path="/" isIcon btnText="View Project" iconColor={project.iconColor}/>
-
-             
+                <Button
+                  path="/"
+                  isIcon
+                  btnText="View Project"
+                  iconColor={project.iconColor}
+                />
               </Box>
             </Box>
           );

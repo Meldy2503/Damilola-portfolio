@@ -1,12 +1,12 @@
 "use client";
 
-import React from "react";
 import { processData } from "@/app/utils/constants";
 import Title from "@/app/utils/heading";
 import Wrapper from "@/app/utils/wrapper";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import textPattern from "../../assets/images/text-pattern.svg";
+import textPattern2 from "../../assets/images/text-pattern2.svg";
 
 const Process = () => {
   return (
@@ -18,11 +18,15 @@ const Process = () => {
         width={800}
         style={{ position: "absolute", bottom: "-4rem", left: "0" }}
       />
+      <Image
+        src={textPattern}
+        alt="text pattern"
+        height={700}
+        width={700}
+        style={{ position: "absolute", top: "-3rem", right: "0" }}
+      />
 
-     
-      <Title color="brand.200" >
-        Learn about my process
-      </Title>
+      <Title color="brand.200">Learn about my process</Title>
       <Flex
         color="brand.300"
         flexWrap={"wrap"}

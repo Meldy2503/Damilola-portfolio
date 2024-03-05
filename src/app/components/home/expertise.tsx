@@ -69,6 +69,10 @@ const Expertise = () => {
                 md: index % 2 === 0 ? "row" : "row-reverse",
               }}
               key={index}
+              my={{
+                base: '0',
+                md: index === 1 ? "8rem" : '0',
+              }}
             >
               <Box
                 w={{ base: "100%", md: "40%" }}
@@ -77,7 +81,7 @@ const Expertise = () => {
               >
                 <Image
                   src={item.img}
-                  alt="author's photo"
+                  alt="expert images"
                   width={800}
                   height={800}
                   style={{

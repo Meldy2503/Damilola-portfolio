@@ -15,7 +15,7 @@ const Wrapper = ({ children, bg, py, id }: Props) => {
     <Box
       width="100%"
       bg={bg ?? "brand.100"}
-      py={py ?? { base: "6rem", md: "10rem" }}
+      py={py ?? { base: "7rem", md: "10rem" }}
       position={"relative"}
       id={id}
     >
