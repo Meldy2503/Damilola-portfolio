@@ -15,7 +15,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logo from "../assets/images/logo.svg";
+import Logo from "../assets/images/white-logo.svg";
 import { Button } from "../utils/button";
 import { menuData } from "../utils/constants";
 
@@ -72,6 +72,7 @@ const Navbar = () => {
             color="brand.200"
             bg="brand.100"
             px="2rem"
+            py=".6rem"
             fontWeight="500"
             border="1.5px solid #ffffff"
           >
@@ -121,6 +122,7 @@ const Navbar = () => {
                 color="brand.200"
                 bg="brand.100"
                 px="2.5rem"
+                py=".6rem"
                 fontWeight="500"
                 border="1.5px solid #ffffff"
               >

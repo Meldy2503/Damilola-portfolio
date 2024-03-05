@@ -5,12 +5,10 @@ import {
   Box,
   Flex,
   Heading,
-  Icon,
   Text,
-  useMediaQuery,
+  useMediaQuery
 } from "@chakra-ui/react";
 import Image from "next/image";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import arthurImage from "../../assets/images/hero-bg.webp";
 import textPattern3 from "../../assets/images/text-pattern3.svg";
 
@@ -35,7 +33,7 @@ const LandingPage = () => {
           position: "absolute",
           bottom: isMobile ? "0" : "-5rem",
           left: "0",
-          opacity: "0.7"
+          opacity: "0.7",
         }}
       />
       <Flex
@@ -102,18 +100,7 @@ const LandingPage = () => {
               minimalism, maximalism and people-centric design principles to
               develop high-end solutions that stands out from competition.
             </Text>
-            <Button path="/">
-              <Flex gap="5rem" align={"center"}>
-                <Text>Contact me</Text>
-
-                <Icon
-                  as={BsFillArrowRightCircleFill}
-                  w={12}
-                  h={12}
-                  color="brand 250"
-                />
-              </Flex>
-            </Button>
+            <Button path="/" isIcon btnText="Contact me" btnGap="5rem" />
           </Box>
         </Flex>
       </Flex>

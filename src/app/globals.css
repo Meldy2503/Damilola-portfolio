@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,7 +9,6 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
-
 }
 
 html {
@@ -19,7 +16,7 @@ html {
 }
 
 body {
-font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 a {
@@ -27,16 +24,21 @@ a {
   text-decoration: none;
 }
 
-.shadow {
-  box-shadow: 0px 4.480370044708252px 112.0092544555664px 0px #0000000D;
+.socials {
+  text-decoration: underline;
 
+ 
+}
+
+
+
+.shadow {
+  box-shadow: 0px 4.480370044708252px 112.0092544555664px 0px #0000000d;
 }
 .btn {
-  box-shadow: 0px 2.137679100036621px 23.05931854248047px 0px #0000001F;
-
+  box-shadow: 0px 2.137679100036621px 23.05931854248047px 0px #0000001f;
 }
 
 .linear-bg {
   background: linear-gradient(152deg, #ffe6df, #f6efff);
 }
-

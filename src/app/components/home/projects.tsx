@@ -118,18 +118,9 @@ const Projects = () => {
                 </Heading>
 
                 <Text mb="2rem">{project.text}</Text>
-                <Button path="/">
-                  <Flex gap="2rem" align={"center"}>
-                    <Text>View Project</Text>
+                <Button path="/" isIcon btnText="View Project" iconColor={project.iconColor}/>
 
-                    <Icon
-                      as={BsFillArrowRightCircleFill}
-                      w={12}
-                      h={12}
-                      color={project.iconColor}
-                    />
-                  </Flex>
-                </Button>
+             
               </Box>
             </Box>
           );
