@@ -1,21 +1,16 @@
 "use client";
 
-import { expertiseData } from "@/app/utils/constants";
-import Title from "@/app/utils/heading";
-import Tags from "@/app/utils/tags";
+import { Button } from "@/app/utils/button";
 import Wrapper from "@/app/utils/wrapper";
 import {
   Box,
   Flex,
   Heading,
-  Icon,
   Text,
-  useMediaQuery,
+  useMediaQuery
 } from "@chakra-ui/react";
 import Image from "next/image";
 import authurImg from "../../assets/images/summary.webp";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import { Button } from "@/app/utils/button";
 
 const Summary = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -39,15 +34,14 @@ const Summary = () => {
             fontWeight={"600"}
             lineHeight={1.4}
           >
-            Certainly, with all you’ve seen so far i affirm that I've
+            Certainly, with all you&apos;ve seen so far i affirm that I&apos;ve
             effectively conveyed that I possess the appropriate skill set to
             significantly boost your revenue{" "}
           </Heading>
 
           <Text py="2rem">In that case;</Text>
-         
-    <Button path="/" isIcon btnText="Hire me" btnGap="6rem"/>
 
+          <Button path="/" isIcon btnText="Hire me" btnGap="6rem" />
         </Flex>
         <Box
           w={{ base: "100%", md: "50%" }}

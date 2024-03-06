@@ -6,7 +6,6 @@ import Wrapper from "@/app/utils/wrapper";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import textPattern from "../../assets/images/text-pattern.svg";
-import textPattern2 from "../../assets/images/text-pattern2.svg";
 
 const Process = () => {
   return (
