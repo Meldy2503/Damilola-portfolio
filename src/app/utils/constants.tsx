@@ -157,27 +157,27 @@ export const expertiseData = [
 
   export const testimonialData = [
     {
-      img: "/assets/images/face1.jpg",
+      img: "",
       text: "The results of the service were nothing short of remarkable. The end product far exceeded my expectations, showcasing the team's commitment to delivering excellence. It's clear that they take great pride in their work, and that pride shines through...",
       reviewer: "Tumininu Grey",
     },
     {
-      img: "/assets/images/face4.jpg",
+      img: "",
       text: "I would wholeheartedly recommend this service to anyone in need. This is a team that is not only skilled and dedicated but also genuinely cares about their clients' satisfaction. If you're looking for a service that combines expertise, professionalism, and a personal touch, look no further this is it!",
       reviewer: "First Bank",
     },
     {
-      img: "/assets/images/ascendancy.png",
+      img: "",
       text: "I recently had the pleasure of experiencing an absolutely outstanding service that left me thoroughly impressed. From start to finish, every aspect of the service rendered was handled with the utmost professionalism, care, and attention to detail.",
       reviewer: "Charles Donga, Firstbank PLC",
     },
     {
-      img: "/assets/images/ascendancy.png",
+      img: "",
       text: "I recently had the pleasure of experiencing an absolutely outstanding service that left me thoroughly impressed. From start to finish, every aspect of the service rendered was handled with the utmost professionalism, care, and attention to detail.",
       reviewer: "Victor Gbenga",
     },
     {
-      img: "/assets/images/face2.jpg",
+      img: "",
       text: "I recently had the pleasure of experiencing an absolutely outstanding service that left me thoroughly impressed. From start to finish, every aspect of the service rendered was handled with the utmost professionalism, care, and attention to detail.",
       reviewer: "Emelder Okafor",
     },

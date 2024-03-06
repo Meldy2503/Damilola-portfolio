@@ -6,47 +6,72 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import { Button } from "../utils/button";
 import Logo from "../assets/images/black-logo.svg";
 import Image from "next/image";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { FiLinkedin, FiFacebook } from "react-icons/fi";
 
 const Footer = () => {
   const socials = ["Email", "Resume", "LinkedIn", "Twitter", "Medium"];
+  const icons = [
+    <FiFacebook key="facebook"  size={18} />,
+    <FaInstagram key="instagram"  size={18} />,
+    <FaXTwitter key="twitter"  size={18} />,
+    <FiLinkedin key="linkedin"  size={18} />,
+  ];
+
   return (
-    <Wrapper bg="brand.150" py="5rem">
+    <Wrapper bg="brand.150" py="4rem">
       <Box>
         <Flex
           gap="3rem"
-          align={"center"}
+          align={"flex-end"}
           justify={"space-between"}
           flexWrap={"wrap"}
           borderBottom="2px solid #818181"
-          pb="2rem"
+           pb="2rem"
         >
           <Image src={Logo} alt="logo" height={50} width={50} />
 
-          <Flex gap="2rem" align={"center"} flexWrap={"wrap"}>
-            <Text>Would you like to reach out?</Text>
-            <Button
-              path="/"
-              color="brand.100"
-              bg="brand.150"
-              px="2.5rem"
-              py=".6rem"
-              fontWeight="500"
-              border="1.5px solid #151515"
-            >
-              Lets Talk
-            </Button>
+          <Flex align={"center"} gap="1rem">
+            {icons.map((icon, index) => (
+              <Flex
+                key={index}
+                h="3.7rem"
+                w="3.7rem"
+                borderRadius={"50%"}
+                bg="brand.550"
+                align={"center"}
+                justify={"center"}
+              >
+                <a href="http://">{icon}</a>
+              </Flex>
+            ))}
           </Flex>
         </Flex>
-        <Flex gap="5rem" justify="space-between" flexWrap={"wrap"} mt="5rem">
-          <Flex gap="2rem" direction="column">
-            <Text>Would you like us to collaborate on a project?</Text>
-            <Button path="/" isIcon btnText="Contact me" btnGap="4rem" />
+        <Flex
+          gap="3rem"
+          justify="space-between"
+          flexWrap={"wrap"}
+          mt={{ base: "4rem", md: "2.5rem" }}
+          align={{ base: "flex-start", md: "center" }}
+          direction={{ base: "column-reverse", md: "row" }}
+        >
+          <Flex
+            gap="1.5rem"
+            align={{ base: "center", md: "flex-start" }}
+            justify="space-between"
+            direction={{ base: "row", md: "column" }}
+            w={{ base: "100%", md: "inherit" }}
+            flexWrap={"wrap"}
+
+          >
+            <Text>Would you like to hire me?</Text>
+            <Button path="/" isIcon btnText="Contact me" btnGap= "3rem" />
           </Flex>
           <Box>
             <Flex
-              gap="1rem"
+              rowGap="1rem"
+              columnGap="2rem"
               justify={{ base: "flex-start", lg: "flex-end" }}
               flexWrap={"wrap"}
             >
@@ -57,20 +82,10 @@ const Footer = () => {
                 </a>
               ))}
             </Flex>
-            <Flex
-              gap={{ base: "2rem", md: "5rem" }}
-              align={"center"}
-              mt="2.5rem"
-              flexWrap={"wrap"}
-            >
-              <Flex align={"center"} gap="1rem">
-                <FaFacebookF />
-                <FaInstagram />
-                <FaXTwitter />
-              </Flex>
-              <Text>© 2023 Damilolabamgbelu. All right reserved.</Text>
-            </Flex>
           </Box>
+        </Flex>
+        <Flex align={"center"} justify={"center"} mt="4rem" textAlign={'center'}>
+          <Text>© 2023 Damilolabamgbelu. All right reserved.</Text>
         </Flex>
       </Box>
     </Wrapper>

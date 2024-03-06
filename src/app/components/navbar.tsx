@@ -36,7 +36,7 @@ const Navbar = () => {
       zIndex={500}
     >
       <Flex
-        width={{ base: "95%", md: "90%" }}
+        width="90%"
         maxW={"1280px"}
         mx="auto"
         justify={"space-between"}
@@ -82,7 +82,7 @@ const Navbar = () => {
         <Box onClick={onOpen} display={{ base: "block", lg: "none" }}>
           <Icon
             as={isOpen ? AiOutlineClose : GiHamburgerMenu}
-            boxSize={12}
+            boxSize={10}
             cursor={"pointer"}
           />
         </Box>

@@ -1,13 +1,7 @@
 "use client";
 
 import { Button } from "@/app/utils/button";
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  useMediaQuery
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import arthurImage from "../../assets/images/hero-bg.webp";
 import textPattern3 from "../../assets/images/text-pattern3.svg";
@@ -28,12 +22,26 @@ const LandingPage = () => {
         src={textPattern3}
         alt="text pattern"
         height={1000}
-        width={1600}
+        width={1500}
         style={{
           position: "absolute",
           bottom: isMobile ? "0" : "-5rem",
           left: "0",
-          opacity: "0.7",
+          opacity: isMobile ? "0.9" : "0.3",
+          animation: "slide1 15s linear infinite",
+        }}
+      />
+      <Image
+        src={textPattern3}
+        alt="text pattern"
+        height={1000}
+        width={1500}
+        style={{
+          position: "absolute",
+          top: isMobile ? "5rem" : "0",
+          opacity: isMobile ? "0.9" : "0.3",
+          left: "0",
+          animation: "slide2 15s linear infinite",
         }}
       />
       <Flex
@@ -43,7 +51,7 @@ const LandingPage = () => {
         direction="column"
         py={{ base: "6rem", md: "10rem" }}
         maxW={"1280px"}
-        width={{ base: "95%", md: "90%" }}
+        width="90%"
         m={"5rem auto"}
       >
         <Flex

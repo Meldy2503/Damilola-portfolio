@@ -4,13 +4,7 @@ import { Button } from "@/app/utils/button";
 import { projectData } from "@/app/utils/constants";
 import Title from "@/app/utils/heading";
 import Wrapper from "@/app/utils/wrapper";
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  useMediaQuery
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import textPattern1 from "../../assets/images/text-pattern1.svg";
 import textPattern2 from "../../assets/images/text-pattern2.svg";
@@ -25,7 +19,7 @@ const Projects = () => {
         alt="text pattern"
         height={600}
         width={600}
-        style={{ position: "absolute", top: "46%", left: "0" }}
+        style={{ position: "absolute", top: "47%", left: "0",  opacity: "0.5", }}
       />
       <Image
         src={textPattern2}
@@ -101,10 +95,12 @@ const Projects = () => {
                   color="brand.450"
                   fontSize={"1.9rem"}
                   w="fit-content"
-                  textDecoration={"underline"}
                   textDecorationThickness={"2px"}
                 >
-                  {`0${index + 1} - ${project.title}`}
+                  {`0${index + 1} - `}
+                  <span style={{ textDecoration: "underline" }}>
+                    {project.title}
+                  </span>
                 </Heading>
                 <Heading
                   color="brand.250"

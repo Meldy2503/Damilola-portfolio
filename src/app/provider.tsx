@@ -3,7 +3,7 @@
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-// import LoadingIcon from "./components/utils/loader";
+ import LoadingIcon from "./utils/loading-icon";
 import { motion, AnimatePresence } from "framer-motion";
 import theme from "./utils/theme";
 
@@ -30,8 +30,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
               exit={{ opacity: 0, scale: 0.5 }}
               transition={{ duration: 0.5 }}
             >
-              {/* <LoadingIcon /> */}
-              <p>Loading...</p>
+              <LoadingIcon />
             </motion.div>
           ) : (
             <motion.div

@@ -19,7 +19,7 @@ const Wrapper = ({ children, bg, py, id }: Props) => {
       position={"relative"}
       id={id}
     >
-      <Box width={{ base: "95%", md: "90%" }} maxW={"1280px"} m={"0 auto"}>
+      <Box width="90%" maxW={"1280px"} m={"0 auto"}>
         {children}
       </Box>
     </Box>

@@ -31,7 +31,7 @@ const Process = () => {
         flexWrap={"wrap"}
         justifyContent={"space-between"}
         position={"relative"}
-        rowGap={{ base: "5rem", lg: "7rem" }}
+        rowGap={{ base: "3rem", lg: "7rem" }}
         columnGap={"3rem"}
       >
         <Box
@@ -39,16 +39,24 @@ const Process = () => {
           w="100%"
           bg="brand.200"
           position={"absolute"}
-          top="54%"
-          display={{ base: "none", lg: "block" }}
+           top={{ base: "0", md: '31.5%', lg: "54%" }}
+          display={{ base: "none", md: "block" }}
+        />
+        <Box
+          h="1px"
+          w="100%"
+          bg="brand.200"
+          position={"absolute"}
+           top={{ base: "0", md: '67%', lg: "54%" }}
+          display={{ base: "none", md: "block", lg: 'none' }}
         />
         <Box
           h="100%"
           w="1px"
           bg="brand.200"
           position={"absolute"}
-          left="32%"
-          display={{ base: "none", lg: "block" }}
+          left={{ base: "0", md: '50%', lg: "32%" }}
+          display={{ base: "none", md: "block" }}
         />
         <Box
           h="100%"
@@ -63,7 +71,9 @@ const Process = () => {
             <Box
               key={index}
               w={{ base: "100%", md: "47%", lg: "30%" }}
-              p="0 3rem 0 0"
+              p={{ base: "0 3rem 3rem 0", lg: "0 3rem 0 0" }}
+              borderBottom={{ base: index !== 5 ? '2px solid #e1e0e0' : 'none', md: '0' }}
+
             >
               <Heading color="brand.350" fontWeight={"600"} fontSize={"4rem"}>
                 0{index + 1}
