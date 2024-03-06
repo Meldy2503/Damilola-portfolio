@@ -72,7 +72,7 @@ const Process = () => {
               key={index}
               w={{ base: "100%", md: "47%", lg: "30%" }}
               p={{ base: "0 3rem 3rem 0", lg: "0 3rem 0 0" }}
-              borderBottom={{ base: index !== 5 ? '2addpx solid #6c6b6b' : 'none', md: '0' }}
+              borderBottom={{ base: index !== 5 ? '2px solid #6c6b6b' : 'none', md: '0' }}
 
             >
               <Heading color="brand.350" fontWeight={"600"} fontSize={"4rem"}>
