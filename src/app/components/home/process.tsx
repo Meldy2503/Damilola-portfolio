@@ -37,7 +37,7 @@ const Process = () => {
         <Box
           h="1px"
           w="100%"
-          bg="brand.200"
+          bg="brand.550"
           position={"absolute"}
            top={{ base: "0", md: '31.5%', lg: "54%" }}
           display={{ base: "none", md: "block" }}
@@ -45,7 +45,7 @@ const Process = () => {
         <Box
           h="1px"
           w="100%"
-          bg="brand.200"
+          bg="brand.550"
           position={"absolute"}
            top={{ base: "0", md: '67%', lg: "54%" }}
           display={{ base: "none", md: "block", lg: 'none' }}
@@ -53,7 +53,7 @@ const Process = () => {
         <Box
           h="100%"
           w="1px"
-          bg="brand.200"
+          bg="brand.550"
           position={"absolute"}
           left={{ base: "0", md: '50%', lg: "32%" }}
           display={{ base: "none", md: "block" }}
@@ -61,7 +61,7 @@ const Process = () => {
         <Box
           h="100%"
           w="1px"
-          bg="brand.200"
+          bg="brand.550"
           position={"absolute"}
           left="67%"
           display={{ base: "none", lg: "block" }}
@@ -72,7 +72,7 @@ const Process = () => {
               key={index}
               w={{ base: "100%", md: "47%", lg: "30%" }}
               p={{ base: "0 3rem 3rem 0", lg: "0 3rem 0 0" }}
-              borderBottom={{ base: index !== 5 ? '2px solid #e1e0e0' : 'none', md: '0' }}
+              borderBottom={{ base: index !== 5 ? '2addpx solid #6c6b6b' : 'none', md: '0' }}
 
             >
               <Heading color="brand.350" fontWeight={"600"} fontSize={"4rem"}>
