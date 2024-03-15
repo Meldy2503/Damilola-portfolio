@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import Wrapper from "../utils/wrapper";
+import Wrapper from "./wrapper";
 import { Box, Flex, Text } from "@chakra-ui/react";
-import { Button } from "../utils/button";
+import { Button } from "./button";
 import Logo from "../assets/images/black-logo.svg";
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
@@ -13,10 +13,10 @@ import { FiLinkedin, FiFacebook } from "react-icons/fi";
 const Footer = () => {
   const socials = ["Email", "Resume", "LinkedIn", "Twitter", "Medium"];
   const icons = [
-    <FiFacebook key="facebook"  size={18} />,
-    <FaInstagram key="instagram"  size={18} />,
-    <FaXTwitter key="twitter"  size={18} />,
-    <FiLinkedin key="linkedin"  size={18} />,
+    <FiFacebook key="facebook" size={18} />,
+    <FaInstagram key="instagram" size={18} />,
+    <FaXTwitter key="twitter" size={18} />,
+    <FiLinkedin key="linkedin" size={18} />,
   ];
 
   return (
@@ -28,7 +28,7 @@ const Footer = () => {
           justify={"space-between"}
           flexWrap={"wrap"}
           borderBottom="2px solid #818181"
-           pb="2rem"
+          pb="2rem"
         >
           <Image src={Logo} alt="logo" height={50} width={50} />
 
@@ -63,10 +63,9 @@ const Footer = () => {
             direction={{ base: "row", md: "column" }}
             w={{ base: "100%", md: "inherit" }}
             flexWrap={"wrap"}
-
           >
             <Text>Would you like to hire me?</Text>
-            <Button path="/" isIcon btnText="Contact me" btnGap= "3rem" />
+            <Button path="/" isIcon btnText="Contact me" btnGap="3rem" />
           </Flex>
           <Box>
             <Flex
@@ -84,7 +83,12 @@ const Footer = () => {
             </Flex>
           </Box>
         </Flex>
-        <Flex align={"center"} justify={"center"} mt="4rem" textAlign={'center'}>
+        <Flex
+          align={"center"}
+          justify={"center"}
+          mt="4rem"
+          textAlign={"center"}
+        >
           <Text>© 2023 Damilolabamgbelu. All right reserved.</Text>
         </Flex>
       </Box>

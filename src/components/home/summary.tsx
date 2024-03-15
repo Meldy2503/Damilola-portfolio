@@ -1,16 +1,10 @@
 "use client";
 
-import { Button } from "@/app/utils/button";
-import Wrapper from "@/app/utils/wrapper";
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  useMediaQuery
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import authurImg from "../../assets/images/summary.webp";
+import Wrapper from "../wrapper";
+import { Button } from "../button";
 
 const Summary = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");

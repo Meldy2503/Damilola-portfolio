@@ -3,9 +3,9 @@
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
- import LoadingIcon from "./utils/loading-icon";
 import { motion, AnimatePresence } from "framer-motion";
-import theme from "./utils/theme";
+import theme from "@/utils/theme";
+import LoadingIcon from "@/components/loading-icon";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
@@ -25,7 +25,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
           {loading ? (
             <motion.div
               key="loading"
-              initial={{ opacity: 0, scale: 0.5 }}
+              initial={{ opacity: 1, scale: 1 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.5 }}
               transition={{ duration: 0.5 }}
@@ -35,7 +35,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
           ) : (
             <motion.div
               key="content"
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 1 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1 }}

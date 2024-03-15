@@ -1,10 +1,10 @@
 "use client";
 
-import { Button } from "@/app/utils/button";
 import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import arthurImage from "../../assets/images/hero-bg.webp";
 import textPattern3 from "../../assets/images/text-pattern3.svg";
+import { Button } from "../button";
 
 const LandingPage = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -27,7 +27,7 @@ const LandingPage = () => {
           position: "absolute",
           bottom: isMobile ? "0" : "-5rem",
           left: "0",
-          opacity: isMobile ? "0.9" : "0.3",
+          opacity: isMobile ? "0.9" : "0.6",
           animation: "slide1 15s linear infinite",
         }}
       />
@@ -39,7 +39,7 @@ const LandingPage = () => {
         style={{
           position: "absolute",
           top: isMobile ? "5rem" : "0",
-          opacity: isMobile ? "0.9" : "0.3",
+          opacity: isMobile ? "0.9" : "0.6",
           left: "0",
           animation: "slide2 15s linear infinite",
         }}

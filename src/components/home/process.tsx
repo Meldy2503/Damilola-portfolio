@@ -1,11 +1,12 @@
 "use client";
 
-import { processData } from "@/app/utils/constants";
-import Title from "@/app/utils/heading";
-import Wrapper from "@/app/utils/wrapper";
+
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import textPattern from "../../assets/images/text-pattern.svg";
+import Wrapper from "../wrapper";
+import Title from "../heading";
+import { processData } from "@/utils/constants";
 
 const Process = () => {
   return (
@@ -39,7 +40,7 @@ const Process = () => {
           w="100%"
           bg="brand.550"
           position={"absolute"}
-           top={{ base: "0", md: '31.5%', lg: "54%" }}
+          top={{ base: "0", md: "31.5%", lg: "54%" }}
           display={{ base: "none", md: "block" }}
         />
         <Box
@@ -47,15 +48,15 @@ const Process = () => {
           w="100%"
           bg="brand.550"
           position={"absolute"}
-           top={{ base: "0", md: '67%', lg: "54%" }}
-          display={{ base: "none", md: "block", lg: 'none' }}
+          top={{ base: "0", md: "67%", lg: "54%" }}
+          display={{ base: "none", md: "block", lg: "none" }}
         />
         <Box
           h="100%"
           w="1px"
           bg="brand.550"
           position={"absolute"}
-          left={{ base: "0", md: '50%', lg: "32%" }}
+          left={{ base: "0", md: "50%", lg: "32%" }}
           display={{ base: "none", md: "block" }}
         />
         <Box
@@ -72,8 +73,10 @@ const Process = () => {
               key={index}
               w={{ base: "100%", md: "47%", lg: "30%" }}
               p={{ base: "0 3rem 3rem 0", lg: "0 3rem 0 0" }}
-              borderBottom={{ base: index !== 5 ? '2px solid #6c6b6b' : 'none', md: '0' }}
-
+              borderBottom={{
+                base: index !== 5 ? "2px solid #6c6b6b" : "none",
+                md: "0",
+              }}
             >
               <Heading color="brand.350" fontWeight={"600"} fontSize={"4rem"}>
                 0{index + 1}

@@ -1,8 +1,5 @@
 "use client";
 
-import { testimonialData } from "@/app/utils/constants";
-import Title from "@/app/utils/heading";
-import Wrapper from "@/app/utils/wrapper";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Slider from "react-slick";
@@ -10,6 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import textPattern from "../../assets/images/text-pattern5.svg";
 import textPattern2 from "../../assets/images/text-pattern6.svg";
+import Wrapper from "../wrapper";
+import Title from "../heading";
+import { testimonialData } from "@/utils/constants";
 
 const Testimonials = () => {
   const settings = {
@@ -58,8 +58,8 @@ const Testimonials = () => {
       />
 
       <Box
-         height="40rem"
-         w="40rem"
+        height="40rem"
+        w="40rem"
         borderRadius={"50%"}
         bg=" hsla(0, 0%, 97%, .037)"
         style={{
@@ -69,7 +69,7 @@ const Testimonials = () => {
           animation: "moveCircle2 8s infinite",
         }}
       />
-    
+
       <Box
         height="40rem"
         w="40rem"
@@ -82,8 +82,8 @@ const Testimonials = () => {
           animation: "moveCircle 4s infinite",
         }}
       />
-     
-         <Box
+
+      <Box
         height="40rem"
         w="40rem"
         borderRadius={"50%"}
@@ -95,8 +95,8 @@ const Testimonials = () => {
           animation: "moveCircle2 8s infinite",
         }}
       />
-      
-         <Box
+
+      <Box
         height="40rem"
         w="40rem"
         borderRadius={"50%"}
@@ -108,7 +108,7 @@ const Testimonials = () => {
           animation: "moveCircle 5s infinite",
         }}
       />
-     
+
       <Title color="brand.200">
         Testimonials from client’s i have worked with{" "}
       </Title>

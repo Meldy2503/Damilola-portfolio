@@ -1,7 +1,7 @@
-import project1 from "../assets/images/project1.webp";
-import project4 from "../assets/images/project2.webp";
-import project2 from "../assets/images/project4.png";
-import project3 from "../assets/images/project3.webp";
+import project1 from "../assets/images/project31.webp";
+import project4 from "../assets/images/project34.webp";
+import project2 from "../assets/images/project36.webp";
+import project3 from "../assets/images/project33.webp";
 import project11 from "../assets/images/project11.svg";
 import project22 from "../assets/images/project22.svg";
 import expert1 from "../assets/images/expert1.webp";
@@ -84,6 +84,7 @@ export const projectData = [
     iconColor: "#214758",
     heading: "An Inventory mobile app for business management.",
     text: "Stock button is an E-commerce Inventory App designed to facilitate seamless and efficient management of the business's inventory in relation to its online retail operations. This app serves as a digital tool that enables the business (Stock Button) to monitor, control, and optimize their product stock levels, sales, and order fulfilment processes. ",
+    path: "/stock-button"
   },
   {
     img: project2,
@@ -91,6 +92,8 @@ export const projectData = [
     iconColor: "#6345B3",
     heading: "A web app enabling purchase of gift vouchers from leading brands",
     text: "Pyyr Rewards is a web-based loyalty platform designed to elevate customer loyalty. Within this platform, businesses or service providers, directly acquire digital gift vouchers from brands. These vouchers are then electronically awarded to customers who are part of a loyalty program.",
+    path: "/pyyr-reward"
+
   },
   {
     img: project3,
@@ -98,6 +101,8 @@ export const projectData = [
     iconColor: "#E46509",
     heading: "A service based mobile app that connects artisans to end-users ",
     text: "I Get Guy is a service rendering app designed to bridge the gap between skilled artisans providing services and end-users urgently seeking experienced service providers in specific localities.",
+    path: "/igetguy"
+
   },
   {
     img: project4,
@@ -106,6 +111,8 @@ export const projectData = [
     title: "Dobble",
     heading: "A web-based procurement software for organisations.",
     text: "Dobble is an innovative web-based procurement solution meticulously designed for organizations to streamline their expenditure management. It facilitates the seamless processing of operational requests and needs from staff members, contributing to the efficient operation of the business ensuring that the company operates within its budgetary limits, promoting financial prudence and effective spending practices.",
+    path: "/dobble"
+
   },
 ];
 

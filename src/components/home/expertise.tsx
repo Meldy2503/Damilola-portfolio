@@ -1,18 +1,14 @@
 "use client";
 
-import { expertiseData } from "@/app/utils/constants";
-import Title from "@/app/utils/heading";
-import Tags from "@/app/utils/tags";
-import Wrapper from "@/app/utils/wrapper";
-import {
-  Box,
-  Flex,
-  Heading,
-  Text
-} from "@chakra-ui/react";
+
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import divider from "../../assets/images/line.svg";
 import textPattern4 from "../../assets/images/text-pattern4.svg";
+import Wrapper from "../wrapper";
+import Title from "../heading";
+import { expertiseData } from "@/utils/constants";
+import Tags from "../tags";
 
 const Expertise = () => {
   return (
@@ -70,8 +66,8 @@ const Expertise = () => {
               }}
               key={index}
               my={{
-                base: '0',
-                md: index === 1 ? "8rem" : '0',
+                base: "0",
+                md: index === 1 ? "8rem" : "0",
               }}
             >
               <Box
@@ -94,7 +90,7 @@ const Expertise = () => {
               <Box w={{ base: "100%", md: "40%" }}>
                 <Heading
                   fontSize={{ base: "3rem", md: "3.5rem" }}
-                 fontWeight={"600"}
+                  fontWeight={"600"}
                 >
                   {item.title}
                 </Heading>

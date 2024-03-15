@@ -1,13 +1,15 @@
 "use client";
 
-import { Button } from "@/app/utils/button";
-import { projectData } from "@/app/utils/constants";
-import Title from "@/app/utils/heading";
-import Wrapper from "@/app/utils/wrapper";
 import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import textPattern1 from "../../assets/images/text-pattern1.svg";
 import textPattern2 from "../../assets/images/text-pattern2.svg";
+import Wrapper from "../wrapper";
+import Title from "../heading";
+import { projectData } from "@/utils/constants";
+import { Button } from "../button";
+import Link from "next/link";
+
 
 const Projects = () => {
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
@@ -19,7 +21,7 @@ const Projects = () => {
         alt="text pattern"
         height={600}
         width={600}
-        style={{ position: "absolute", top: "47%", left: "0",  opacity: "0.5", }}
+        style={{ position: "absolute", top: "47%", left: "0", opacity: "0.5" }}
       />
       <Image
         src={textPattern2}
@@ -54,19 +56,24 @@ const Projects = () => {
                 lg: index === 0 || index === 3 ? "scale(1)" : "scale(0.85)",
               }}
             >
+              <Link href={project.path}>
               <Box>
                 <Box position={"relative"}>
+                 
                   <Image
                     src={project.img}
                     alt="project image"
-                    height={800}
-                    width={800}
+                    height={1500}
+                    width={1500}
+                    quality={100}
                     style={{
                       maxWidth: "100%",
                       objectFit: "cover",
                       objectPosition: "center",
                     }}
                   />
+
+               
                 </Box>
                 {project.icon && (
                   <Box
@@ -119,6 +126,7 @@ const Projects = () => {
                   iconColor={project.iconColor}
                 />
               </Box>
+              </Link>
             </Box>
           );
         })}
