@@ -64,7 +64,7 @@ export const Button = ({
       bg={bg ?? "brand.200"}
       border={border ?? "none"}
     >
-      <Link href={path} target="_blank">
+      <Link href={path}>
         {children ?? (
           <Flex gap={btnGap ?? "3rem"} align={"center"}>
             <Text pl="1rem">{btnText}</Text>
