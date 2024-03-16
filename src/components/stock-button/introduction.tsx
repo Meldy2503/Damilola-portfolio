@@ -1,9 +1,15 @@
 "use client";
 
-import { stockButtonImg } from "@/utils/constants";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { stockButtonImg, stockIntroCards } from "@/utils/constants";
+import { Box, Flex, HStack, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
+import { useState } from "react";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
+import {
+  IoIosArrowDown,
+  IoIosArrowUp,
+  IoMdNotificationsOutline,
+} from "react-icons/io";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -11,6 +17,14 @@ import { Button } from "../button";
 import Wrapper from "../wrapper";
 
 const Introduction = () => {
+  const [isShowMore, setIsShowMore] = useState(false);
+  const [showMoreData, setShowMoreData] = useState(0);
+
+  const handleShowMore = (index: number) => {
+    setShowMoreData(index);
+    setIsShowMore(!isShowMore);
+  };
+
   const settings = {
     centerMode: true,
     infinite: true,
@@ -79,8 +93,7 @@ const Introduction = () => {
                         maxWidth: "100%",
                         objectFit: "cover",
                         objectPosition: "center",
-                        width: '100%'
-
+                        width: "100%",
                       }}
                     />
                   </Flex>
@@ -127,6 +140,89 @@ const Introduction = () => {
           />
         </Box>
       </Flex>
+      <Box mt="2rem">
+        <Text color="brand.480" fontWeight={"600"} mb="1rem">
+          Core Features Introduced{" "}
+        </Text>
+
+        <Flex
+          gap="2rem"
+          justify={"space-between"}
+          transition={"all 2s linear"}
+          flexWrap={"wrap"}
+        >
+          {stockIntroCards.map((items, index) => {
+            return (
+              <Box
+                key={index}
+                borderWidth="2px"
+                borderColor="brand.150"
+                borderRadius={".5rem"}
+                w={{ base: "100%", md: "46%", xl: "23%" }}
+                p="2rem 2rem 1rem 2rem"
+                _hover={{
+                  boxShadow: "0px 4px 60px 0px #00000018",
+                }}
+                onMouseEnter={() => setIsShowMore(true)}
+                onMouseLeave={() => setIsShowMore(false)}
+              >
+                <Flex justify={"space-between"} direction={"column"} h="100%">
+                  <Box>
+                    <Flex
+                      h="4rem"
+                      w="4rem"
+                      bg="brand.600"
+                      borderRadius={".5rem"}
+                      align={"center"}
+                      justify={"center"}
+                    >
+                      <IoMdNotificationsOutline
+                        color="#fff"
+                        fontSize={"2.5rem"}
+                      />
+                    </Flex>
+                    <Box mt="2rem">
+                      <Heading fontSize={"1.8rem"} fontWeight={"700"} mb="1rem">
+                        {items.title}
+                      </Heading>
+                      <Text pb="2rem">{items.text}</Text>
+                      {isShowMore && showMoreData === index ? (
+                        <Box
+                          borderTopWidth="2px"
+                          borderTopColor="brand.150"
+                          py="2rem"
+                        >
+                          <Text>{items.showMore}</Text>
+                        </Box>
+                      ) : undefined}
+                    </Box>
+                  </Box>
+                  <HStack
+                    onClick={() => handleShowMore(index)}
+                    borderTopWidth="2px"
+                    borderTopColor="brand.150"
+                    pt="1rem"
+                    cursor={"pointer"}
+                    spacing={"1rem"}
+                    color="brand.600"
+                  >
+                    <Text>
+                      {isShowMore && showMoreData === index
+                        ? "Show Less"
+                        : "Show More"}
+                    </Text>
+                    {isShowMore && showMoreData === index ? (
+                      <IoIosArrowUp />
+                    ) : (
+                      <IoIosArrowDown />
+                    )}
+                  </HStack>
+                </Flex>
+              </Box>
+            );
+          })}
+        </Flex>
+      </Box>
     </Wrapper>
   );
 };
