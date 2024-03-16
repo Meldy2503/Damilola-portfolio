@@ -24,7 +24,14 @@ const Introduction = () => {
     arrows: true,
   };
   return (
-    <Wrapper py='7rem' borderTopWidth="2.5rem" borderTopColor="brand.650" bg="brand.200">
+    <Wrapper
+      py="7rem"
+      borderTopWidth="2.5rem"
+      borderTopColor="brand.650"
+      borderBottomWidth="2.5rem"
+      borderBottomColor="brand.600"
+      bg="brand.200"
+    >
       <Flex
         justify={"space-between"}
         align={"center"}
@@ -72,6 +79,8 @@ const Introduction = () => {
                         maxWidth: "100%",
                         objectFit: "cover",
                         objectPosition: "center",
+                        width: '100%'
+
                       }}
                     />
                   </Flex>
@@ -89,7 +98,7 @@ const Introduction = () => {
           >
             01
           </Text>
-          <Heading fontSize={{ base: "3.5rem", md: "4rem" }} fontWeight={"600"}>
+          <Heading fontSize={{ base: "3rem", xl: "4rem" }} fontWeight={"600"}>
             Introduction
           </Heading>
 

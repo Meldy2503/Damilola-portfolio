@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react";
-import Wrapper from "../wrapper";
-import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { HiOutlineArrowSmUp } from "react-icons/hi";
 import { Button } from "../button";
-import { HiOutlineArrowSmDown, HiOutlineArrowSmUp } from "react-icons/hi";
+import Wrapper from "../wrapper";
 
 const Achievements = () => {
   return (
@@ -17,7 +16,6 @@ const Achievements = () => {
     >
       <Flex
         justify={"space-between"}
-        // align={"center"}
         columnGap="2rem"
         direction={{
           base: "column",
@@ -33,7 +31,7 @@ const Achievements = () => {
           >
             05
           </Text>
-          <Heading fontSize={{ base: "3.5rem", xl: "4rem" }} fontWeight={"600"}>
+          <Heading fontSize={{ base: "3rem", xl: "4rem" }} fontWeight={"600"}>
             Achievements{" "}
           </Heading>
         </Box>
@@ -73,16 +71,19 @@ const Achievements = () => {
           boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
         >
           <Flex
-            justify={{base: 'center', md:"space-between"}}
+            justify={{ base: "center", md: "space-between" }}
             flexWrap={"wrap"}
             gap="2rem"
             align={"center"}
-            mx='auto'
-            textAlign={'center'}
-            // flex={1}
+            mx="auto"
+            textAlign={"center"}
           >
-            <Box   flex={1}>
-              <Text fontSize={{ base: "4rem", lg: "5rem" }} fontWeight={500} mb="1.5rem">
+            <Box flex={1}>
+              <Text
+                fontSize={{ base: "4rem", lg: "5rem" }}
+                fontWeight={500}
+                mb="1.5rem"
+              >
                 21%
               </Text>
               <Text>Increase in stock level Awareness</Text>
@@ -92,8 +93,12 @@ const Achievements = () => {
               w={{ base: "100%", md: "1.2px" }}
               bg={"brand.480"}
             />
-            <Box   flex={1}>
-              <Text fontSize={{ base: "4rem", lg: "5rem" }} fontWeight={500} mb="1.5rem">
+            <Box flex={1}>
+              <Text
+                fontSize={{ base: "4rem", lg: "5rem" }}
+                fontWeight={500}
+                mb="1.5rem"
+              >
                 10%
               </Text>
               <Text>Boost in sales within just three months</Text>
@@ -103,8 +108,12 @@ const Achievements = () => {
               w={{ base: "100%", md: "1.2px" }}
               bg={"brand.480"}
             />
-            <Box   flex={1}>
-              <Text fontSize={{ base: "4rem", lg: "5rem" }} fontWeight={500} mb="1.5rem">
+            <Box flex={1}>
+              <Text
+                fontSize={{ base: "4rem", lg: "5rem" }}
+                fontWeight={500}
+                mb="1.5rem"
+              >
                 78%
               </Text>
               <Text>Product Demand Forecasting</Text>

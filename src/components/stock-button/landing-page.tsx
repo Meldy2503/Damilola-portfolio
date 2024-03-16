@@ -61,6 +61,8 @@ const LandingPage = () => {
                 maxWidth: "100%",
                 objectFit: "cover",
                 objectPosition: "top",
+                width: '100%'
+
               }}
             />
           </Box>

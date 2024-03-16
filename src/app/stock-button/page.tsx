@@ -7,6 +7,9 @@ import Footer from '@/components/footer'
 import Introduction from '@/components/stock-button/introduction'
 import Cta from '@/components/stock-button/cta'
 import Achievements from '@/components/stock-button/achievements'
+import StyleGuide from '@/components/stock-button/style-guide'
+import HifiDesigns from '@/components/stock-button/hifi-designs'
+import PrincipalTask from '@/components/stock-button/principal-task'
 
 const StockButton = () => {
   return (
@@ -14,6 +17,9 @@ const StockButton = () => {
     <Navbar/>
     <LandingPage/>
     <Introduction/>
+    <PrincipalTask/>
+    <HifiDesigns/>
+    <StyleGuide/>
     <Achievements/>
     <Cta/>
     <Footer/>
