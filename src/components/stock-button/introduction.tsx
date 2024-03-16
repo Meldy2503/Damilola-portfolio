@@ -1,17 +1,14 @@
 "use client";
 
-import React from "react";
-import Wrapper from "../wrapper";
-import Image from "next/image";
+import { stockButtonImg } from "@/utils/constants";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import { Button } from "../button";
-import Title from "../heading";
-import { GoArrowDown } from "react-icons/go";
+import Image from "next/image";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import { stockButtonImg } from "@/utils/constants";
+import { Button } from "../button";
+import Wrapper from "../wrapper";
 
 const Introduction = () => {
   const settings = {
@@ -27,7 +24,7 @@ const Introduction = () => {
     arrows: true,
   };
   return (
-    <Wrapper borderTopWidth="3rem" borderTopColor="brand.650" bg="brand.200">
+    <Wrapper py='7rem' borderTopWidth="2.5rem" borderTopColor="brand.650" bg="brand.200">
       <Flex
         justify={"space-between"}
         align={"center"}
@@ -36,10 +33,6 @@ const Introduction = () => {
           base: "column-reverse",
           md: "row",
         }}
-        //   my={{
-        //     base: "0",
-        //     md: index === 1 ? "8rem" : "0",
-        //   }}
       >
         <Box
           w={{ base: "100%", md: "46%" }}
@@ -71,7 +64,6 @@ const Introduction = () => {
                   </style>
                   <Flex justify={"center"}>
                     <Image
-                      //   src=''
                       src={item}
                       alt="reviewers image"
                       height={1000}
@@ -97,7 +89,7 @@ const Introduction = () => {
           >
             01
           </Text>
-          <Heading fontSize={{ base: "4rem", md: "4.5rem" }} fontWeight={"600"}>
+          <Heading fontSize={{ base: "3.5rem", md: "4rem" }} fontWeight={"600"}>
             Introduction
           </Heading>
 

@@ -15,7 +15,7 @@ const LandingPage = () => {
       align={"center"}
       justify={"center"}
       position={"relative"}
-      borderBottomWidth="3rem"
+      borderBottomWidth="2.5rem"
       borderBottomColor="brand.600"
       zIndex={100}
     >
@@ -65,14 +65,15 @@ const LandingPage = () => {
             />
           </Box>
           <Box
-            w={{ base: "100%", md: "50%" }}
+            w={{ base: "100%", md: "55%" }}
             mt={{ base: "6rem", md: "2rem", lg: "0" }}
+            flex={1}
           >
             <Back name="Stock Button" />
             <Heading
-              fontSize={{ base: "4rem", xl: "5.5rem" }}
+              fontSize={{ base: "3.8rem", md: '3.3rem',  xl: "5.5rem" }}
               py="2rem"
-              fontWeight={"600"}
+              fontWeight={600}
               w={{ base: "100%", lg: "92%" }}
               lineHeight={1.1}
             >
@@ -105,8 +106,8 @@ const LandingPage = () => {
             </Text>
             <Flex
               fontSize={"1.35rem"}
-              rowGap={"2rem"}
-              columnGap={"5rem"}
+              rowGap={"1rem"}
+              columnGap={{base: '2rem', lg: '5rem'}}
               flexWrap={"wrap"}
               fontWeight={"bold"}
             >

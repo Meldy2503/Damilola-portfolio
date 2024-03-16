@@ -79,7 +79,7 @@ const LandingPage = () => {
           </Box>
           <Box w={{ base: "100%", md: "50%" }}>
             <Heading
-              fontSize={{ base: "4rem", sm: "4.5rem", xl: "5.5rem" }}
+              fontSize={{ base: "3.8rem", md: "3.5rem", xl: "5.5rem" }}
               py="2rem"
               color="brand.200"
               fontWeight={"thin"}

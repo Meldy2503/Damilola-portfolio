@@ -6,6 +6,7 @@ import LandingPage from '@/components/stock-button/landing-page'
 import Footer from '@/components/footer'
 import Introduction from '@/components/stock-button/introduction'
 import Cta from '@/components/stock-button/cta'
+import Achievements from '@/components/stock-button/achievements'
 
 const StockButton = () => {
   return (
@@ -13,6 +14,7 @@ const StockButton = () => {
     <Navbar/>
     <LandingPage/>
     <Introduction/>
+    <Achievements/>
     <Cta/>
     <Footer/>
     </>

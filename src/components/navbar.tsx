@@ -43,7 +43,9 @@ const Navbar = () => {
         align={"center"}
         color="brand.200"
       >
+        <Link href={'/'}>
         <Image src={Logo} alt="logo" height={35} width={35} />
+        </Link>
         <Flex
           gap="5rem"
           display={{ base: "none", lg: "flex" }}
