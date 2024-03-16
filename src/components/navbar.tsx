@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <Box
       w="100%"
-      py="1.5rem"
+      py="1rem"
       position={"fixed"}
       top={"0px"}
       bg="brand.100"

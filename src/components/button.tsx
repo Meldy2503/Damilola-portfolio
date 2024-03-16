@@ -22,6 +22,8 @@ interface BtnProps {
   btnText?: string;
   btnGap?: string;
   isIcon?: boolean;
+  icon?: any;
+  iconW?: string;
 }
 
 export const Button = ({
@@ -40,7 +42,9 @@ export const Button = ({
   iconColor,
   isIcon,
   btnText,
-  btnGap
+  icon,
+  btnGap,
+  iconW
 }: BtnProps) => {
   return (
     <Box
@@ -67,8 +71,8 @@ export const Button = ({
 
             {isIcon && (
               <Icon
-                as={BsFillArrowRightCircleFill}
-                w={14}
+                as={icon ?? BsFillArrowRightCircleFill}
+                w={iconW ?? 14}
                 h={14}
                 color={iconColor ?? "brand 250"}
               />

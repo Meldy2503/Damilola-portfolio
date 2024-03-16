@@ -7,6 +7,10 @@ import project22 from "../assets/images/project22.svg";
 import expert1 from "../assets/images/expert1.webp";
 import expert2 from "../assets/images/expert2.webp";
 import expert3 from "../assets/images/expert3.webp";
+import stock1 from "../assets/images/intro5.png";
+import stock2 from "../assets/images/intro2.png";
+import stock3 from "../assets/images/intro3.png";
+import stock4 from "../assets/images/intro4.png";
 
 export const menuData = [
   {
@@ -189,4 +193,9 @@ export const expertiseData = [
       reviewer: "Emelder Okafor",
     },
   ];
+
+
+  export const stockButtonImg = [
+    stock1, stock2, stock3, stock4
+  ]
 

@@ -72,7 +72,7 @@ const LandingPage = () => {
             <Heading
               fontSize={{ base: "4rem", xl: "5.5rem" }}
               py="2rem"
-              fontWeight={"500"}
+              fontWeight={"600"}
               w={{ base: "100%", lg: "92%" }}
               lineHeight={1.1}
             >

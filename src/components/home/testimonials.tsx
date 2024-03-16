@@ -135,6 +135,11 @@ const Testimonials = () => {
                     font-size: 2rem;
                   }
                 
+                   .slick-center {
+                    transform: scale(1.15);
+                    position: relative;
+                    z-index: 1;
+                  } 
                 `}
                 </style>
                 <Flex justify={"center"}>

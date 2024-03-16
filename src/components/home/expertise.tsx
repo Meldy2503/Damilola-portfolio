@@ -69,7 +69,7 @@ const Expertise = () => {
                 base: "0",
                 md: index === 1 ? "8rem" : "0",
               }}
-            >
+             >
               <Box
                 w={{ base: "100%", md: "40%" }}
                 position={"relative"}
