@@ -41,8 +41,8 @@ const Achievements = () => {
             managers, the inventory managers nailed one big goal: they could
             predict which products customers were really after. This meant they
             knew exactly what to restock before products ran out from their
-            suppliers. Ultimately, their stock level awareness shot up by 20%,
-            and they saw a solid 10% boost in sales within just three months!
+            suppliers. Ultimately, their <b>stock level awareness shot up by 20%</b>,
+            and they saw a solid <b>10% boost in sales</b> within just three months!
           </Text>
           <Button
             path="/"

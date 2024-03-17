@@ -17,17 +17,16 @@ import { Button } from "../button";
 import Wrapper from "../wrapper";
 
 const Introduction = () => {
-  const [isShowMore, setIsShowMore] = useState(false);
-  const [showMoreData, setShowMoreData] = useState(0);
+  const [expandedIndex, setExpandedIndex] = useState(-1);
 
   const handleShowMore = (index: number) => {
-    setShowMoreData(index);
-    setIsShowMore(!isShowMore);
+    setExpandedIndex(index === expandedIndex ? -1 : index);
   };
 
   const settings = {
     centerMode: true,
     infinite: true,
+
     centerPadding: "0px",
     slidesToShow: 1,
     speed: 500,
@@ -117,14 +116,15 @@ const Introduction = () => {
 
           <Text py="2rem">
             Acknowledging the presence of a well-established e-commerce
-            software, The major challenge has been the delayed awareness of
-            stock levels for specific items which has resulted in inaccurate
-            product demand forecasting from suppliers, occasionally leading to
-            popular products running out of stock before replenishment.
-            Consequently, this situation had led to missed sales opportunities,
-            potential customer dissatisfaction and a decline in overall revenue
-            generated. In light of these challenges, the project scope was
-            delineated into four distinct parts;
+            software, The major challenge has been the <b>delayed awareness</b>{" "}
+            of stock levels for specific items which has resulted in{" "}
+            <b>inaccurate product demand forecasting</b> from suppliers,
+            occasionally leading to popular products running out of stock before
+            replenishment. Consequently, this situation had led to missed sales{" "}
+            <b>opportunities</b>, potential <b>customer dissatisfaction</b> and
+            a <b>decline in overall revenue generated</b>. In light of these
+            challenges, the project scope was delineated into four distinct
+            parts;
           </Text>
           <Button
             path="/"
@@ -144,7 +144,6 @@ const Introduction = () => {
         <Text color="brand.480" fontWeight={"600"} mb="1rem">
           Core Features Introduced{" "}
         </Text>
-
         <Flex
           gap="2rem"
           justify={"space-between"}
@@ -152,19 +151,21 @@ const Introduction = () => {
           flexWrap={"wrap"}
         >
           {stockIntroCards.map((items, index) => {
+            const isExpanded = expandedIndex === index;
+
             return (
               <Box
                 key={index}
                 borderWidth="2px"
                 borderColor="brand.150"
                 borderRadius={".5rem"}
+                h="fit-content"
                 w={{ base: "100%", md: "46%", xl: "23%" }}
                 p="2rem 2rem 1rem 2rem"
+                boxShadow={isExpanded ? "0px 4px 60px 0px #00000018" : ""}
                 _hover={{
                   boxShadow: "0px 4px 60px 0px #00000018",
                 }}
-                onMouseEnter={() => setIsShowMore(true)}
-                onMouseLeave={() => setIsShowMore(false)}
               >
                 <Flex justify={"space-between"} direction={"column"} h="100%">
                   <Box>
@@ -186,15 +187,18 @@ const Introduction = () => {
                         {items.title}
                       </Heading>
                       <Text pb="2rem">{items.text}</Text>
-                      {isShowMore && showMoreData === index ? (
+                      {isExpanded && (
                         <Box
                           borderTopWidth="2px"
                           borderTopColor="brand.150"
                           py="2rem"
+                          style={{
+                            animation: "slideUp .5s ease",
+                          }}
                         >
                           <Text>{items.showMore}</Text>
                         </Box>
-                      ) : undefined}
+                      )}
                     </Box>
                   </Box>
                   <HStack
@@ -205,17 +209,10 @@ const Introduction = () => {
                     cursor={"pointer"}
                     spacing={"1rem"}
                     color="brand.600"
+                    w="100%"
                   >
-                    <Text>
-                      {isShowMore && showMoreData === index
-                        ? "Show Less"
-                        : "Show More"}
-                    </Text>
-                    {isShowMore && showMoreData === index ? (
-                      <IoIosArrowUp />
-                    ) : (
-                      <IoIosArrowDown />
-                    )}
+                    <Text>{isExpanded ? "Show Less" : "Show More"}</Text>
+                    {isExpanded ? <IoIosArrowUp /> : <IoIosArrowDown />}
                   </HStack>
                 </Flex>
               </Box>

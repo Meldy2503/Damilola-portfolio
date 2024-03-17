@@ -196,22 +196,22 @@ export const stockButtonImg = [stock1, stock2, stock3, stock4];
 export const stockIntroCards = [
   {
     title: "A Dashboard System",
-    text: "The dashboard system functions as a consolidated and informative interface, presenting a summarised view of the products that have been added to the system over a designated time frame.",
+    text: 'The dashboard system provides a consolidated interface which presents a summarized view of products added within a specified time frame.',
    showMore: "This feature allows users to track the evolution of their product catalog, monitor sales trends, and keep a close eye on the current inventory levels. It maintains a detailed record of items that have been sold, offering insights into the sales history and the existing stock levels for each product"
   },
   {
     title: "Product Management",
-    text: "This feature ensures there’s a synergy between the stock in the inventory and the sales of individual item",
+    text: 'This feature ensures there’s a synergy between the stock in the inventory and the sales of individual items, enhancing overall operational efficiency.',
     showMore: " The product monitoring feature was crucial in ensuring there’s a synergy between the stock in the inventory and the sales of individual item. This implies that once inventory has been taken, sales from the e-commerce automatically reflect on the inventory balance, providing accurate insights on stock levels"
   },
   {
     title: "Report Analysis",
-    text: "With the Report system, the business gets insights into key metrics such as stock level, turnover rate, etc. over a desired timeframe.",
+    text: "With the Report system, the business gets insights into key metrics such as stock level, turnover rate, etc. over a desired time frame.",
     showMore: "The goal of this feature was to help the business with insights into key metrics such as stock levels, turnover rates, and reorder frequencies, enabling businesses to assess their overall inventory performance and anticipate future inventory needs more accurately, reducing the risk of stock-outs or overstock situations."
   },
   {
     title: "Supplier Management",
-    text: "The supplier management feature Enables the business place orders directly from the inventory app with accurate update on stock levels upon delivery. ",
+    text: "The supplier management feature Enables the business place orders directly from the inventory app with accurate update on stock levels on delivery. ",
     showMore: "To create a more holistic solution, the supplier module was an added feature, the goal here was to enable the business place orders directly from the inventory app. This integration would streamline the entire ordering process, from creating purchase orders to receiving and updating stock levels upon delivery"
   },
   
