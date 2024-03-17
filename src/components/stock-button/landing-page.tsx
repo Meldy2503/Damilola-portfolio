@@ -101,7 +101,7 @@ const LandingPage = () => {
               w={{ base: "100%", lg: "85%" }}
             >
               Stock button is an E-commerce Inventory App designed to facilitate
-              seamless and efficient management of the business's inventory in
+              seamless and efficient management of the business&apos;s inventory in
               relation to its online retail operations. This app serves as a
               digital tool that enables the business (Stock Button) to monitor,
               control, and optimize their product stock levels, sales, and order
