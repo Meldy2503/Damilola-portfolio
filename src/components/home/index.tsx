@@ -7,10 +7,11 @@ import Process from "./process";
 import Summary from "./summary";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import { Box } from "@chakra-ui/react";
 
 const Layout = () => {
   return (
-    <>
+    <Box overflowX={'hidden'}>
       <Navbar />
       <LandingPage />
       <Projects />
@@ -19,7 +20,7 @@ const Layout = () => {
       <Testimonials />
       <Summary />
       <Footer />
-    </>
+    </Box>
   );
 };
 

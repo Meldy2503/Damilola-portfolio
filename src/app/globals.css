@@ -7,7 +7,7 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -167,61 +167,6 @@ a {
   }
 }
 
-/* gggggggg */
-
-:root {
-  --images: 3;
-  --divHeight: 87vh;
-  --divTopPadding: 1.5em;
-  --divMargin: 4vw;
-}
-
-.container {
-  margin: 0 auto;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(var(--images), var(--divHeight));
-  gap: var(--divMargin);
-  padding-bottom: calc(var(--images) * var(--divTopPadding));
-  margin-bottom: var(--divMargin);
-}
-
-ul li {
-  position: sticky;
-  top: 0;
-  padding-top: calc(var(--index) * var(--divTopPadding));
-}
-
-ul li div {
-  box-sizing: border-box;
-  height: var(--divHeight);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s;
-}
-
-ul li div img {
-  height: 100%;
-}
-
-#img1 {
-  --index: 1;
-}
-
-#img2 {
-  --index: 2;
-}
-
-#img3 {
-  --index: 3;
-}
-
 @keyframes slideUp {
   0% {
     opacity: 0;
@@ -232,3 +177,86 @@ ul li div img {
     transform: translateY(0);
   }
 }
+
+/* For stacked cards */
+
+:root {
+  --cards: 5;
+  /* --cardHeight: 100vh; */
+  --cardTopPadding: 0.5em;
+  --cardMargin: 4vw;
+}
+
+
+
+#cards {
+  /* list-style: none;
+  padding-left: 0; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), var(--cardHeight));
+  gap: var(--cardMargin);
+  /* padding-bottom: calc(var(--cards) * var(--cardTopPadding)); */
+  /* margin-bottom: var(--cardMargin); */
+  margin-bottom: 1.5rem;
+}
+
+#card1 {
+  --index: 1;
+}
+#card2 {
+  --index: 2;
+}
+#card3 {
+  --index: 3;
+}
+#card4 {
+  --index: 4;
+}
+#card5 {
+  --index: 5;
+}
+
+
+.card {
+  position: sticky;
+  top: 6rem;
+  /* padding-top: calc(var(--index) * 2rem); */
+  padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+/* 
+#card1 .card-body {
+  background-color: #52b2cf;
+}
+#card2 .card-body {
+  background-color: #e5a36f;
+}
+#card3 .card-body {
+  background-color: #9cadce;
+}
+#card4 .card-body {
+  background-color: #d81747;
+}
+#card5 .card-body {
+  background-color: #d4afb9;
+} */
+
+.card-body {
+  padding: 20px 20px 0 20px;
+  /* box-shadow: 0px 4px 10px 0px #0000000D; */
+  /* box-shadow: 0px 4px 10px 0px #0000000D; */
+  border: 2px solid #F2F2F2;
+
+  /* height: var(--cardHeight); */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  transition: all 0.5s;
+  background-color: #ffffff;
+  /* background-color: #ffffff; */
+
+}
+
+/* h2 {
+  font-size: 2.5em;
+} */

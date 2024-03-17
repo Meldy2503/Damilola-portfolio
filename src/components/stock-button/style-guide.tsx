@@ -78,6 +78,8 @@ const StyleGuide = () => {
               alt="stock button style guide"
               height={1000}
               width={1000}
+              unoptimized={true}
+              quality={100}
               style={{
                 maxWidth: "100%",
                 objectFit: "cover",
@@ -91,6 +93,8 @@ const StyleGuide = () => {
               alt="stock button style guide"
               height={1000}
               width={1000}
+              unoptimized={true}
+              quality={100}
               style={{
                 maxWidth: "100%",
                 objectFit: "cover",
@@ -105,6 +109,8 @@ const StyleGuide = () => {
             alt="stock button style guide"
             height={1000}
             width={1000}
+            unoptimized={true}
+            quality={100}
             style={{
               maxWidth: "100%",
               objectFit: "cover",
@@ -121,6 +127,8 @@ const StyleGuide = () => {
                 alt="stock button style guide"
                 height={1000}
                 width={1000}
+                unoptimized={true}
+                quality={100}
                 style={{
                   maxWidth: "100%",
                   objectFit: "cover",
@@ -134,6 +142,8 @@ const StyleGuide = () => {
                 alt="stock button style guide"
                 height={1000}
                 width={1000}
+                unoptimized={true}
+                quality={100}
                 style={{
                   maxWidth: "100%",
                   objectFit: "cover",

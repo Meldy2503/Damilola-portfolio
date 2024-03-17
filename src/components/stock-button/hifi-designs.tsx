@@ -1,14 +1,43 @@
+// "use client";
+
+// import React, { useEffect, useState } from "react";
+// import Wrapper from "../wrapper";
+// import { Box, Divider, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+// import { Button } from "../button";
+// import { HiOutlineArrowSmDown, HiOutlineArrowSmUp } from "react-icons/hi";
+// const HifiDesigns = () => {
+
+//   return (
+//    <div >
+//    <div >
+//     <div className="card card1">card 1</div>
+//     <div className="card card2" >card 2</div>
+//     <div className="card card3">card 3</div>
+//     <div className="card card4">card 4</div>
+//    </div>
+//    </div>
+//   );
+// };
+
+// export default HifiDesigns;
+
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Wrapper from "../wrapper";
 import { Box, Divider, Flex, Grid, Heading, Text } from "@chakra-ui/react";
 import { Button } from "../button";
 import { HiOutlineArrowSmDown, HiOutlineArrowSmUp } from "react-icons/hi";
+import { stockHifiCards } from "@/utils/constants";
+import Image from "next/image";
 const HifiDesigns = () => {
- 
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
   return (
-    
     <Wrapper
       borderTopWidth="2.5rem"
       borderTopColor="brand.650"
@@ -16,7 +45,7 @@ const HifiDesigns = () => {
       borderBottomColor="brand.600"
       bg="brand.200"
     >
-      {/* <Flex
+      <Flex
         justify={"space-between"}
         columnGap="2rem"
         direction={{
@@ -60,15 +89,92 @@ const HifiDesigns = () => {
             btnGap="1rem"
           />
         </Box>
-      </Flex> */}
-  
-  <div className="container">
-            <div className="card" id="card1">Card 1</div>
-            <div className="card" id="card2">Card 2</div>
-            <div className="card" id="card3">Card 3</div>
-            <div className="card" id="card4">Card 4</div>
-        </div>
+      </Flex>
 
+      <Box mt="5rem" p='0 .8rem' borderWidth={"2px"}
+          borderColor={"brand.150"} boxShadow= '0px 4px 30px 0px #0000000D'>
+        <Box id="cards">
+          {stockHifiCards.map((items, index) => {
+            return (
+              <Box className="card" id={`card${index + 1}`} key={index}>
+                <Box className="card-body">
+                  <Heading fontWeight={800} fontSize={'2rem'}>{items.title}</Heading>
+                  <Text mt='2rem' mb='1rem'>{items.text}</Text>
+                 <Flex bg='#e8f2f5' align={'center'} justify={'center'} p='3rem' mb='2rem'>
+                  <Image
+                    src={items.img}
+                    alt="stock button"
+                    width={index === 3 ? 870 : 1050 }
+                    height={1050}
+                    unoptimized={true}
+                      quality={100}
+                    style={{
+                      maxWidth: "100%",
+                        objectFit: "cover",
+                      objectPosition: "center",
+                    }}
+                  />
+                  </Flex>
+                </Box>
+              </Box>
+            );
+          })}
+          {/* <li className="card" id="card1">
+                <div className="card-body">
+                    <h2>Card 1</h2>
+                </div>
+            </li>
+            <li className="card" id="card2">
+                <div className="card-body">
+                    <h2>Card 2</h2>
+                </div>
+            </li>
+            <li className="card" id="card3">
+                <div className="card-body">
+                    <h2>Card 3</h2>
+                </div>
+            </li>
+            <li className="card" id="card4">
+                <div className="card-body">
+                    <h2>Card 4</h2>
+                </div>
+            </li>
+            <li className="card" id="card5">
+                <div className="card-body">
+                    <h2>Card 5</h2>
+                </div>
+            </li> */}
+        </Box>
+      </Box>
+      {/* <div>
+        <ul id="cards">
+            <li className="card" id="card1">
+                <div className="card-body">
+                    <h2>Card 1</h2>
+                </div>
+            </li>
+            <li className="card" id="card2">
+                <div className="card-body">
+                    <h2>Card 2</h2>
+                </div>
+            </li>
+            <li className="card" id="card3">
+                <div className="card-body">
+                    <h2>Card 3</h2>
+                </div>
+            </li>
+            <li className="card" id="card4">
+                <div className="card-body">
+                    <h2>Card 4</h2>
+                </div>
+            </li>
+            <li className="card" id="card5">
+                <div className="card-body">
+                    <h2>Card 5</h2>
+                </div>
+            </li>
+        </ul>
+    </div> */}
     </Wrapper>
   );
 };

@@ -86,8 +86,10 @@ const Introduction = () => {
                     <Image
                       src={item}
                       alt="reviewers image"
-                      height={1000}
-                      width={1000}
+                      height={1200}
+                      width={1200}
+                      unoptimized={true}
+                      quality={100}
                       style={{
                         maxWidth: "100%",
                         objectFit: "cover",

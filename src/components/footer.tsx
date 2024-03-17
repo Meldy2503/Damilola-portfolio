@@ -30,7 +30,13 @@ const Footer = () => {
           borderBottom="2px solid #818181"
           pb="2rem"
         >
-          <Image src={Logo} alt="logo" height={50} width={50} />
+          <Image
+            src={Logo}
+            alt="logo"
+            height={50}
+            width={50}
+            unoptimized={true}
+          />
 
           <Flex align={"center"} gap="1rem">
             {icons.map((icon, index) => (

@@ -10,7 +10,6 @@ import { projectData } from "@/utils/constants";
 import { Button } from "../button";
 import Link from "next/link";
 
-
 const Projects = () => {
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
 
@@ -57,75 +56,75 @@ const Projects = () => {
               }}
             >
               <Link href={project.path}>
-              <Box>
-                <Box position={"relative"}>
-                 
-                  <Image
-                    src={project.img}
-                    alt="project image"
-                    height={1500}
-                    width={1500}
-                    quality={100}
-                    style={{
-                      maxWidth: "100%",
-                      objectFit: "cover",
-                      objectPosition: "center",
-                    }}
-                  />
-
-               
-                </Box>
-                {project.icon && (
-                  <Box
-                    position={"absolute"}
-                    top={isMobile ? "-4rem" : "-5rem"}
-                    left="-6rem"
-                    display={{ base: "none", md: "block" }}
-                  >
+                <Box>
+                  <Box position={"relative"}>
                     <Image
-                      src={project.icon}
+                      src={project.img}
                       alt="project image"
-                      height={800}
-                      width={1000}
+                      height={1200}
+                      width={1200}
+                      unoptimized={true}
+                      quality={100}
                       style={{
                         maxWidth: "100%",
                         objectFit: "cover",
                         objectPosition: "center",
-                        width: isMobile ? "15rem" : "20rem",
                       }}
                     />
                   </Box>
-                )}
-              </Box>
-              <Box bg="brand.500" p="2rem">
-                <Heading
-                  color="brand.450"
-                  fontSize={"1.9rem"}
-                  w="fit-content"
-                  textDecorationThickness={"2px"}
-                >
-                  {`0${index + 1} - `}
-                  <span style={{ textDecoration: "underline" }}>
-                    {project.title}
-                  </span>
-                </Heading>
-                <Heading
-                  color="brand.250"
-                  fontWeight={"600"}
-                  fontSize={"2.3rem"}
-                  my="1.5rem"
-                >
-                  {project.heading}
-                </Heading>
+                  {project.icon && (
+                    <Box
+                      position={"absolute"}
+                      top={isMobile ? "-4rem" : "-5rem"}
+                      left="-6rem"
+                      display={{ base: "none", md: "block" }}
+                    >
+                      <Image
+                        src={project.icon}
+                        alt="project image"
+                        height={1000}
+                        width={1000}
+                        unoptimized={true}
+                        quality={100}
+                        style={{
+                          maxWidth: "100%",
+                          objectFit: "cover",
+                          objectPosition: "center",
+                          width: isMobile ? "15rem" : "20rem",
+                        }}
+                      />
+                    </Box>
+                  )}
+                </Box>
+                <Box bg="brand.500" p="2rem">
+                  <Heading
+                    color="brand.450"
+                    fontSize={"1.9rem"}
+                    w="fit-content"
+                    textDecorationThickness={"2px"}
+                  >
+                    {`0${index + 1} - `}
+                    <span style={{ textDecoration: "underline" }}>
+                      {project.title}
+                    </span>
+                  </Heading>
+                  <Heading
+                    color="brand.250"
+                    fontWeight={"600"}
+                    fontSize={"2.3rem"}
+                    my="1.5rem"
+                  >
+                    {project.heading}
+                  </Heading>
 
-                <Text mb="2rem">{project.text}</Text>
-                <Button
-                  path="/"
-                  isIcon
-                  btnText="View Project"
-                  iconColor={project.iconColor}
-                />
-              </Box>
+                  <Text mb="2rem">{project.text}</Text>
+                  <Button
+                    path="/"
+                    isIcon
+                    btnText="View Project"
+                    iconColor={project.iconColor}
+                  />
+                </Box>
               </Link>
             </Box>
           );

@@ -54,8 +54,9 @@ const LandingPage = () => {
             <Image
               src={stockImg}
               alt="stock button"
-              width={1000}
+              width={1200}
               height={800}
+              unoptimized={true}
               quality={100}
               style={{
                 maxWidth: "100%",

@@ -1,6 +1,5 @@
 "use client";
 
-
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import divider from "../../assets/images/line.svg";
@@ -69,7 +68,7 @@ const Expertise = () => {
                 base: "0",
                 md: index === 1 ? "8rem" : "0",
               }}
-             >
+            >
               <Box
                 w={{ base: "100%", md: "40%" }}
                 position={"relative"}
@@ -78,8 +77,10 @@ const Expertise = () => {
                 <Image
                   src={item.img}
                   alt="expert images"
-                  width={800}
-                  height={800}
+                  width={1200}
+                  height={1200}
+                  unoptimized={true}
+                  quality={100}
                   style={{
                     maxWidth: "100%",
                     objectFit: "cover",
