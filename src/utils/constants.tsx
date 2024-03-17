@@ -16,7 +16,17 @@ import hifi2 from "../assets/images/hi-fi2.webp";
 import hifi3 from "../assets/images/hi-fi3.webp";
 import hifi4 from "../assets/images/hi-fi4.webp";
 import hifi5 from "../assets/images/hi-fi5.webp";
-
+import task11 from "../assets/images/task11.webp";
+import task12 from "../assets/images/task12.webp";
+import task13 from "../assets/images/task13.webp";
+import task21 from "../assets/images/task21.webp";
+import task22 from "../assets/images/task22.webp";
+import task23 from "../assets/images/task23.webp";
+import task24 from "../assets/images/task24.webp";
+import task25 from "../assets/images/task25.webp";
+import task31 from "../assets/images/task31.webp";
+import task32 from "../assets/images/task32.webp";
+import task33 from "../assets/images/task33.webp";
 
 export const menuData = [
   {
@@ -240,7 +250,6 @@ export const stockHifiCards = [
     title: "Product",
     text: "On the product screen, the inventory manager sees summary cards that summarises the total amount of products available (the number of orders and the number of sold items in a specific period of timeframe selected), a data table that shows the products available ad their stock level and a button to add more product.",
     img: hifi3,
-    
   },
   {
     title: "Report",
@@ -251,5 +260,26 @@ export const stockHifiCards = [
     title: "Supplier",
     text: "In the suppliers menu of the inventory app, the inventory manager interfaces with A comprehensive list of all registered suppliers, displaying key information such as contact details, delivery performance, and order history.  Capability to easily add new suppliers to the system, including relevant details such as name, contact information, and preferred terms",
     img: hifi5,
+  },
+];
+
+export const stockTaskCards = [
+  {
+    title: "User Research",
+    text: "One effective method adopted was to engage in a table talk with a few Stock Button staff members. This conversation helped to decipher the core parts that'd give a wholesome experience with the results intended. It became evident that to boost revenue, incorporating a feature that monitors individual sales and overall stock levels is crucial. Additionally, there's a need for a Feature that offers insights into sales trends, aiding informed decisions about product demands from suppliers in order to mitigate overstocking and under-stocking, which would foster consistent availability of high-demand products to customers.",
+    img: [task11, task12, task13],
+
+  },
+  {
+    title: "User Flow",
+    text: "The goal of developing a user flow was to meticulously map out the user journey for three critical aspects: product monitoring, supplier management, and report analysis. This involved systematically visualizing and understanding the sequence of interactions users would undertake within each flow, ensuring intuitive navigation, optimal user experience, and efficient accomplishment of tasks",
+    img: [task21, task22, task23, task24, task25],
+
+  },
+  {
+    title: "Wireflow",
+    text: "The creation of wireframes served the purpose of establishing expectations for the final product's appearance and providing a clear direction for the optimal visual approach. This strategic step aimed to ensure that the eventual design, crafted in the final stages, has been thoroughly considered and adheres to the best design practices. ",
+    img: [task31, task32, task33],
+
   },
 ];

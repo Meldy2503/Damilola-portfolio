@@ -123,6 +123,7 @@ const Projects = () => {
                     isIcon
                     btnText="View Project"
                     iconColor={project.iconColor}
+                    ClassName="pulse-animate"
                   />
                 </Box>
               </Link>

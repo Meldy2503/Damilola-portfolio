@@ -177,27 +177,45 @@ a {
     transform: translateY(0);
   }
 }
+/* pulse button animation */
+.pulse-animate {
+  transition: 0.25s;
+  animation: pulse 1s infinite;
+  box-shadow: 0 0 0 1.2em rgba(255, 255, 255, 0);
+}
 
-/* For stacked cards */
+.pulse-animate:hover,
+.pulse-animate:focus,
+.pulse-animate:active {
+  animation: pulse-animate 1s;
+  transform: scale(1.5);
+  box-shadow: 0 0 0 2.3em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #d6d6d7;
+  }
+}
+
+.pulse-animate {
+  --color: #d6d6d7;
+  --hover: #d6d6d7;
+}
+
+/* For Hifi stacked cards */
 
 :root {
   --cards: 5;
-  /* --cardHeight: 100vh; */
-  --cardTopPadding: 0.5em;
+  --cardTopPadding: 0.8rem;
   --cardMargin: 4vw;
 }
 
-
-
 #cards {
-  /* list-style: none;
-  padding-left: 0; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(var(--cards), var(--cardHeight));
   gap: var(--cardMargin);
-  /* padding-bottom: calc(var(--cards) * var(--cardTopPadding)); */
-  /* margin-bottom: var(--cardMargin); */
   margin-bottom: 1.5rem;
 }
 
@@ -217,46 +235,63 @@ a {
   --index: 5;
 }
 
-
 .card {
   position: sticky;
   top: 6rem;
-  /* padding-top: calc(var(--index) * 2rem); */
   padding-top: calc(var(--index) * var(--cardTopPadding));
 }
-/* 
-#card1 .card-body {
-  background-color: #52b2cf;
-}
-#card2 .card-body {
-  background-color: #e5a36f;
-}
-#card3 .card-body {
-  background-color: #9cadce;
-}
-#card4 .card-body {
-  background-color: #d81747;
-}
-#card5 .card-body {
-  background-color: #d4afb9;
-} */
 
 .card-body {
   padding: 20px 20px 0 20px;
-  /* box-shadow: 0px 4px 10px 0px #0000000D; */
-  /* box-shadow: 0px 4px 10px 0px #0000000D; */
-  border: 2px solid #F2F2F2;
-
-  /* height: var(--cardHeight); */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  border: 2px solid #f2f2f2;
   transition: all 0.5s;
   background-color: #ffffff;
-  /* background-color: #ffffff; */
-
+  border-radius: 2rem;
 }
 
-/* h2 {
-  font-size: 2.5em;
-} */
+/* For task stacked card */
+
+:root {
+  --tasks: 3;
+  --taskTopPadding: 1.5rem;
+  --taskMargin: 4vw;
+}
+
+#tasks {
+  margin-bottom: 1.5rem;
+}
+
+#task1 {
+  --index: 1;
+}
+#task2 {
+  --index: 2;
+}
+#task3 {
+  --index: 3;
+}
+
+.task {
+  position: sticky;
+  top: 5rem;
+  padding-top: calc(var(--index) * var(--taskTopPadding));
+}
+
+#task1 .task-body {
+  background-color: #fff0f7;
+}
+#task2 .task-body {
+  background-color: #fffaed;
+}
+#task3 .task-body {
+  background-color: #f3f8ff;
+}
+
+.task-body {
+  padding: 0px 10px;
+  border-radius: 3rem;
+  box-shadow: 0px 1px 0px 0px #00000014;
+  transition: all 0.5s;
+}
+
+

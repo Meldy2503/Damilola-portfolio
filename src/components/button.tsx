@@ -48,7 +48,7 @@ export const Button = ({
 }: BtnProps) => {
   return (
     <Box
-      className={ClassName ?? "btn"}
+      className={ClassName}
       zIndex={100}
       cursor="pointer"
       textAlign="center"

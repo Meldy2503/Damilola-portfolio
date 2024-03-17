@@ -34,7 +34,7 @@ const Introduction = () => {
     slidesToScroll: 1,
     autoplay: true,
     adaptiveHeight: true,
-    arrows: true,
+    arrows: false,
   };
   return (
     <Wrapper
@@ -53,7 +53,7 @@ const Introduction = () => {
           base: "column-reverse",
           md: "row",
         }}
-      >
+       >
         <Box
           w={{ base: "100%", md: "46%" }}
           position={"relative"}
@@ -145,6 +145,7 @@ const Introduction = () => {
       <Box mt="2rem">
         <Text color="brand.480" fontWeight={"600"} mb="1rem">
           Core Features Introduced{" "}
+          
         </Text>
         <Flex
           gap="2rem"

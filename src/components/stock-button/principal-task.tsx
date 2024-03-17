@@ -1,12 +1,28 @@
 "use client";
 
-import React from "react";
-import Wrapper from "../wrapper";
-import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
+import { stockTaskCards } from "@/utils/constants";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import Image from "next/image";
+import { HiOutlineArrowSmDown } from "react-icons/hi";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import { Button } from "../button";
-import { HiOutlineArrowSmDown, HiOutlineArrowSmUp } from "react-icons/hi";
-
+import Wrapper from "../wrapper";
 const PrincipalTask = () => {
+  const settings = {
+    centerMode: true,
+    infinite: true,
+
+    centerPadding: "0px",
+    slidesToShow: 1,
+    speed: 500,
+    dots: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    adaptiveHeight: true,
+    arrows: false,
+  };
   return (
     <Wrapper
       borderTopWidth="2.5rem"
@@ -62,6 +78,93 @@ const PrincipalTask = () => {
           />
         </Box>
       </Flex>
+
+      <Box id="tasks" mt="5rem">
+        <Text color="brand.480" fontWeight={"600"} mb="1rem">
+          The 3 core things i did
+        </Text>
+        {stockTaskCards.map((items, index) => {
+          return (
+            <Box className="task" id={`task${index + 1}`} key={index}>
+              <Box className="task-body" shadow={"md"}>
+                <Flex
+                  justify={"space-between"}
+                  align={"center"}
+                  columnGap="3rem"
+                  direction={{
+                    base: "column-reverse",
+                    lg: "row-reverse",
+                  }}
+                >
+                  <Box
+                    w={{ base: "100%", lg: "55%" }}
+                    position={"relative"}
+                    zIndex={"100"}
+                  >
+                    <Slider {...settings}>
+                      {items.img.map((images, index) => {
+                        return (
+                          <Box key={index}>
+                            <style>
+                              {`.slick-dots li button:before 
+                              {
+                                font-size: 1rem;
+                                color: #D9C9A1
+                                ;
+                                margin-top: -9rem;
+                               }
+                              .slick-dots li.slick-active button:before
+                               {
+                                color: #A49E8E
+                                ;
+                                font-size: 2rem;    
+                                 }
+                               .slick-center {
+                               transform: scale(1);
+                                }
+                                `}
+                            </style>
+                            <Flex justify={"center"}>
+                              <Image
+                                src={images}
+                                alt="task image"
+                                height={1000}
+                                width={1200}
+                                unoptimized={true}
+                                quality={100}
+                                style={{
+                                  maxWidth: "100%",
+                                  objectFit: "cover",
+                                  objectPosition: "center",
+                                  borderRadius: "2rem",
+                                }}
+                              />
+                            </Flex>
+                          </Box>
+                        );
+                      })}
+                    </Slider>
+                  </Box>
+                  <Box
+                    w={{ base: "100%", lg: "50%" }}
+                    p={{
+                      base: "4rem 1rem 0 1rem",
+                      lg: "4rem 1rem 2rem 1rem",
+                      xl: "0 4rem 0 4rem",
+                    }}
+                  >
+                    <Text fontSize="2.5rem" fontWeight={800}>
+                      {items.title}
+                    </Text>
+
+                    <Text py="2rem">{items.text}</Text>
+                  </Box>
+                </Flex>
+              </Box>
+            </Box>
+          );
+        })}
+      </Box>
     </Wrapper>
   );
 };
