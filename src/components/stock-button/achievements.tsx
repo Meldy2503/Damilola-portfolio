@@ -36,7 +36,7 @@ const Achievements = () => {
           </Heading>
         </Box>
         <Box w={{ base: "100%", md: "55%" }}>
-          <Text py="2rem">
+          <Text pb="2rem">
             Months after implementing the app for in-house use by inventory
             managers, the inventory managers nailed one big goal: they could
             predict which products customers were really after. This meant they

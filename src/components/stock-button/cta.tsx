@@ -59,6 +59,9 @@ const Cta = () => {
             <Button
               path="/pyyr-reward"
               isIcon
+              boxShadow= '0px 2px 25px 0px #0000001F'
+
+
               btnText="See Next Project"
               btnGap="2rem"
             />

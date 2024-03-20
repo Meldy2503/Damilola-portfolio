@@ -266,19 +266,22 @@ export const stockHifiCards = [
 export const stockTaskCards = [
   {
     title: "User Research",
-    text: "One effective method adopted was to engage in a table talk with a few Stock Button staff members. This conversation helped to decipher the core parts that'd give a wholesome experience with the results intended. It became evident that to boost revenue, incorporating a feature that monitors individual sales and overall stock levels is crucial. Additionally, there's a need for a Feature that offers insights into sales trends, aiding informed decisions about product demands from suppliers in order to mitigate overstocking and under-stocking, which would foster consistent availability of high-demand products to customers.",
+    text1: 'One effective method adopted was to engage in a table talk with a few Stock Button staff members. ',
+    text2: "This conversation helped to decipher the core parts that'd give a wholesome experience with the results intended. It became evident that to boost revenue, incorporating a feature that monitors individual sales trend and overall stock levels is crucial.",
     img: [task11, task12, task13],
 
   },
   {
     title: "User Flow",
-    text: "The goal of developing a user flow was to meticulously map out the user journey for three critical aspects: product monitoring, supplier management, and report analysis. This involved systematically visualizing and understanding the sequence of interactions users would undertake within each flow, ensuring intuitive navigation, optimal user experience, and efficient accomplishment of tasks",
+    text1: "The goal of developing a user flow was to meticulously map out the user journey for three critical aspects: product monitoring, supplier management, and report analysis.",
+    text2: " This involved systematically visualizing and understanding the sequence of interactions users would undertake within each flow, ensuring intuitive navigation, optimal user experience, and efficient accomplishment of tasks",
     img: [task21, task22, task23, task24, task25],
 
   },
   {
     title: "Wireflow",
-    text: "The creation of wireframes served the purpose of establishing expectations for the final product's appearance and providing a clear direction for the optimal visual approach. This strategic step aimed to ensure that the eventual design, crafted in the final stages, has been thoroughly considered and adheres to the best design practices. ",
+    text1: "The creation of wireframes served the purpose of establishing expectations for the final product's appearance and providing a clear direction for the optimal visual approach.",
+    text2: " This strategic step aimed to ensure that the eventual design, crafted in the final stages, has been thoroughly considered and adheres to the best design practices. ",
     img: [task31, task32, task33],
 
   },

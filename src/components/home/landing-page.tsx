@@ -13,7 +13,7 @@ const LandingPage = () => {
     <Flex
       id="home"
       bg="brand.100"
-      h={{ base: "100%", md: "100vh" }}
+      h="100%"
       align={"center"}
       justify={"center"}
       position={"relative"}
@@ -27,7 +27,7 @@ const LandingPage = () => {
           position: "absolute",
           bottom: isMobile ? "0" : "-5rem",
           left: "0",
-          opacity: isMobile ? "0.9" : "0.6",
+          opacity: isMobile ? "0.9" : "0.5",
           animation: "slide1 15s linear infinite",
         }}
       />
@@ -39,7 +39,7 @@ const LandingPage = () => {
         style={{
           position: "absolute",
           top: isMobile ? "5rem" : "0",
-          opacity: isMobile ? "0.9" : "0.6",
+          opacity: isMobile ? "0.9" : "0.5",
           left: "0",
           animation: "slide2 15s linear infinite",
         }}
@@ -49,10 +49,10 @@ const LandingPage = () => {
         align={"center"}
         gap="5rem"
         direction="column"
-        py={{ base: "6rem", md: "10rem" }}
+         pt={{ base: "7rem", lg: "0" }}
         maxW={"1280px"}
         width="90%"
-        m={"5rem auto"}
+         m={"5rem auto"}
       >
         <Flex
           justify={"space-between"}

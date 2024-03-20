@@ -38,7 +38,7 @@ const HifiDesigns = () => {
           </Heading>
         </Box>
         <Box w={{ base: "100%", md: "55%" }}>
-          <Text py="2rem">
+          <Text pb="2rem">
             These designs focused on elevating the user experience by
             implementing a clean and intuitive interface. By incorporating a
             user-centric approach, the high fidelity designs aimed to enhance
@@ -84,7 +84,7 @@ const HifiDesigns = () => {
                     <Image
                       src={items.img}
                       alt="stock button"
-                      width={index === 3 ? 870 : 1050}
+                      width={index === 3 ? 870 : 1070}
                       height={1050}
                       unoptimized={true}
                       quality={100}

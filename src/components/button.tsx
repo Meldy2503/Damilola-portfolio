@@ -23,6 +23,7 @@ interface BtnProps {
   btnGap?: string;
   isIcon?: boolean;
   icon?: any;
+  boxShadow?: string;
   iconW?: string;
 }
 
@@ -44,6 +45,7 @@ export const Button = ({
   btnText,
   icon,
   btnGap,
+  boxShadow,
   iconW
 }: BtnProps) => {
   return (
@@ -56,6 +58,7 @@ export const Button = ({
       fontWeight={fontWeight ?? 600}
       transition={"all .3s ease-in"}
       borderRadius={borderRadius ?? "3rem"}
+      boxShadow={boxShadow}
       py={py ?? ".4rem"}
       px={px ?? ".4rem"}
       onClick={onClick}

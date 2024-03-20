@@ -38,7 +38,7 @@ const Introduction = () => {
   };
   return (
     <Wrapper
-      py="7rem"
+      py={{ base: "7rem", md: "10rem"  }}
       borderTopWidth="2.5rem"
       borderTopColor="brand.650"
       borderBottomWidth="2.5rem"
@@ -142,7 +142,7 @@ const Introduction = () => {
           />
         </Box>
       </Flex>
-      <Box mt="2rem">
+      <Box mt= {{ base: "5rem", md: "7rem"  }}>
         <Text color="brand.480" fontWeight={"600"} mb="1rem">
           Core Features Introduced{" "}
           
@@ -159,7 +159,7 @@ const Introduction = () => {
             return (
               <Box
                 key={index}
-                borderWidth="2px"
+                borderWidth="1px"
                 borderColor="brand.150"
                 borderRadius={".5rem"}
                 h="fit-content"
@@ -192,7 +192,7 @@ const Introduction = () => {
                       <Text pb="2rem">{items.text}</Text>
                       {isExpanded && (
                         <Box
-                          borderTopWidth="2px"
+                          borderTopWidth="1px"
                           borderTopColor="brand.150"
                           py="2rem"
                           style={{
@@ -206,7 +206,7 @@ const Introduction = () => {
                   </Box>
                   <HStack
                     onClick={() => handleShowMore(index)}
-                    borderTopWidth="2px"
+                    borderTopWidth="1px"
                     borderTopColor="brand.150"
                     pt="1rem"
                     cursor={"pointer"}

@@ -53,7 +53,7 @@ const PrincipalTask = () => {
           </Heading>
         </Box>
         <Box w={{ base: "100%", md: "55%" }}>
-          <Text py="2rem">
+          <Text pb="2rem">
             The initial part of my strategy for this product was to identify the
             business challenges faced and understand the potential advantages a
             solution like this could offer. I commenced my efforts by conducting
@@ -80,7 +80,7 @@ const PrincipalTask = () => {
       </Flex>
 
       <Box id="tasks" mt="5rem">
-        <Text color="brand.480" fontWeight={"600"} mb="1rem">
+        <Text color="brand.480" fontWeight={"600"}>
           The 3 core things i did
         </Text>
         {stockTaskCards.map((items, index) => {
@@ -111,7 +111,7 @@ const PrincipalTask = () => {
                                 font-size: 1rem;
                                 color: #D9C9A1
                                 ;
-                                margin-top: -9rem;
+                                margin-top: -6rem;
                                }
                               .slick-dots li.slick-active button:before
                                {
@@ -121,6 +121,10 @@ const PrincipalTask = () => {
                                  }
                                .slick-center {
                                transform: scale(1);
+                                }
+
+                                .slick-slide {
+                                  padding: 0rem;
                                 }
                                 `}
                             </style>
@@ -147,17 +151,19 @@ const PrincipalTask = () => {
                   </Box>
                   <Box
                     w={{ base: "100%", lg: "50%" }}
+                    color={"brand.250"}
                     p={{
                       base: "4rem 1rem 0 1rem",
                       lg: "4rem 1rem 2rem 1rem",
                       xl: "0 4rem 0 4rem",
                     }}
                   >
-                    <Text fontSize="2.5rem" fontWeight={800}>
+                    <Text fontSize="2.3rem" fontWeight={800}>
                       {items.title}
                     </Text>
 
-                    <Text py="2rem">{items.text}</Text>
+                    <Text pt="2rem">{items.text1}</Text>
+                    <Text py="2rem">{items.text2}</Text>
                   </Box>
                 </Flex>
               </Box>

@@ -237,7 +237,7 @@ a {
 
 .card {
   position: sticky;
-  top: 6rem;
+  top: 5rem;
   padding-top: calc(var(--index) * var(--cardTopPadding));
 }
 

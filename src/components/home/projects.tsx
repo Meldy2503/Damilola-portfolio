@@ -27,7 +27,12 @@ const Projects = () => {
         alt="text pattern"
         height={300}
         width={300}
-        style={{ position: "absolute", top: "5rem", right: "0" }}
+        style={{
+          position: "absolute",
+          top: "5rem",
+          right: "0",
+          opacity:  "0.5",
+        }}
       />
 
       <Title color="brand.250">Projects i have worked on </Title>

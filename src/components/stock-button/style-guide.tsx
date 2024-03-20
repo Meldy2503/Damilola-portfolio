@@ -44,7 +44,7 @@ const StyleGuide = () => {
           </Heading>
         </Box>
         <Box w={{ base: "100%", md: "55%" }}>
-          <Text py="2rem">
+          <Text pb="2rem">
             In designing the inventory mobile app, I adhered to a carefully
             crafted style guide that served as the foundation for the app&apos;s
             visual and user interface elements. The style guide outlined the

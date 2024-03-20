@@ -140,6 +140,7 @@ const Testimonials = () => {
                     position: relative;
                     z-index: 1;
                   } 
+                  
                 `}
                 </style>
                 <Flex justify={"center"}>

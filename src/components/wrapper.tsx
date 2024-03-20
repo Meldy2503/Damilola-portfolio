@@ -6,7 +6,7 @@ import { Box } from "@chakra-ui/react";
 interface Props {
   children: React.ReactNode;
   bg?: string;
-  py?: string;
+  py?: any;
   id?: string;
   borderBottomColor?: string;
   borderBottomWidth?: string;
