@@ -1,10 +1,8 @@
 "use client";
 
-import React from "react";
-import bgImage from "../../assets/images/igetguy-bg.webp";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import bgImage from "../../assets/images/igetguy-bg.webp";
 import Back from "../back";
-import { GoArrowDown } from "react-icons/go";
 
 const LandingPage = () => {
   return (

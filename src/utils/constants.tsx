@@ -286,3 +286,41 @@ export const stockTaskCards = [
 
   },
 ];
+
+
+export const igetguyIntroCards1 = [
+  {
+    title: "Home/Dashboard System",
+    text: "Enables the business place orders directly from the inventory app with accurate update on stock levels upon delivery. ",
+  },
+  {
+    title: "Booking Management",
+    text: "Provides a summary of the products added over a period of time, a record of sold items and their stock levels.",
+  },
+  {
+    title: "Invoice Management",
+    text: "Ensures there’s a cohesive and visible synergy between the stock in the inventory and the sales of individual items.",
+  },
+  {
+    title: "Chat",
+    text: "Helps the business with insights into key metrics such as stock level, turnover rate, etc. over a desired timeframe. ",
+  },
+];
+export const igetguyIntroCards2 = [
+  {
+    title: "Explore/Search",
+    text: "End-users can easily browse and discover local artisans offering a wide range of services within their vicinity.",
+  },
+  {
+    title: "Booking System",
+    text: "Provides a summary of the products added over a period of time, a record of sold items and their stock levels.",
+  },
+  {
+    title: "Invoice Management",
+    text: "Ensures there’s a cohesive and visible synergy between the stock in the inventory and the sales of individual items.",
+  },
+  {
+    title: "Chat",
+    text: "Helps the business with insights into key metrics such as stock level, turnover rate, etc. over a desired timeframe. ",
+  },
+];
