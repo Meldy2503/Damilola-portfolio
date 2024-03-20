@@ -242,7 +242,7 @@ export const stockHifiCards = [
     img: hifi1,
   },
   {
-    title: "Dashboard",
+    title: "Home Screen",
     text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
     img: hifi2,
   },
