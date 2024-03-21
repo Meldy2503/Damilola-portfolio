@@ -16,12 +16,13 @@ const Introduction = () => {
     <Wrapper bg="brand.700">
       <Flex
         align={"center"}
+        h={{ base: "100%", md: "62rem", lg: "57rem", xl: "100%" }}
         direction={{
           base: "column-reverse",
           md: "row",
         }}
       >
-        <Box w={{ base: "100%", md: "50%", xl: "55%" }}>
+        <Box w={{ base: "100%", md: "50%", xl: "55%" }} h="100%">
           <Image
             src={introImg}
             alt="intro image"
@@ -33,6 +34,7 @@ const Introduction = () => {
               maxWidth: "100%",
               objectFit: "cover",
               objectPosition: "center",
+              height: "100%",
             }}
           />
         </Box>
@@ -40,9 +42,10 @@ const Introduction = () => {
           px={{ base: "2rem", xl: "4rem" }}
           py={{ base: "4rem", md: "2rem", xl: "4rem" }}
           ml={{ base: "0", md: "0rem", xl: "-10rem" }}
-          w={{ base: "100%", md: "70%", xl: "55%" }}
+          w={{ base: "100%", md: "50%", xl: "55%" }}
           bg="brand.100"
           color="brand.380"
+          h="100%"
         >
           <Text fontSize={"2.8rem"} fontWeight={"600"} mb="1rem">
             01
@@ -55,20 +58,22 @@ const Introduction = () => {
             Introduction
           </Heading>
 
-          <Text pt="2rem" pb="3rem">
-            <i>I get guy</i>, is a word derived from Nigerian&apos;s local parlance
-            called
-            <i>&quot;Pidgin&quot;</i> which means to <i>&quot;Have a Guy&quot;</i> , also known as{" "}
-            <i>&quot;Have Someone&quot;</i>
+          <Text py="2rem">
+            <i>I get guy</i>, is a word derived from Nigerian&apos;s local
+            parlance called
+            <i>&quot;Pidgin&quot;</i> which means to{" "}
+            <i>&quot;Have a Guy&quot;</i> , also known as{" "}
+            <i>&quot;Have Someone&quot; </i>
             trusted to get a job done. <br /> <br /> The aim of this project was
             to design a solution that offers local artisans an online platform,
-            enabling customers within their vicinity to easily locate them and
-            request services with just a few taps on their smartphones. <br />
+            enabling customers within their vicinity to easily locate and
+            request services with few taps on their smartphones. <br />
             <br /> The solution was crafted to cater to two primary user
             categories: The Artisan(Service Provider) and The End-User
-            (Customer), each with tailored features designed to meet their
-            specific needs.
+            (Customer), each with tailored features designed to meet specific
+            needs.
           </Text>
+
           <Button
             path="/"
             isIcon
@@ -105,7 +110,7 @@ const Introduction = () => {
                 borderRightColor="brand.420"
                 h="fit-content"
                 w={{ base: "100%", md: "46%", xl: "23%" }}
-                p="1rem 2rem 0rem 2rem"
+                p={{ base: "1rem 0rem 0rem 0rem", md: "1rem 3rem 0rem 0rem" }}
               >
                 <Box>
                   <Flex
@@ -155,7 +160,7 @@ const Introduction = () => {
                 borderRightColor="brand.420"
                 h="fit-content"
                 w={{ base: "100%", md: "46%", xl: "23%" }}
-                p="1rem 2rem .5rem 2rem"
+                p={{ base: "1rem 0rem 0rem 0rem", md: "1rem 3rem 0rem 0rem" }}
               >
                 <Box>
                   <Flex

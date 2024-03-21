@@ -57,21 +57,22 @@ const Navbar = () => {
           display={{ base: "none", lg: "flex" }}
           align={"center"}
         >
-          {menuData.map((link) => {
+          {menuData.map((link, index) => {
             return (
               <Box
-                key={link.id}
+                key={index}
                 borderBottom={
-                  currentMenu === link.id ? "3px solid #ffffff" : "none"
+                  currentMenu === link.path ? "3px solid #ffffff" : "none"
                 }
                 _hover={{
                   borderBottom: "3px solid brand.200",
                 }}
                 onClick={() => {
-                  handlecurrentMenu(link.id);
+                  handlecurrentMenu(link.path);
                 }}
+               
               >
-                <Link href={link.id}>{link.name}</Link>
+                <Link href={link.path}>{link.name}</Link>
               </Box>
             );
           })}
@@ -99,13 +100,13 @@ const Navbar = () => {
         <DrawerContent mt="6rem" pb="3rem" pt="1rem" bg="brand.100">
           <DrawerBody>
             <Flex direction="column" rowGap={"3rem"} align={"center"} mt="2rem">
-              {menuData.map((menu) => {
+              {menuData.map((menu, index) => {
                 return (
                   <Box
-                    key={menu.id}
-                    border="none"
+                  key={index}
+                  border="none"
                     borderBottom={
-                      currentMenu === menu.id ? "3px solid #ffffff" : "none"
+                      currentMenu === menu.path ? "3px solid #ffffff" : "none"
                     }
                     _hover={{
                       borderBottom: "3px solid brand.200",
@@ -113,9 +114,9 @@ const Navbar = () => {
                     color="brand.200"
                   >
                     <Link
-                      href={menu.id}
+                      href={menu.path}
                       onClick={() => {
-                        handlecurrentMenu(menu.id);
+                        handlecurrentMenu(menu.path);
                         onClose();
                       }}
                     >

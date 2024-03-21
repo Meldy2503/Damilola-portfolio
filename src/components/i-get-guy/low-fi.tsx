@@ -14,6 +14,7 @@ const LowFi = () => {
     <Wrapper bg="brand.700">
       <Flex
         align={"center"}
+        h={{ base: "100%", md: "47rem", lg: "42rem", xl: "100%" }}
         direction={{
           base: "column",
           md: "row",
@@ -22,11 +23,11 @@ const LowFi = () => {
         <Box
           px={{ base: "2rem", xl: "4rem" }}
           py="4rem"
-          //   py={{ base: "4rem", md: "2rem", xl: "4rem" }}
-          w={{ base: "100%", md: "55%" }}
+          w={{ base: "100%", md: "50%", xl: "55%" }}
           bg="#2E2A27"
           color="brand.550"
           zIndex={100}
+          h="100%"
         >
           <Text
             fontSize={"2.8rem"}
@@ -55,8 +56,8 @@ const LowFi = () => {
             path="/"
             isIcon
             btnText="View Hi-Fi"
-            color="brand.100"
             borderRadius="1rem"
+            color="brand.100"
             bg="brand.200"
             icon={HiOutlineArrowSmDown}
             iconW="8"
@@ -64,7 +65,11 @@ const LowFi = () => {
             btnGap="1rem"
           />
         </Box>
-        <Box w={{ base: "100%", md: "55%" }} ml={{ base: "0", xl: "-10rem" }}>
+        <Box
+          w={{ base: "100%", md: "50%", xl: "55%" }}
+          ml={{ base: "0", xl: "-10rem" }}
+          h="100%"
+        >
           <Image
             src={introImg}
             alt="intro image"
@@ -76,6 +81,7 @@ const LowFi = () => {
               maxWidth: "100%",
               objectFit: "cover",
               objectPosition: "center",
+              height: "100%",
             }}
           />
         </Box>

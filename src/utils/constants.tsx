@@ -30,25 +30,28 @@ import task33 from "../assets/images/task33.webp";
 
 export const menuData = [
   {
-    name: "Projects",
-    id: "#projects",
+    name: "Home",
+    path: '/'
   },
   {
-    name: "My Processs",
-    id: "#process",
+    name: "Stock Button",
+    path: '/stock-button'
   },
   {
-    name: "My Expertise",
-    id: "#expertise",
+    name: "Pyyr Reward",
+    path: "/pyyr-reward",
+
   },
 
   {
-    name: "Testimonials",
-    id: "#testimonials",
+    name: "Igetguy",
+    path: "/igetguy",
+
   },
   {
-    name: "About Me",
-    id: "#aboutMe",
+    name: "Dobble",
+    path: "/dobble",
+
   },
 ];
 export const processData = [

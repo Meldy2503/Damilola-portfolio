@@ -13,8 +13,8 @@ import {
 } from "@chakra-ui/react";
 
 import React from "react";
-import UserPersonas from "./user-personas";
-import CompetitiveAnalysis from "./comp-analysis";
+import UserPersonas from "./artisans";
+import CompetitiveAnalysis from "./end-users";
 import { Button } from "@/components/button";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 
@@ -83,7 +83,7 @@ const PrincipalTasks = () => {
             _selected={{ color: "white", bg: "brand.800" }}
             fontSize={"1.6rem"}
           >
-            User Personas
+            End Users
           </Tab>
           <Box
               h= "2.5rem"
@@ -95,7 +95,7 @@ const PrincipalTasks = () => {
             _selected={{ color: "white", bg: "brand.800" }}
             fontSize={"1.6rem"}
           >
-            Competitive Analysis
+            Artisans
           </Tab>
           </Flex>
         </TabList>
