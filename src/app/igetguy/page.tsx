@@ -1,4 +1,5 @@
 import Footer from "@/components/footer";
+import Achievements from "@/components/i-get-guy/achievements";
 import Introduction from "@/components/i-get-guy/introduction";
 import LandingPage from "@/components/i-get-guy/landing-page";
 import PrincipalTasks from "@/components/i-get-guy/principal-task";
@@ -12,7 +13,8 @@ const IgetGuy = () => {
       <Navbar />
       <LandingPage />
       <Introduction />
-      <PrincipalTasks/>
+      <PrincipalTasks />
+      <Achievements />
       <Footer />
     </>
   );

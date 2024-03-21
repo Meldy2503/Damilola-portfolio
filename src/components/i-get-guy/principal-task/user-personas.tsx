@@ -6,7 +6,7 @@ import PersonaImg from "../../../assets/images/igetguy-task1.webp";
 
 const UserPersonas = () => {
   return (
-    <Box color="brand.300">
+    <Box color="brand.550">
       <Box mt="3rem">
         <Image
           src={PersonaImg}
@@ -30,7 +30,7 @@ const UserPersonas = () => {
         discovered valid concerns that should influence the features of the
         mobile app. It became evident that there is a need for:
       </Text>
-      <UnorderedList ml="3rem">
+      <UnorderedList ml="3rem" lineHeight={1.6}>
         <ListItem>
           Easy service discovery and a seamless booking experience.
         </ListItem>

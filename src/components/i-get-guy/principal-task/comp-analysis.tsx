@@ -6,7 +6,7 @@ import PersonaImg from "../../../assets/images/igetguy-task2.webp";
 
 const CompetitiveAnalysis = () => {
   return (
-    <Box color="brand.300">
+    <Box color="brand.550">
       <Box mt="3rem">
         <Image
           src={PersonaImg}

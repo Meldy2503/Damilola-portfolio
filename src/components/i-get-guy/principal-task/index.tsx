@@ -24,8 +24,8 @@ const PrincipalTasks = () => {
       <Flex
         justify={"space-between"}
         columnGap="2rem"
-        color="brand.300"
-        mb="5rem"
+        color="brand.550"
+        mb="10rem"
         direction={{
           base: "column",
           md: "row",
@@ -78,6 +78,7 @@ const PrincipalTasks = () => {
 
       <Tabs variant="unstyled">
         <TabList color="brand.300">
+            <Flex align={'center'}>
           <Tab
             _selected={{ color: "white", bg: "brand.800" }}
             fontSize={"1.6rem"}
@@ -85,10 +86,10 @@ const PrincipalTasks = () => {
             User Personas
           </Tab>
           <Box
-              h= "2rem"
-              w="1px"
-              mx='2rem'
-              bg={"brand.480"}
+              h= "2.5rem"
+              w=".5px"
+              mx='1.3rem'
+              bg={"brand.350"}
             />
           <Tab
             _selected={{ color: "white", bg: "brand.800" }}
@@ -96,6 +97,7 @@ const PrincipalTasks = () => {
           >
             Competitive Alanlysis
           </Tab>
+          </Flex>
         </TabList>
         <TabPanels>
           <TabPanel p="0">

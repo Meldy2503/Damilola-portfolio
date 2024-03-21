@@ -31,7 +31,7 @@ const Projects = () => {
           position: "absolute",
           top: "5rem",
           right: "0",
-          opacity:  "0.5",
+          opacity: "0.5",
         }}
       />
 
@@ -124,11 +124,11 @@ const Projects = () => {
 
                   <Text mb="2rem">{project.text}</Text>
                   <Button
-                    path="/"
                     isIcon
                     btnText="View Project"
                     iconColor={project.iconColor}
                     ClassName="pulse-animate"
+                    path={project.path}
                   />
                 </Box>
               </Link>
