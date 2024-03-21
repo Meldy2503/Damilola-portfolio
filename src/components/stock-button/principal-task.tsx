@@ -95,7 +95,7 @@ const PrincipalTask = () => {
                     base: "column-reverse",
                     lg: "row-reverse",
                   }}
-                >
+                 >
                   <Box
                     w={{ base: "100%", lg: "55%" }}
                     position={"relative"}

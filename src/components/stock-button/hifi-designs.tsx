@@ -62,45 +62,38 @@ const HifiDesigns = () => {
         </Box>
       </Flex>
 
-      <Box mt="6rem">
+      <Box id="cards" mt="6rem">
         {stockHifiCards.map((items, index) => {
           return (
-            <Box
-              key={index}
-              p='4rem 2rem 0 2rem'
-              mt='3rem'
-              borderWidth={"1px"}
-              borderColor={"brand.150"}
-              boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
-            >
-              <Box>
-                <Heading fontWeight={800} fontSize={"2rem"}>
-                  {items.title}
-                </Heading>
-                <Text my="2rem">
-                  {items.text}
-                </Text>
-                <Flex
-                  bg="#e8f2f5"
-                  align={"center"}
-                  justify={"center"}
-                  p="3rem"
-                  mb="2rem"
-                >
-                  <Image
-                    src={items.img}
-                    alt="stock button"
-                    width={1000}
-                    height={1000}
-                    unoptimized={true}
-                    quality={100}
-                    style={{
-                      maxWidth: "100%",
-                      objectFit: "cover",
-                      objectPosition: "center",
-                    }}
-                  />
-                </Flex>
+            <Box className="card" id={`card${index + 1}`} key={index}>
+              <Box className="card-body">
+                <Box mt='1rem'>
+                  <Heading fontWeight={800} fontSize={"2rem"}>
+                    {items.title}
+                  </Heading>
+                  <Text mt="1.5rem" mb='1rem'>{items.text}</Text>
+                  <Flex
+                    bg="#e8f2f5"
+                    align={"center"}
+                    justify={"center"}
+                    p="3rem"
+                    mb="2rem"
+                  >
+                    <Image
+                      src={items.img}
+                      alt="stock button"
+                      width={index === 3 ? 850 : 1050}
+                      height={1000}
+                      unoptimized={true}
+                      quality={100}
+                      style={{
+                        maxWidth: "100%",
+                        objectFit: "cover",
+                        objectPosition: "center",
+                      }}
+                    />
+                  </Flex>
+                </Box>
               </Box>
             </Box>
           );
