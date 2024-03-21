@@ -1,22 +1,21 @@
 "use client";
 import Wrapper from "@/components/wrapper";
 import {
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
   Box,
-  Text,
   Flex,
   Heading,
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+  Text,
 } from "@chakra-ui/react";
 
-import React from "react";
-import UserPersonas from "./user-personas";
-import CompetitiveAnalysis from "./comp-analysis";
 import { Button } from "@/components/button";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
+import CompetitiveAnalysis from "./comp-analysis";
+import UserPersonas from "./user-personas";
 
 const PrincipalTasks = () => {
   return (
@@ -31,7 +30,7 @@ const PrincipalTasks = () => {
           md: "row",
         }}
       >
-        <Box w={{ base: "100%", md: "40%" }}>
+        <Box w={{ base: "100%", md: "35%" }}>
           <Text
             fontSize={"2.8rem"}
             color="brand.350"
@@ -48,7 +47,7 @@ const PrincipalTasks = () => {
             Principal Task{" "}
           </Heading>
         </Box>
-        <Box w={{ base: "100%", md: "55%" }}>
+        <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
             Before i came up with the features stated above, I outlined key
             objectives for the product and devised steps to achieve them. I
@@ -59,7 +58,8 @@ const PrincipalTasks = () => {
             Additionally, I held informal interviews with friends who fit our
             target end-user profile. This allowed me to create two detailed User
             Personas. I also analyzed the strengths and weaknesses of two major
-            competing brands, namely, &quot;Task Rabbit&quot; and &quot;Urban Clap.&quot;
+            competing brands, namely, &quot;Task Rabbit&quot; and &quot;Urban
+            Clap.&quot;
           </Text>
           <Button
             path="/"
@@ -78,25 +78,20 @@ const PrincipalTasks = () => {
 
       <Tabs variant="unstyled">
         <TabList color="brand.300">
-            <Flex align={'center'}>
-          <Tab
-            _selected={{ color: "white", bg: "brand.800" }}
-            fontSize={"1.6rem"}
-          >
-            User Personas
-          </Tab>
-          <Box
-              h= "2.5rem"
-              w=".5px"
-              mx='1.3rem'
-              bg={"brand.350"}
-            />
-          <Tab
-            _selected={{ color: "white", bg: "brand.800" }}
-            fontSize={"1.6rem"}
-          >
-            Competitive Analysis
-          </Tab>
+          <Flex align={"center"}>
+            <Tab
+              _selected={{ color: "white", bg: "brand.800" }}
+              fontSize={"1.6rem"}
+            >
+              User Personas
+            </Tab>
+            <Box h="2.5rem" w=".5px" mx="1.3rem" bg={"brand.350"} />
+            <Tab
+              _selected={{ color: "white", bg: "brand.800" }}
+              fontSize={"1.6rem"}
+            >
+              Competitive Analysis
+            </Tab>
           </Flex>
         </TabList>
         <TabPanels>

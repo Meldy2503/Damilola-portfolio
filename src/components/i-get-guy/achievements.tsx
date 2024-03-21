@@ -22,7 +22,7 @@ const Achievements = () => {
           md: "row",
         }}
       >
-        <Box w={{ base: "100%", md: "40%" }}>
+        <Box w={{ base: "100%", md: "35%" }}>
           <Text
             fontSize={"2.8rem"}
             color="brand.480"
@@ -35,15 +35,15 @@ const Achievements = () => {
             Achievements{" "}
           </Heading>
         </Box>
-        <Box w={{ base: "100%", md: "55%" }}>
+        <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
             From my chat with the product owner, we zeroed in on a major success
             metric: customer acquisition. Our target was to{" "}
             <b>onboard the initial 100 Merchants</b> and{" "}
             <b>80 Brands within the first two months post-implementation</b>.
             Thanks to a solid marketing strategy, we nailed
-            <b>75%</b> of this goal, boasting an <b>80%</b> product acceptance rate by
-            businesses and an impressive 90% acceptance rate by brands
+            <b>75%</b> of this goal, boasting an <b>80%</b> product acceptance
+            rate by businesses and an impressive 90% acceptance rate by brands
           </Text>
           <Button
             path="/"

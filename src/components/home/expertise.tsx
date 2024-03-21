@@ -1,13 +1,13 @@
 "use client";
 
+import { expertiseData } from "@/utils/constants";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import divider from "../../assets/images/line.svg";
 import textPattern4 from "../../assets/images/text-pattern4.svg";
-import Wrapper from "../wrapper";
 import Title from "../heading";
-import { expertiseData } from "@/utils/constants";
 import Tags from "../tags";
+import Wrapper from "../wrapper";
 
 const Expertise = () => {
   return (

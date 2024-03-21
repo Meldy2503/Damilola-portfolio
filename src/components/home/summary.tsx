@@ -3,8 +3,8 @@
 import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import authurImg from "../../assets/images/summary.webp";
-import Wrapper from "../wrapper";
 import { Button } from "../button";
+import Wrapper from "../wrapper";
 
 const Summary = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -48,7 +48,6 @@ const Summary = () => {
             height={1000}
             unoptimized={true}
             quality={100}
-
             style={{
               maxWidth: "100%",
               objectFit: "cover",

@@ -27,6 +27,17 @@ import task25 from "../assets/images/task25.webp";
 import task31 from "../assets/images/task31.webp";
 import task32 from "../assets/images/task32.webp";
 import task33 from "../assets/images/task33.webp";
+import igetguyUser1 from "../assets/images/igetguy-user1.webp";
+import igetguyUser2 from "../assets/images/igetguy-user2.webp";
+import igetguyUser3 from "../assets/images/igetguy-user3.webp";
+import igetguyUser4 from "../assets/images/igetguy-user4.webp";
+import igetguyUser5 from "../assets/images/igetguy-user5.webp";
+import igetguyUser6 from "../assets/images/igetguy-user6.webp";
+import igetguyArt1 from "../assets/images/igetguy-art1.webp";
+import igetguyArt2 from "../assets/images/igetguy-art2.webp";
+import igetguyArt3 from "../assets/images/igetguy-art3.webp";
+import igetguyArt4 from "../assets/images/igetguy-art4.webp";
+import igetguyArt5 from "../assets/images/igetguy-art5.webp";
 
 export const menuData = [
   {
@@ -293,8 +304,8 @@ export const stockTaskCards = [
 
 export const igetguyIntroCards1 = [
   {
-    title: "Home/Dashboard System",
-    text: "Enables the business place orders directly from the inventory app with accurate update on stock levels upon delivery. ",
+    title: "Chat",
+    text: "Helps the business with insights into key metrics such as stock level, turnover rate, etc. over a desired timeframe. ",
   },
   {
     title: "Booking Management",
@@ -305,8 +316,8 @@ export const igetguyIntroCards1 = [
     text: "Ensures there’s a cohesive and visible synergy between the stock in the inventory and the sales of individual items.",
   },
   {
-    title: "Chat",
-    text: "Helps the business with insights into key metrics such as stock level, turnover rate, etc. over a desired timeframe. ",
+    title: "Home/Service Listing",
+    text: "Enables the business place orders directly from the inventory app with accurate update on stock levels upon delivery. ",
   },
 ];
 export const igetguyIntroCards2 = [
@@ -327,3 +338,65 @@ export const igetguyIntroCards2 = [
     text: "Helps the business with insights into key metrics such as stock level, turnover rate, etc. over a desired timeframe. ",
   },
 ];
+
+
+export const igetguyUsersCards = [
+  {
+    title: "Home Screen",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyUser1,
+  },
+  {
+    title: "Explore",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyUser2,
+  },
+  {
+    title: "Bookings",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyUser3,
+  },
+  {
+    title: "Invoices",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyUser4,
+  },
+  {
+    title: "Chats",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyUser5,
+  },
+  {
+    title: "Rating, Notification & Profile",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyUser6,
+  },
+];
+export const igetguyArtisansCards = [
+  {
+    title: "Home Screen",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyArt1,
+  },
+  {
+    title: "Explore",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyArt2,
+  },
+  {
+    title: "Bookings",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyArt3,
+  },
+  {
+    title: "Invoices",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyArt4,
+  },
+  {
+    title: "Chats",
+    text: "On the home screen, the inventory manager sees latest notifications or alerts related to inventory status, low stock, or other important updates. A card that summarises the stock level, a graph that shows the sales trend, and a table that displays the available products and their statuses.",
+    img: igetguyArt5,
+  },
+];
+

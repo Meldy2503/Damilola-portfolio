@@ -16,8 +16,8 @@ import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "../assets/images/white-logo.svg";
-import { Button } from "./button";
 import { menuData } from "../utils/constants";
+import { Button } from "./button";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -70,7 +70,6 @@ const Navbar = () => {
                 onClick={() => {
                   handlecurrentMenu(link.path);
                 }}
-               
               >
                 <Link href={link.path}>{link.name}</Link>
               </Box>
@@ -103,8 +102,8 @@ const Navbar = () => {
               {menuData.map((menu, index) => {
                 return (
                   <Box
-                  key={index}
-                  border="none"
+                    key={index}
+                    border="none"
                     borderBottom={
                       currentMenu === menu.path ? "3px solid #ffffff" : "none"
                     }

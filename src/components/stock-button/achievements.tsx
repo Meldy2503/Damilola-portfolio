@@ -22,7 +22,7 @@ const Achievements = () => {
           md: "row",
         }}
       >
-        <Box w={{ base: "100%", md: "40%" }}>
+        <Box w={{ base: "100%", md: "35%" }}>
           <Text
             fontSize={"2.8rem"}
             color="brand.480"
@@ -35,14 +35,15 @@ const Achievements = () => {
             Achievements{" "}
           </Heading>
         </Box>
-        <Box w={{ base: "100%", md: "55%" }}>
+        <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
             Months after implementing the app for in-house use by inventory
             managers, the inventory managers nailed one big goal: they could
             predict which products customers were really after. This meant they
             knew exactly what to restock before products ran out from their
-            suppliers. Ultimately, their <b>stock level awareness shot up by 20%</b>,
-            and they saw a solid <b>10% boost in sales</b> within just three months!
+            suppliers. Ultimately, their{" "}
+            <b>stock level awareness shot up by 20%</b>, and they saw a solid{" "}
+            <b>10% boost in sales</b> within just three months!
           </Text>
           <Button
             path="/"

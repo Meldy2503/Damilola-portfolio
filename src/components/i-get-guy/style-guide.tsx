@@ -26,7 +26,7 @@ const StyleGuide = () => {
           md: "row",
         }}
       >
-        <Box w={{ base: "100%", md: "40%" }}>
+        <Box w={{ base: "100%", md: "35%" }}>
           <Text
             fontSize={"2.8rem"}
             color="brand.480"
@@ -39,10 +39,10 @@ const StyleGuide = () => {
             Style Guide
           </Heading>
         </Box>
-        <Box w={{ base: "100%", md: "55%" }}>
+        <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
             In designing the inventory mobile app, I adhered to a carefully
-            crafted style guide that served as the foundation for the app's
+            crafted style guide that served as the foundation for the app&apos;s
             visual and user interface elements. The style guide outlined the
             consistent design principles, color schemes, typography, and
             iconography to ensure a cohesive and user-friendly experience

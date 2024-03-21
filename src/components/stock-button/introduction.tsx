@@ -38,7 +38,7 @@ const Introduction = () => {
   };
   return (
     <Wrapper
-      py={{ base: "7rem", md: "10rem"  }}
+      py={{ base: "7rem", md: "10rem" }}
       borderTopWidth="2.5rem"
       borderTopColor="brand.650"
       borderBottomWidth="2.5rem"
@@ -53,7 +53,7 @@ const Introduction = () => {
           base: "column-reverse",
           md: "row",
         }}
-       >
+      >
         <Box
           w={{ base: "100%", md: "46%" }}
           position={"relative"}
@@ -142,10 +142,9 @@ const Introduction = () => {
           />
         </Box>
       </Flex>
-      <Box mt= {{ base: "5rem", md: "7rem"  }}>
+      <Box mt={{ base: "5rem", md: "7rem" }}>
         <Text color="brand.480" fontWeight={"600"} mb="1rem">
           Core Features Introduced{" "}
-          
         </Text>
         <Flex
           gap="2rem"

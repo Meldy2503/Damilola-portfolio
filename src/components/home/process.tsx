@@ -1,12 +1,11 @@
 "use client";
 
-
+import { processData } from "@/utils/constants";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import textPattern from "../../assets/images/text-pattern.svg";
-import Wrapper from "../wrapper";
 import Title from "../heading";
-import { processData } from "@/utils/constants";
+import Wrapper from "../wrapper";
 
 const Process = () => {
   return (

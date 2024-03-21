@@ -24,7 +24,7 @@ const HifiDesigns = () => {
           md: "row",
         }}
       >
-        <Box w={{ base: "100%", md: "40%" }}>
+        <Box w={{ base: "100%", md: "35%" }}>
           <Text
             fontSize={"2.8rem"}
             color="brand.480"
@@ -37,7 +37,7 @@ const HifiDesigns = () => {
             Hi-Fi Designs{" "}
           </Heading>
         </Box>
-        <Box w={{ base: "100%", md: "55%" }}>
+        <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
             These designs focused on elevating the user experience by
             implementing a clean and intuitive interface. By incorporating a
@@ -67,16 +67,19 @@ const HifiDesigns = () => {
           return (
             <Box className="card" id={`card${index + 1}`} key={index}>
               <Box className="card-body">
-                <Box mt='1rem'>
+                <Box mt="1rem">
                   <Heading fontWeight={800} fontSize={"2rem"}>
                     {items.title}
                   </Heading>
-                  <Text mt="1.5rem" mb='1rem'>{items.text}</Text>
+                  <Text mt="1.5rem" mb="1rem">
+                    {items.text}
+                  </Text>
                   <Flex
                     bg="#e8f2f5"
                     align={"center"}
                     justify={"center"}
-                    p="3rem"
+                    px="1rem"
+                    py="2.5rem"
                     mb="2rem"
                   >
                     <Image

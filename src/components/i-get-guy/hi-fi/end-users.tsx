@@ -1,44 +1,44 @@
 "use client";
 
-import { Box, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { igetguyUsersCards } from "@/utils/constants";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import PersonaImg from "../../../assets/images/igetguy-task2.webp";
 
 const EndUsers = () => {
   return (
-    <Box color="brand.550">
-      <Box mt="3rem">
-        <Image
-          src={PersonaImg}
-          alt="persona image"
-          height={1200}
-          width={1200}
-          unoptimized={true}
-          quality={100}
-          style={{
-            maxWidth: "100%",
-            objectFit: "cover",
-            objectPosition: "center",
-            width: "100%",
-          }}
-        />
-      </Box>
-      <Text mt="4rem" mb="2rem">
-        After assessing the both competitors I realized different types of gap
-        that could be fixed. In my analysis, Urban Clap is treated as solely a
-        Business to Customer (B2C) service provider app where users do not have
-        the autonomy to relates directly with the artisans (you book a service
-        and get an artisan assigned to you).
-      </Text>
-      <Text>
-        This however makes some of the artisans run their business off the app,
-        while some of the customers get under qualified services. Task Rabbit on
-        the other hand comes as a B2B and a B2C, allowing services providers
-        (artisans) showcase themselves as businesses, while on the customer’s
-        end, they get high rates of services and a really slow response to
-        service request.
-      </Text>
-    </Box>
+    <Flex mt="2.5rem" direction={"column"} gap="3rem">
+      {igetguyUsersCards.map((items, index) => {
+        return (
+          <Box key={index} bg="brand.200" p="3rem 1.5rem 1.5rem 1.5rem">
+            <Heading fontWeight={800} fontSize={"2rem"}>
+              {items.title}
+            </Heading>
+            <Text my="2rem">{items.text}</Text>
+            <Flex
+              bg="brand.700"
+              align={"center"}
+              justify={"center"}
+              px="2rem"
+              py="4rem"
+            >
+              <Image
+                src={items.img}
+                alt="End Users"
+                width={800}
+                height={800}
+                unoptimized={true}
+                quality={100}
+                style={{
+                  maxWidth: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
+              />
+            </Flex>
+          </Box>
+        );
+      })}
+    </Flex>
   );
 };
 

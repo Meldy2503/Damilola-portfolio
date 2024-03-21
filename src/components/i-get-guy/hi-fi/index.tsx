@@ -1,26 +1,27 @@
 "use client";
 import Wrapper from "@/components/wrapper";
 import {
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
   Box,
-  Text,
   Flex,
   Heading,
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+  Text,
 } from "@chakra-ui/react";
 
-import React from "react";
-import UserPersonas from "./artisans";
-import CompetitiveAnalysis from "./end-users";
 import { Button } from "@/components/button";
+import { useState } from "react";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
+import Artisans from "./artisans";
+import EndUsers from "./end-users";
 
-const PrincipalTasks = () => {
+const Hifi = () => {
+  const [bgColor, setBgColor] = useState("brand.750");
   return (
-    <Wrapper bg="brand.750">
+    <Wrapper bg={bgColor}>
       <Flex
         justify={"space-between"}
         columnGap="2rem"
@@ -31,24 +32,24 @@ const PrincipalTasks = () => {
           md: "row",
         }}
       >
-        <Box w={{ base: "100%", md: "40%" }}>
+        <Box w={{ base: "100%", md: "35%" }}>
           <Text
             fontSize={"2.8rem"}
             color="brand.350"
             fontWeight={"600"}
             mb="1rem"
           >
-            02
+            04
           </Text>
           <Heading
             fontSize={{ base: "3rem", xl: "4rem" }}
             fontWeight={"600"}
             color="brand.200"
           >
-            Principal Task{" "}
+            Hi-Fidelity
           </Heading>
         </Box>
-        <Box w={{ base: "100%", md: "55%" }}>
+        <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
             Before i came up with the features stated above, I outlined key
             objectives for the product and devised steps to achieve them. I
@@ -59,7 +60,8 @@ const PrincipalTasks = () => {
             Additionally, I held informal interviews with friends who fit our
             target end-user profile. This allowed me to create two detailed User
             Personas. I also analyzed the strengths and weaknesses of two major
-            competing brands, namely, &quot;Task Rabbit&quot; and &quot;Urban Clap.&quot;
+            competing brands, namely, &quot;Task Rabbit&quot; and &quot;Urban
+            Clap.&quot;
           </Text>
           <Button
             path="/"
@@ -78,33 +80,30 @@ const PrincipalTasks = () => {
 
       <Tabs variant="unstyled">
         <TabList color="brand.300">
-            <Flex align={'center'}>
-          <Tab
-            _selected={{ color: "white", bg: "brand.800" }}
-            fontSize={"1.6rem"}
-          >
-            End Users
-          </Tab>
-          <Box
-              h= "2.5rem"
-              w=".5px"
-              mx='1.3rem'
-              bg={"brand.350"}
-            />
-          <Tab
-            _selected={{ color: "white", bg: "brand.800" }}
-            fontSize={"1.6rem"}
-          >
-            Artisans
-          </Tab>
+          <Flex align={"center"}>
+            <Tab
+              _selected={{ color: "white", bg: "brand.800" }}
+              fontSize={"1.6rem"}
+              onClick={() => setBgColor("brand.750")}
+            >
+              End Users
+            </Tab>
+            <Box h="2.5rem" w=".5px" mx="1.3rem" bg={"brand.350"} />
+            <Tab
+              _selected={{ color: "white", bg: "brand.870" }}
+              fontSize={"1.6rem"}
+              onClick={() => setBgColor("brand.850")}
+            >
+              Artisans
+            </Tab>
           </Flex>
         </TabList>
         <TabPanels>
           <TabPanel p="0">
-            <UserPersonas />
+            <EndUsers />
           </TabPanel>
           <TabPanel p="0">
-            <CompetitiveAnalysis />
+            <Artisans />
           </TabPanel>
         </TabPanels>
       </Tabs>
@@ -112,4 +111,4 @@ const PrincipalTasks = () => {
   );
 };
 
-export default PrincipalTasks;
+export default Hifi;

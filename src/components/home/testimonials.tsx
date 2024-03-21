@@ -1,5 +1,6 @@
 "use client";
 
+import { testimonialData } from "@/utils/constants";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Slider from "react-slick";
@@ -7,9 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import textPattern from "../../assets/images/text-pattern5.svg";
 import textPattern2 from "../../assets/images/text-pattern6.svg";
-import Wrapper from "../wrapper";
 import Title from "../heading";
-import { testimonialData } from "@/utils/constants";
+import Wrapper from "../wrapper";
 
 const Testimonials = () => {
   const settings = {

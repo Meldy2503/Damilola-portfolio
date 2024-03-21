@@ -1,10 +1,8 @@
 "use client";
 
-import React from "react";
 import { Flex, HStack, Text } from "@chakra-ui/react";
-import { IoIosArrowBack } from "react-icons/io";
-import { Handlee } from "next/font/google";
 import { useRouter } from "next/navigation";
+import { IoIosArrowBack } from "react-icons/io";
 
 interface Props {
   name?: string;
@@ -16,7 +14,13 @@ const Back = ({ name }: Props) => {
     router.back();
   };
   return (
-    <Flex fontSize={"1.6rem"} mb="2rem" cursor='pointer' gap="1.5rem" onClick={handleBack}>
+    <Flex
+      fontSize={"1.6rem"}
+      mb="2rem"
+      cursor="pointer"
+      gap="1.5rem"
+      onClick={handleBack}
+    >
       <HStack>
         <IoIosArrowBack />
         <Text>Project</Text>

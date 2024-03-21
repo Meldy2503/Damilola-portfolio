@@ -39,7 +39,7 @@ const PrincipalTask = () => {
           md: "row",
         }}
       >
-        <Box w={{ base: "100%", md: "40%" }}>
+        <Box w={{ base: "100%", md: "35%" }}>
           <Text
             fontSize={"2.8rem"}
             color="brand.480"
@@ -52,7 +52,7 @@ const PrincipalTask = () => {
             Principal Task{" "}
           </Heading>
         </Box>
-        <Box w={{ base: "100%", md: "55%" }}>
+        <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
             The initial part of my strategy for this product was to identify the
             business challenges faced and understand the potential advantages a
@@ -95,7 +95,7 @@ const PrincipalTask = () => {
                     base: "column-reverse",
                     lg: "row-reverse",
                   }}
-                 >
+                >
                   <Box
                     w={{ base: "100%", lg: "55%" }}
                     position={"relative"}

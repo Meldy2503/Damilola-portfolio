@@ -1,14 +1,13 @@
 "use client";
 
-import React from "react";
-import Wrapper from "./wrapper";
 import { Box, Flex, Text } from "@chakra-ui/react";
-import { Button } from "./button";
-import Logo from "../assets/images/black-logo.svg";
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FiLinkedin, FiFacebook } from "react-icons/fi";
+import { FiFacebook, FiLinkedin } from "react-icons/fi";
+import Logo from "../assets/images/black-logo.svg";
+import { Button } from "./button";
+import Wrapper from "./wrapper";
 
 const Footer = () => {
   const socials = ["Email", "Resume", "LinkedIn", "Twitter", "Medium"];

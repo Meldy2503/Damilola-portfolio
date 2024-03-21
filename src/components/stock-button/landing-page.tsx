@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { GoArrowDown } from "react-icons/go";
 import stockImg from "../../assets/images/stock-1.webp";

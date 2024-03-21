@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  Box,
-  Flex,
-  HStack,
-  Heading,
-  Text
-} from "@chakra-ui/react";
+import { Box, Flex, HStack, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import authurImg from "../../assets/images/authur2.webp";
 import vector from "../../assets/images/headerIcon.svg";
@@ -59,9 +53,7 @@ const Cta = () => {
             <Button
               path="/pyyr-reward"
               isIcon
-              boxShadow= '0px 2px 25px 0px #0000001F'
-
-
+              boxShadow="0px 2px 25px 0px #0000001F"
               btnText="See Next Project"
               btnGap="2rem"
             />

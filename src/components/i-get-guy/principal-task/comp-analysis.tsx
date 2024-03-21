@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import PersonaImg from "../../../assets/images/igetguy-task2.webp";
 

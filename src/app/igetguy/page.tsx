@@ -1,6 +1,7 @@
 import Footer from "@/components/footer";
 import Achievements from "@/components/i-get-guy/achievements";
 import Cta from "@/components/i-get-guy/cta";
+import Hifi from "@/components/i-get-guy/hi-fi";
 import Introduction from "@/components/i-get-guy/introduction";
 import LandingPage from "@/components/i-get-guy/landing-page";
 import LowFi from "@/components/i-get-guy/low-fi";
@@ -17,7 +18,7 @@ const IgetGuy = () => {
       <Introduction />
       <PrincipalTasks />
       <LowFi />
-      <HiFi />
+      <Hifi />
       <StyleGuide />
       <Achievements />
       <Cta/>

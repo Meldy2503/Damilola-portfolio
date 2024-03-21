@@ -1,14 +1,14 @@
 "use client";
 
+import { projectData } from "@/utils/constants";
 import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 import textPattern1 from "../../assets/images/text-pattern1.svg";
 import textPattern2 from "../../assets/images/text-pattern2.svg";
-import Wrapper from "../wrapper";
-import Title from "../heading";
-import { projectData } from "@/utils/constants";
 import { Button } from "../button";
-import Link from "next/link";
+import Title from "../heading";
+import Wrapper from "../wrapper";
 
 const Projects = () => {
   const [isMobile] = useMediaQuery("(max-width: 1000px)");
