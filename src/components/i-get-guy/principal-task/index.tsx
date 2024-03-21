@@ -59,7 +59,7 @@ const PrincipalTasks = () => {
             Additionally, I held informal interviews with friends who fit our
             target end-user profile. This allowed me to create two detailed User
             Personas. I also analyzed the strengths and weaknesses of two major
-            competing brands, namely, "Task Rabbit" and "Urban Clap."
+            competing brands, namely, &quot;Task Rabbit&quot; and &quot;Urban Clap.&quot;
           </Text>
           <Button
             path="/"

@@ -56,10 +56,10 @@ const Introduction = () => {
           </Heading>
 
           <Text pt="2rem" pb="3rem">
-            <i>I get guy</i>, is a word derived from Nigerian's local parlance
+            <i>I get guy</i>, is a word derived from Nigerian&apos;s local parlance
             called
-            <i>"Pidgin"</i> which means to <i>"Have a Guy"</i> , also known as{" "}
-            <i>"Have Someone"</i>
+            <i>&quot;Pidgin&quot;</i> which means to <i>&quot;Have a Guy&quot;</i> , also known as{" "}
+            <i>&quot;Have Someone&quot;</i>
             trusted to get a job done. <br /> <br /> The aim of this project was
             to design a solution that offers local artisans an online platform,
             enabling customers within their vicinity to easily locate them and

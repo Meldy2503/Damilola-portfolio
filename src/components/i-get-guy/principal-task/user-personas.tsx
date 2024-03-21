@@ -42,7 +42,7 @@ const UserPersonas = () => {
           An off-system payment mode with an invoice management system to track
           services rendered by artisans and paid for by consumers. This feature
           allows for flexibility in payment processes, prevents off-app jobs,
-          and protects consumers from paying for services that aren't delivered.
+          and protects consumers from paying for services that aren&apos;t delivered.
         </ListItem>
         <ListItem>
           Offering coupons to consumers after they have ordered a certain amount
