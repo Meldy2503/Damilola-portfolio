@@ -9,7 +9,7 @@ import Wrapper from "../wrapper";
 
 const Cta = () => {
   return (
-    <Wrapper bg="brand.200" borderTopWidth="2.5rem" borderTopColor="brand.650">
+    <Wrapper bg="brand.200" borderTopWidth="2.5rem" borderTopColor="brand.1000">
       <Flex
         direction={{ base: "column", md: "row" }}
         boxShadow="0px 4px 30px 0px #C1BAF8B2"

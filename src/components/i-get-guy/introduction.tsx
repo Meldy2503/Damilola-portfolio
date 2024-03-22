@@ -5,8 +5,6 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 import { IoMdNotificationsOutline } from "react-icons/io";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
 import introImg from "../../assets/images/igetguy-intro.webp";
 import { Button } from "../button";
 import Wrapper from "../wrapper";

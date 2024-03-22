@@ -42,27 +42,24 @@ import igetguyArt5 from "../assets/images/igetguy-art5.webp";
 export const menuData = [
   {
     name: "Home",
-    path: '/'
+    path: "/",
   },
   {
     name: "Stock Button",
-    path: '/stock-button'
+    path: "/stock-button",
   },
   {
     name: "Pyyr Reward",
     path: "/pyyr-reward",
-
   },
 
   {
     name: "Igetguy",
     path: "/igetguy",
-
   },
   {
     name: "Dobble",
     path: "/dobble",
-
   },
 ];
 export const processData = [
@@ -280,27 +277,29 @@ export const stockHifiCards = [
 export const stockTaskCards = [
   {
     title: "User Research",
-    text1: 'One effective method adopted was to engage in a table talk with a few Stock Button staff members. ',
-    text2: "This conversation helped to decipher the core parts that'd give a wholesome experience with the results intended. It became evident that to boost revenue, incorporating a feature that monitors individual sales trend and overall stock levels is crucial.",
+    text1:
+      "One effective method adopted was to engage in a table talk with a few Stock Button staff members. ",
+    text2:
+      "This conversation helped to decipher the core parts that'd give a wholesome experience with the results intended. It became evident that to boost revenue, incorporating a feature that monitors individual sales trend and overall stock levels is crucial.",
     img: [task11, task12, task13],
-
   },
   {
     title: "User Flow",
-    text1: "The goal of developing a user flow was to meticulously map out the user journey for three critical aspects: product monitoring, supplier management, and report analysis.",
-    text2: " This involved systematically visualizing and understanding the sequence of interactions users would undertake within each flow, ensuring intuitive navigation, optimal user experience, and efficient accomplishment of tasks",
+    text1:
+      "The goal of developing a user flow was to meticulously map out the user journey for three critical aspects: product monitoring, supplier management, and report analysis.",
+    text2:
+      " This involved systematically visualizing and understanding the sequence of interactions users would undertake within each flow, ensuring intuitive navigation, optimal user experience, and efficient accomplishment of tasks",
     img: [task21, task22, task23, task24, task25],
-
   },
   {
     title: "Wireflow",
-    text1: "The creation of wireframes served the purpose of establishing expectations for the final product's appearance and providing a clear direction for the optimal visual approach.",
-    text2: " This strategic step aimed to ensure that the eventual design, crafted in the final stages, has been thoroughly considered and adheres to the best design practices. ",
+    text1:
+      "The creation of wireframes served the purpose of establishing expectations for the final product's appearance and providing a clear direction for the optimal visual approach.",
+    text2:
+      " This strategic step aimed to ensure that the eventual design, crafted in the final stages, has been thoroughly considered and adheres to the best design practices. ",
     img: [task31, task32, task33],
-
   },
 ];
-
 
 export const igetguyIntroCards1 = [
   {
@@ -338,7 +337,6 @@ export const igetguyIntroCards2 = [
     text: "Helps the business with insights into key metrics such as stock level, turnover rate, etc. over a desired timeframe. ",
   },
 ];
-
 
 export const igetguyUsersCards = [
   {
@@ -400,3 +398,41 @@ export const igetguyArtisansCards = [
   },
 ];
 
+// pyyr constants
+
+export const pyyrIntroCards1 = [
+  {
+    title: "Dashboard System",
+    text: "Provides a summary of the products added over a period of time, a record of sold items and their stock levels.",
+  },
+  {
+    title: "Campaign Management",
+    text: "Ensures there’s a synergy between the stock in the inventory and the sales of individual item",
+  },
+  {
+    title: "Marketplace",
+    text: "Helps the business with insights into key metrics such as stock level, turnover rate, etc. over a desired timeframe.",
+  },
+  {
+    title: "Embedded Wallet",
+    text: "Enables the business place orders directly from the inventory app with accurate update on stock levels upon delivery. ",
+  },
+];
+export const pyyrIntroCards2 = [
+  {
+    title: "Dashboard System",
+    text: "Provides a summary of the products added over a period of time, a record of sold items and their stock levels.",
+  },
+  {
+    title: "Voucher Management",
+    text: "Ensures there’s a synergy between the stock in the inventory and the sales of individual item",
+  },
+  {
+    title: "Report Analysis",
+    text: "Helps the business with insights into key metrics such as stock level, turnover rate, etc. over a desired timeframe.",
+  },
+  {
+    title: "Embedded Wallet",
+    text: "Enables the business place orders directly from the inventory app with accurate update on stock levels upon delivery. ",
+  },
+];
