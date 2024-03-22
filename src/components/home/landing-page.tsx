@@ -13,7 +13,6 @@ const LandingPage = () => {
     <Flex
       id="home"
       bg="brand.100"
-      h="100%"
       align={"center"}
       justify={"center"}
       position={"relative"}
@@ -49,7 +48,7 @@ const LandingPage = () => {
         align={"center"}
         gap="5rem"
         direction="column"
-        pt={{ base: "7rem", lg: "0" }}
+        pt={{ base: "7rem", md: "0" }}
         maxW={"1280px"}
         width="90%"
         m={"5rem auto"}

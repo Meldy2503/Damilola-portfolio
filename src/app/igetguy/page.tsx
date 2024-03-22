@@ -21,7 +21,7 @@ const IgetGuy = () => {
       <Hifi />
       <StyleGuide />
       <Achievements />
-      <Cta/>
+      <Cta />
       <Footer />
     </>
   );

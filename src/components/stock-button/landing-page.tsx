@@ -35,7 +35,7 @@ const LandingPage = () => {
         align={"center"}
         gap="5rem"
         direction="column"
-        py={{ base: "6rem", lg: "10rem", xl: "13rem" }}
+        py={{ base: "6rem", xl: "13rem" }}
         maxW={"1280px"}
         width="90%"
         my={"5rem auto"}
@@ -44,10 +44,10 @@ const LandingPage = () => {
           justify={"space-between"}
           align={"center"}
           gap="5rem"
-          direction={{ base: "column-reverse", lg: "row-reverse" }}
+          direction={{ base: "column-reverse", md: "row-reverse" }}
         >
-          <Box w={{ base: "100%", lg: "45%" }}>
-            <Box display={{ base: "block", lg: "none" }}>
+          <Box w={{ base: "100%", md: "45%" }}>
+            <Box display={{ base: "block", xl: "none" }}>
               <Image
                 src={stockImg}
                 alt="stock button"
@@ -65,7 +65,7 @@ const LandingPage = () => {
           </Box>
 
           <Box
-            w={{ base: "100%", lg: "55%" }}
+            w={{ base: "100%", md: "55%" }}
             mt={{ base: "6rem", lg: "0" }}
             flex={1}
           >
@@ -147,9 +147,8 @@ const LandingPage = () => {
         position={"absolute"}
         right="0"
         top="0"
-        display={{ base: "none", lg: "block" }}
+        display={{ base: "none", xl: "block" }}
         w={{ base: "0", lg: "52rem", xl: "64rem" }}
-        overflowY={"hidden"}
       >
         <Image
           src={stockImg}

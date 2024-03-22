@@ -1,19 +1,20 @@
 "use client";
 
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import bgImage from "../../assets/images/igetguy-bg.webp";
-import Back from "../back";
+import bgImage from "../../../assets/images/igetguy-bg.webp";
+import Back from "../../back";
 
-const LandingPage = () => {
+const DesktopLandingPage = () => {
   return (
-    <Box
+    <Flex
       bgImage={`url(${bgImage.src})`}
       bgSize="cover"
-      bgPosition="left"
+      bgPosition="center"
       bgRepeat="no-repeat"
       width="100%"
-      pt={{ base: "5rem", lg: "10rem" }}
-      pb={{ base: "0rem", sm: "5rem", lg: "13rem" }}
+      align={"center"}
+      justify={"center"}
+      h={{ base: "100%", lg: "100vh" }}
       color="brand.200"
     >
       <Flex
@@ -22,18 +23,18 @@ const LandingPage = () => {
         direction="column"
         maxW={"1280px"}
         width="90%"
-        m={"5rem auto"}
+        py="12rem"
       >
         <Flex
           justify={"space-between"}
           align={"center"}
           gap="5rem"
-          direction={{ base: "column", sm: "row" }}
+          direction="row"
         >
-          <Box w={{ base: "100%", sm: "82%", md: "60%", lg: "55%" }} flex={1}>
+          <Box w={{ base: "60%", lg: "55%" }} flex={1}>
             <Back name="I Get Guy" />
             <Heading
-              fontSize={{ base: "3.8rem", md: "3.3rem", xl: "5.5rem" }}
+              fontSize={{ base: "3.8rem", xl: "5.5rem" }}
               py="2rem"
               fontWeight={600}
               lineHeight={1.1}
@@ -69,11 +70,11 @@ const LandingPage = () => {
               seeking experienced service providers in specific localities.
             </Text>
           </Box>
-          <Box w={{ base: "100%", sm: "15%", md: "35%", lg: "45%" }} />
+          <Box w={{ base: "35%", lg: "45%" }} />
         </Flex>
       </Flex>
-    </Box>
+    </Flex>
   );
 };
 
-export default LandingPage;
+export default DesktopLandingPage;
