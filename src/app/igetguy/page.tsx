@@ -1,3 +1,6 @@
+'use client'
+
+
 import Footer from "@/components/footer";
 import Achievements from "@/components/i-get-guy/achievements";
 import Cta from "@/components/i-get-guy/cta";
