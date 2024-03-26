@@ -3,11 +3,11 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { HiOutlineArrowSmUp } from "react-icons/hi";
-import styleGuide5 from "../../assets/images/igetguy-style1.png";
-import styleGuide4 from "../../assets/images/igetguy-style2.png";
-import styleGuide3 from "../../assets/images/igetguy-style3.png";
-import styleGuide2 from "../../assets/images/igetguy-style4.webp";
-import styleGuide1 from "../../assets/images/igetguy-style5.webp";
+import styleGuide5 from "../../assets/images/style-pyyr1.webp";
+import styleGuide4 from "../../assets/images/style-pyyr2.webp";
+import styleGuide3 from "../../assets/images/style-pyyr3.webp";
+import styleGuide1 from "../../assets/images/style-pyyr4.webp";
+import styleGuide2 from "../../assets/images/style-pyyr5.webp";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
 
@@ -15,8 +15,10 @@ const StyleGuide = () => {
   return (
     <Wrapper
       borderBottomWidth="2.5rem"
-      borderBottomColor="brand.750"
-      bg="brand.700"
+      borderBottomColor="brand.950"
+      borderTopWidth="2.5rem"
+      borderTopColor="brand.1000"
+      bg="brand.200"
     >
       <Flex
         justify={"space-between"}
@@ -64,7 +66,7 @@ const StyleGuide = () => {
       <Flex
         mt="7rem"
         borderWidth={"1px"}
-        borderColor={"brand.550"}
+        borderColor={"brand.150"}
         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
         p="1.3rem"
         direction="column"
@@ -76,7 +78,9 @@ const StyleGuide = () => {
           flexWrap={"wrap"}
           gap="2rem"
         >
-          <Box w={{ base: "100%", md: "48%" }}>
+          <Box w={{ base: "100%", md: "48%" }}  borderWidth={"1px"}
+        borderColor={"brand.150"}         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
+        >
             <Image
               src={styleGuide5}
               alt="stock button style guide"
@@ -91,7 +95,9 @@ const StyleGuide = () => {
               }}
             />
           </Box>
-          <Box w={{ base: "100%", md: "48%" }}>
+          <Box w={{ base: "100%", md: "48%" }}  borderWidth={"1px"}
+        borderColor={"brand.150"}         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
+        >
             <Image
               src={styleGuide4}
               alt="stock button style guide"
@@ -107,7 +113,9 @@ const StyleGuide = () => {
             />
           </Box>
         </Flex>
-        <Box>
+        <Box  borderWidth={"1px"}
+        borderColor={"brand.150"}         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
+        >
           <Image
             src={styleGuide3}
             alt="stock button style guide"
@@ -129,7 +137,9 @@ const StyleGuide = () => {
           flexWrap={"wrap"}
           gap="2rem"
         >
-          <Box w={{ base: "100%", md: "48%" }}>
+          <Box w={{ base: "100%", md: "48%" }}  borderWidth={"1px"}
+        borderColor={"brand.150"}         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
+        >
             <Image
               src={styleGuide2}
               alt="stock button style guide"
@@ -144,7 +154,9 @@ const StyleGuide = () => {
               }}
             />
           </Box>
-          <Box w={{ base: "100%", md: "48%" }}>
+          <Box w={{ base: "100%", md: "48%" }}  borderWidth={"1px"}
+        borderColor={"brand.150"}         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
+        >
             <Image
               src={styleGuide1}
               alt="stock button style guide"

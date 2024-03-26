@@ -22,8 +22,8 @@ const IgetGuy = () => {
       <PrincipalTasks />
       <LowFi />
       <Hifi />
-      <StyleGuide />
       <Achievements />
+      <StyleGuide />
       <Cta />
       <Footer />
     </>

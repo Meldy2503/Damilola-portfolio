@@ -37,7 +37,7 @@ const StyleGuide = () => {
             fontWeight={"600"}
             mb="1rem"
           >
-            04
+            05
           </Text>
           <Heading fontSize={{ base: "3rem", xl: "4rem" }} fontWeight={"600"}>
             Style Guide
@@ -72,7 +72,8 @@ const StyleGuide = () => {
         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
       >
         <Flex justify={"space-between"} align={"center"} flexWrap={"wrap"}>
-          <Box w={{ base: "100%", md: "50%" }}>
+          <Box w={{ base: "100%", md: "50%" }}  borderWidth={"1px"}
+        borderColor={"brand.150"}>
             <Image
               src={styleGuide5}
               alt="stock button style guide"
@@ -87,7 +88,7 @@ const StyleGuide = () => {
               }}
             />
           </Box>
-          <Box w={{ base: "100%", md: "50%" }}>
+          <Box w={{ base: "100%", md: "50%" }} >
             <Image
               src={styleGuide4}
               alt="stock button style guide"

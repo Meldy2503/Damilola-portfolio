@@ -19,8 +19,8 @@ const StockButton = () => {
     <Introduction/>
     <PrincipalTask/>
     <HifiDesigns/>
-    <StyleGuide/>
     <Achievements/>
+    <StyleGuide/>
     <Cta/>
     <Footer/>
     </>

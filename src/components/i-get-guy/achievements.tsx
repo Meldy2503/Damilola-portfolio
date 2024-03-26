@@ -29,7 +29,7 @@ const Achievements = () => {
             fontWeight={"600"}
             mb="1rem"
           >
-            06
+            05
           </Text>
           <Heading fontSize={{ base: "3rem", xl: "4rem" }} fontWeight={"600"}>
             Achievements{" "}
