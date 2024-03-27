@@ -1,6 +1,6 @@
 "use client";
 
-import { igetguyIntroCards1, igetguyIntroCards2, pyyrIntroCards1, pyyrIntroCards2 } from "@/utils/constants";
+import { pyyrIntroCards1, pyyrIntroCards2 } from "@/utils/constants";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
@@ -12,20 +12,24 @@ import Wrapper from "../wrapper";
 
 const Introduction = () => {
   return (
-    <Wrapper bg="brand.200"       borderTopWidth="2.5rem"
-    borderTopColor="brand.1000"
-    borderBottomWidth="2.5rem"
-    borderBottomColor="brand.950">
+    <Wrapper
+      bg="brand.200"
+      borderTopWidth="2.5rem"
+      borderTopColor="brand.1000"
+      borderBottomWidth="2.5rem"
+      borderBottomColor="brand.950"
+    >
       <Flex
         justify={"space-between"}
         align={"center"}
-        gap="3rem"
+        rowGap="5rem"
+        columnGap="3rem"
         direction={{
           base: "column-reverse",
           md: "row",
         }}
       >
-        <Box w={{ base: "100%", md: "46%" }}>
+        <Box w={{ base: "100%", md: "43%" }}>
           <Image
             src={introImg}
             alt="reviewers image"
@@ -41,7 +45,7 @@ const Introduction = () => {
             }}
           />
         </Box>
-        <Box w={{ base: "100%", md: "47%" }}>
+        <Box w={{ base: "100%", md: "52%" }}>
           <Text
             fontSize={"2.8rem"}
             color="brand.480"
@@ -56,19 +60,26 @@ const Introduction = () => {
 
           <Text py="2rem">
             The objective of this project was to develop a solution that
-           <b> “simplifies the acquisition of loyalty vouchers for businesses
-            across multiple brands”.</b> The goal was to establish a “unified
-            marketplace” where businesses can conveniently access and shop
-            vouchers from a diverse array of brands, offering a comprehensive
-            <b>“one-stop solution that serves the brands and the merchants”.</b> <br />{" "}
-            <br />
+            <b>
+              {" "}
+              “simplifies the acquisition of loyalty vouchers for businesses
+              across multiple brands”.
+            </b>{" "}
+            The goal was to establish a “unified marketplace” where businesses
+            can conveniently access and shop vouchers from a diverse array of
+            brands, offering a comprehensive
+            <b>
+              “one-stop solution that serves the brands and the merchants”.
+            </b>{" "}
+            <br /> <br />
             Additionally, the platform was to include a campaign system that
             enables businesses to establish loyalty programs for customers,
             assigning acquired vouchers to enhance customer engagement. <br />
-            <br /> Given the <b>multi-tenancy</b> nature of this solution, it became
-            evident that its direction would feature dual functionalities, each
-            uniquely tailored to the identity of the user currently logged in.
-            The core features highlighted for both user types were;
+            <br /> Given the <b>multi-tenancy</b> nature of this solution, it
+            became evident that its direction would feature dual
+            functionalities, each uniquely tailored to the identity of the user
+            currently logged in. The core features highlighted for both user
+            types were;
           </Text>
           <Button
             path="/"

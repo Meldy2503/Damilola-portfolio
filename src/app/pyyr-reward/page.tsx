@@ -8,6 +8,7 @@ import Introduction from "@/components/pyyr-reward/introduction";
 import Cta from "@/components/pyyr-reward/cta";
 import Achievements from "@/components/pyyr-reward/achievements";
 import StyleGuide from "@/components/pyyr-reward/style-guide";
+import LowFi from "@/components/pyyr-reward/low-fi";
 
 
 const PyyrReward = () => {
@@ -17,7 +18,7 @@ const PyyrReward = () => {
       <LandingPage />
       <Introduction />
       {/* <PrincipalTasks /> */}
-      {/* <LowFi /> */}
+       <LowFi /> 
       {/* <Hifi /> */}
       <Achievements />
       <StyleGuide />
