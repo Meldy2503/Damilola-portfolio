@@ -24,9 +24,9 @@ const Hifi = () => {
     <Wrapper bg={bgColor}>
       <Flex
         justify={"space-between"}
-        columnGap="2rem"
+        gap="2rem"
         color="brand.550"
-        mb="10rem"
+        mb={{ base: "7rem", md: "10rem" }}
         direction={{
           base: "column",
           md: "row",

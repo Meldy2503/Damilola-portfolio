@@ -35,7 +35,7 @@ const Introduction = () => {
             alt="reviewers image"
             height={1200}
             width={1200}
-            unoptimized={true}
+               unoptimized={true}
             quality={100}
             style={{
               maxWidth: "100%",

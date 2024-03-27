@@ -22,7 +22,7 @@ const StyleGuide = () => {
     >
       <Flex
         justify={"space-between"}
-        columnGap="2rem"
+        gap="2rem"
         direction={{
           base: "column",
           md: "row",
@@ -78,9 +78,12 @@ const StyleGuide = () => {
           flexWrap={"wrap"}
           gap="2rem"
         >
-          <Box w={{ base: "100%", md: "48%" }}  borderWidth={"1px"}
-        borderColor={"brand.150"}         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
-        >
+          <Box
+            w={{ base: "100%", md: "48%" }}
+            borderWidth={"1px"}
+            borderColor={"brand.150"}
+            boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
+          >
             <Image
               src={styleGuide5}
               alt="stock button style guide"
@@ -95,9 +98,12 @@ const StyleGuide = () => {
               }}
             />
           </Box>
-          <Box w={{ base: "100%", md: "48%" }}  borderWidth={"1px"}
-        borderColor={"brand.150"}         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
-        >
+          <Box
+            w={{ base: "100%", md: "48%" }}
+            borderWidth={"1px"}
+            borderColor={"brand.150"}
+            boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
+          >
             <Image
               src={styleGuide4}
               alt="stock button style guide"
@@ -113,8 +119,10 @@ const StyleGuide = () => {
             />
           </Box>
         </Flex>
-        <Box  borderWidth={"1px"}
-        borderColor={"brand.150"}         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
+        <Box
+          borderWidth={"1px"}
+          borderColor={"brand.150"}
+          boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
         >
           <Image
             src={styleGuide3}
@@ -137,9 +145,12 @@ const StyleGuide = () => {
           flexWrap={"wrap"}
           gap="2rem"
         >
-          <Box w={{ base: "100%", md: "48%" }}  borderWidth={"1px"}
-        borderColor={"brand.150"}         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
-        >
+          <Box
+            w={{ base: "100%", md: "48%" }}
+            borderWidth={"1px"}
+            borderColor={"brand.150"}
+            boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
+          >
             <Image
               src={styleGuide2}
               alt="stock button style guide"
@@ -154,9 +165,12 @@ const StyleGuide = () => {
               }}
             />
           </Box>
-          <Box w={{ base: "100%", md: "48%" }}  borderWidth={"1px"}
-        borderColor={"brand.150"}         boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
-        >
+          <Box
+            w={{ base: "100%", md: "48%" }}
+            borderWidth={"1px"}
+            borderColor={"brand.150"}
+            boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
+          >
             <Image
               src={styleGuide1}
               alt="stock button style guide"

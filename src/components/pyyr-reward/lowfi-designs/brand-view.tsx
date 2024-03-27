@@ -15,14 +15,14 @@ const BrandView = () => {
       boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
     >
       <Box bg="brand.200" p="3rem 1.5rem 1.5rem 1.5rem">
-        <Heading fontWeight={800} fontSize={"2rem"}>
+        <Heading fontWeight={800} fontSize={"1.8rem"}>
           As a Brand
         </Heading>
         <Flex align={"center"} justify={"center"} pt="3rem">
           <Image
             src={brandImg}
-            alt="Artisans"
-            width={800}
+            alt="Brand image"
+            width={1200}
             height={800}
             unoptimized={true}
             quality={100}

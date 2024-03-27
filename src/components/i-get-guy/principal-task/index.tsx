@@ -22,7 +22,7 @@ const PrincipalTasks = () => {
     <Wrapper bg="brand.750">
       <Flex
         justify={"space-between"}
-        columnGap="2rem"
+        gap="2rem"
         color="brand.550"
         mb="10rem"
         direction={{

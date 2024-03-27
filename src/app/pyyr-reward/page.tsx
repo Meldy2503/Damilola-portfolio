@@ -8,7 +8,8 @@ import Introduction from "@/components/pyyr-reward/introduction";
 import Cta from "@/components/pyyr-reward/cta";
 import Achievements from "@/components/pyyr-reward/achievements";
 import StyleGuide from "@/components/pyyr-reward/style-guide";
-import LowFi from "@/components/pyyr-reward/low-fi";
+import LowFi from "@/components/pyyr-reward/lowfi-designs";
+import HiFi from "@/components/pyyr-reward/hifi-designs";
 
 
 const PyyrReward = () => {
@@ -19,7 +20,7 @@ const PyyrReward = () => {
       <Introduction />
       {/* <PrincipalTasks /> */}
        <LowFi /> 
-      {/* <Hifi /> */}
+       <HiFi /> 
       <Achievements />
       <StyleGuide />
       <Cta />

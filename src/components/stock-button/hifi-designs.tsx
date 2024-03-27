@@ -18,7 +18,7 @@ const HifiDesigns = () => {
     >
       <Flex
         justify={"space-between"}
-        columnGap="2rem"
+        gap="2rem"
         direction={{
           base: "column",
           md: "row",
