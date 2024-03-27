@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Footer from "@/components/footer";
@@ -10,7 +10,7 @@ import Achievements from "@/components/pyyr-reward/achievements";
 import StyleGuide from "@/components/pyyr-reward/style-guide";
 import LowFi from "@/components/pyyr-reward/lowfi-designs";
 import HiFi from "@/components/pyyr-reward/hifi-designs";
-
+import PrincipalTasks from "@/components/pyyr-reward/principal-tasks";
 
 const PyyrReward = () => {
   return (
@@ -18,9 +18,9 @@ const PyyrReward = () => {
       <Navbar />
       <LandingPage />
       <Introduction />
-      {/* <PrincipalTasks /> */}
-       <LowFi /> 
-       <HiFi /> 
+      <PrincipalTasks />
+      <LowFi />
+      <HiFi />
       <Achievements />
       <StyleGuide />
       <Cta />

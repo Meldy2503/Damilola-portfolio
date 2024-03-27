@@ -13,7 +13,6 @@ const PrincipalTask = () => {
   const settings = {
     centerMode: true,
     infinite: true,
-
     centerPadding: "0px",
     slidesToShow: 1,
     speed: 500,

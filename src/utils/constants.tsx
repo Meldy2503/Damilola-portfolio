@@ -231,7 +231,6 @@ export const testimonialData = [
 ];
 
 // stockButton constants
-
 export const stockButtonImg = [stock1, stock2, stock3, stock4];
 
 export const stockIntroCards = [
@@ -316,7 +315,6 @@ export const stockTaskCards = [
 ];
 
 // igetguy constants
-
 export const igetguyIntroCards1 = [
   {
     title: "Chat",
@@ -415,7 +413,6 @@ export const igetguyArtisansCards = [
 ];
 
 // pyyr constants
-
 export const pyyrIntroCards1 = [
   {
     title: "Dashboard System",
