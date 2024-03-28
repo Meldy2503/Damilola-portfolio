@@ -44,8 +44,8 @@ const PrincipalTasks = () => {
           <Text pb="2rem">
             The first approach I adopted for this project was to run a
             competitive analysis which is supposed to help gain insight into how
-            related products proffered solutions. Unfortunately there wasn't
-            much help with existing solutions as a lot of them didn't focus on
+            related products proffered solutions. Unfortunately there wasn&apos;t
+            much help with existing solutions as a lot of them didn&apos;t focus on
             multi tenancy.
           </Text>
           <Text mb="3rem">

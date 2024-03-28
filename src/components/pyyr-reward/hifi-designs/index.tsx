@@ -50,7 +50,7 @@ const HiFi = () => {
         <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
             I translated the initially designed low-fi wireframes into high
-            fidelity designs right after iterating some ideas that didn't work.
+            fidelity designs right after iterating some ideas that didn&apos;t work.
             I pioritized effectiveness and functionality as well as ease of use,
             all of which helped to come up with a coherent and consistent design
             which affords users the ability to feel in Control, Confident and
