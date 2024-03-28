@@ -152,7 +152,7 @@ const PrincipalTask = () => {
                     w={{ base: "100%", lg: "50%" }}
                     color={"brand.250"}
                     p={{
-                      base: "4rem 1rem 0 1rem",
+                      base: "2rem 1rem 0 1rem",
                       lg: "4rem 1rem 2rem 1rem",
                       xl: "0 4rem 0 4rem",
                     }}
@@ -161,8 +161,8 @@ const PrincipalTask = () => {
                       {items.title}
                     </Text>
 
-                    <Text pt="2rem">{items.text1}</Text>
-                    <Text py="2rem">{items.text2}</Text>
+                    <Text pt="1.5rem">{items.text1}</Text>
+                    <Text pt="1.5rem">{items.text2}</Text>
                   </Box>
                 </Flex>
               </Box>

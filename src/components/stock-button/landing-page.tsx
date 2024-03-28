@@ -35,7 +35,7 @@ const LandingPage = () => {
         align={"center"}
         gap="5rem"
         direction="column"
-        py={{ base: "6rem", xl: "13rem" }}
+        py="6rem"
         maxW={"1280px"}
         width="90%"
         my={"5rem auto"}
@@ -47,7 +47,7 @@ const LandingPage = () => {
           direction={{ base: "column-reverse", md: "row-reverse" }}
         >
           <Box w={{ base: "100%", md: "45%" }}>
-            <Box display={{ base: "block", xl: "none" }}>
+            <Box>
               <Image
                 src={stockImg}
                 alt="stock button"
@@ -143,27 +143,6 @@ const LandingPage = () => {
           </Box>
         </Flex>
       </Flex>
-      <Box
-        position={"absolute"}
-        right="0"
-        top="0"
-        display={{ base: "none", xl: "block" }}
-        w={{ base: "0", lg: "52rem", xl: "64rem" }}
-      >
-        <Image
-          src={stockImg}
-          alt="stock button"
-          width={1200}
-          height={800}
-          unoptimized={true}
-          quality={100}
-          style={{
-            maxWidth: "100%",
-            objectFit: "cover",
-            objectPosition: "top",
-          }}
-        />
-      </Box>
     </Flex>
   );
 };

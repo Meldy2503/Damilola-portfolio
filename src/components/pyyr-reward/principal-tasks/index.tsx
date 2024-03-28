@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import { useState } from "react";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 import { Button } from "../../button";
@@ -11,6 +11,8 @@ import UserResearch from "./user-research";
 const PrincipalTasks = () => {
   const [isUserResearch, setIsUserResearch] = useState(true);
   const [isUserFlow, setIsUserFlow] = useState(false);
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
     <Wrapper
       borderTopWidth="2.5rem"
@@ -44,9 +46,9 @@ const PrincipalTasks = () => {
           <Text pb="2rem">
             The first approach I adopted for this project was to run a
             competitive analysis which is supposed to help gain insight into how
-            related products proffered solutions. Unfortunately there wasn&apos;t
-            much help with existing solutions as a lot of them didn&apos;t focus on
-            multi tenancy.
+            related products proffered solutions. Unfortunately there
+            wasn&apos;t much help with existing solutions as a lot of them
+            didn&apos;t focus on multi tenancy.
           </Text>
           <Text mb="3rem">
             I resulted into fleshing out user flows using fictional case
@@ -70,18 +72,18 @@ const PrincipalTasks = () => {
         </Box>
       </Flex>
       <Box mt="8rem">
-        <Text fontWeight={"600"} mb="1rem">
+        <Text fontWeight={"600"} mb="1.5rem">
           Core routes i took{" "}
         </Text>
         <Flex
           justify={"space-between"}
-          direction={{ base: "column", md: "row" }}
+          direction="row"
           color={isUserResearch ? "brand.100" : "brand.480"}
         >
           <Box
-            w={{ base: "100%", md: "48%" }}
-            py={{ base: "3rem", lg: "4rem" }}
-            px={{ base: "2rem", lg: "4rem" }}
+            w="48%"
+            py={{ base: "1rem", md: "3rem", lg: "4rem" }}
+            px={{ base: "1rem", md: "2rem", lg: "4rem" }}
             color={isUserResearch ? "brand.100" : "brand.480"}
             bg={isUserResearch ? "brand.200" : ""}
             onClick={() => {
@@ -90,45 +92,49 @@ const PrincipalTasks = () => {
             }}
             cursor={"pointer"}
           >
-            <Heading fontSize={"1.8rem"} pb="1rem">
+            <Heading fontSize={"1.8rem"} pb={{ base: "0", md: "1rem" }}>
               User Research
             </Heading>
-            <Text pb="2rem">
-              I initiated my process by having informal conversation small
-              business owners aiming to enhance customer retention through
-              innovative strategies beyond their usual approaches.
-            </Text>
-            <Text>
-              This approach allowed me to gain valuable insights and understand
-              their unique perspectives, paving the way for the development of
-              strategies tailored to meet their specific needs.
-            </Text>
+            <Box display={{ base: "none", md: "block" }}>
+              <Text pb="2rem">
+                I initiated my process by having informal conversation small
+                business owners aiming to enhance customer retention through
+                innovative strategies beyond their usual approaches.
+              </Text>
+              <Text>
+                This approach allowed me to gain valuable insights and
+                understand their unique perspectives, paving the way for the
+                development of strategies tailored to meet their specific needs.
+              </Text>
+            </Box>
           </Box>
           <Box
-            w={{ base: "100%", md: "48%" }}
+            w="48%"
+            py={{ base: "1rem", md: "3rem", lg: "4rem" }}
+            px={{ base: "1rem", md: "2rem", lg: "4rem" }}
             onClick={() => {
               setIsUserFlow(true);
               setIsUserResearch(false);
             }}
-            py="4rem"
-            px={{ base: "2rem", lg: "4rem" }}
             cursor={"pointer"}
             color={isUserFlow ? "brand.100" : "brand.480"}
             bg={isUserFlow ? "brand.200" : ""}
           >
             <Heading fontSize={"1.8rem"} pb="1rem">
-              Case Scenarios & User Flows
+              {isMobile ? " Case Scenarios" : " Case Scenarios & User Flows"}
             </Heading>
-            <Text pb="2rem">
-              I crafted a series of fictional case scenarios based on the key
-              insights gathered during my interview.
-            </Text>
-            <Text>
-              Prioritising the goals of specific users, I carefully outlined the
-              functional touch-points within the system where these users would
-              interact, providing a detailed roadmap for user engagement and
-              system interaction.
-            </Text>
+            <Box display={{ base: "none", md: "block" }}>
+              <Text pb="2rem">
+                I crafted a series of fictional case scenarios based on the key
+                insights gathered during my interview.
+              </Text>
+              <Text>
+                Prioritising the goals of specific users, I carefully outlined
+                the functional touch-points within the system where these users
+                would interact, providing a detailed roadmap for user engagement
+                and system interaction.
+              </Text>
+            </Box>
           </Box>
         </Flex>
         {isUserResearch && <UserResearch />}

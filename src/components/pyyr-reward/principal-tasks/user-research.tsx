@@ -1,5 +1,5 @@
 "use client";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,6 +10,7 @@ import userResearch3 from "../../../assets/images/pyyr-task3.webp";
 
 const UserResearch = () => {
   const userResearchImg = [userResearch1, userResearch2, userResearch3];
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   const settings = {
     centerMode: true,
@@ -26,6 +27,7 @@ const UserResearch = () => {
   return (
     <Box
       bg="brand.200"
+      boxShadow="0px 4px 35.099998474121094px 0px #0000000D"
       p={{ base: " 0rem 1rem 0rem 0rem", md: "2.5rem 3rem 2rem 2rem " }}
     >
       <Slider {...settings}>
@@ -54,7 +56,24 @@ const UserResearch = () => {
           
           `}
               </style>
-              <Flex justify={"center"}>
+              <Flex direction={"column"}>
+                <Box
+                  display={{ base: "block", md: "none" }}
+                  pb="2rem"
+                  pt="1rem"
+                >
+                  <Text pb="2rem">
+                    I initiated my process by having informal conversation small
+                    business owners aiming to enhance customer retention through
+                    innovative strategies beyond their usual approaches.
+                  </Text>
+                  <Text>
+                    This approach allowed me to gain valuable insights and
+                    understand their unique perspectives, paving the way for the
+                    development of strategies tailored to meet their specific
+                    needs.
+                  </Text>
+                </Box>
                 <Image
                   src={item}
                   alt="reviewers image"
@@ -67,6 +86,7 @@ const UserResearch = () => {
                     objectFit: "cover",
                     objectPosition: "center",
                     width: "100%",
+                    height: isMobile ? "26rem" : "100%",
                   }}
                 />
               </Flex>
