@@ -1,9 +1,17 @@
-import React from 'react'
+"use client";
+import LandingPage from "@/components/dobble/landing-page";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+import React from "react";
 
 const Dobble = () => {
   return (
-    <div>Dobble</div>
-  )
-}
+    <>
+      <Navbar />
+      <LandingPage />
+      <Footer />
+    </>
+  );
+};
 
-export default Dobble
+export default Dobble;

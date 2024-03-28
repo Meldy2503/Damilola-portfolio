@@ -37,7 +37,7 @@ const UserResearch = () => {
             .slick-dots li button:before {
               font-size: 1rem;
               color: #fff;
-               margin-top: -4rem;
+               margin-top: -5rem;
           }
           .slick-dots li.slick-active button:before {
               color: #fff;

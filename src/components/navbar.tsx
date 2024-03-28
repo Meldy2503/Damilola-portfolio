@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 
 import {
   Box,
@@ -21,10 +20,10 @@ import { Button } from "./button";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [currentMenu, setCurrentMenu] = useState("#home");
-  const handlecurrentMenu = (link: string) => {
-    setCurrentMenu(link);
+  const handleCurrentMenu = (linkName: string) => {
+    sessionStorage.setItem("currentMenu", linkName);
   };
+  const selectedPage = sessionStorage.getItem("currentMenu") || "Home";
 
   return (
     <Box
@@ -61,14 +60,11 @@ const Navbar = () => {
             return (
               <Box
                 key={index}
-                borderBottom={
-                  currentMenu === link.path ? "3px solid #ffffff" : "none"
+                className={
+                  selectedPage === link.name ? "nav-active" : "nav-links"
                 }
-                _hover={{
-                  borderBottom: "3px solid brand.200",
-                }}
                 onClick={() => {
-                  handlecurrentMenu(link.path);
+                  handleCurrentMenu(link.name);
                 }}
               >
                 <Link href={link.path}>{link.name}</Link>
@@ -103,24 +99,13 @@ const Navbar = () => {
                 return (
                   <Box
                     key={index}
-                    border="none"
-                    borderBottom={
-                      currentMenu === menu.path ? "3px solid #ffffff" : "none"
-                    }
-                    _hover={{
-                      borderBottom: "3px solid brand.200",
+                    className={selectedPage === menu.name ? "nav-active" : ""}
+                    onClick={() => {
+                      handleCurrentMenu(menu.name);
                     }}
                     color="brand.200"
                   >
-                    <Link
-                      href={menu.path}
-                      onClick={() => {
-                        handlecurrentMenu(menu.path);
-                        onClose();
-                      }}
-                    >
-                      {menu.name}
-                    </Link>
+                    <Link href={menu.path}>{menu.name}</Link>
                   </Box>
                 );
               })}
