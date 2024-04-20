@@ -32,7 +32,8 @@ const PrincipalTask = () => {
         gap={{ base: "6rem", md: "0" }}
         position={"relative"}
         color="white"
-      >
+        mb='2rem'
+       >
         {taskData.map((item, index) => {
           return (
             <Flex
