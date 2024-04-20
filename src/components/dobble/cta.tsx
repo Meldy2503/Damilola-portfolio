@@ -8,7 +8,7 @@ import Wrapper from "../wrapper";
 
 const Cta = () => {
   return (
-    <Wrapper bg="brand.200" borderTopWidth="2.5rem" borderTopColor="brand.700">
+    <Wrapper bg="brand.200" borderTopWidth="2.5rem" borderTopColor="brand.1150">
       <Flex direction="column" align={"center"} justify={"center"}>
         <Box>
           <Image
