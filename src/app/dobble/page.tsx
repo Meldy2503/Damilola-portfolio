@@ -1,4 +1,5 @@
 "use client";
+import Cta from "@/components/dobble/cta";
 import LandingPage from "@/components/dobble/landing-page";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
@@ -9,6 +10,8 @@ const Dobble = () => {
     <>
       <Navbar />
       <LandingPage />
+      <Cta />
+
       <Footer />
     </>
   );
