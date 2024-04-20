@@ -1,6 +1,6 @@
 "use client";
 
-import { expertiseData } from "@/utils/constants";
+import { expertiseData } from "@/utils/constants/home";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import divider from "../../assets/images/line.svg";

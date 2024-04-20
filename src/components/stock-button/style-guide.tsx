@@ -37,7 +37,7 @@ const StyleGuide = () => {
             fontWeight={"600"}
             mb="1rem"
           >
-            05
+            06
           </Text>
           <Heading fontSize={{ base: "3rem", xl: "4rem" }} fontWeight={"600"}>
             Style Guide

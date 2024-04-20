@@ -1,6 +1,6 @@
 "use client";
 
-import { igetguyArtisansCards } from "@/utils/constants";
+import { igetguyArtisansCards } from "@/utils/constants/igetguy";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 

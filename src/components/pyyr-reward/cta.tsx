@@ -2,45 +2,60 @@
 
 import { Box, Flex, HStack, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import authurImg from "../../assets/images/authur2.webp";
-import vector from "../../assets/images/headerIcon.svg";
+import authurImg from "../../assets/images/dami-img.png";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
 
 const Cta = () => {
   return (
     <Wrapper bg="brand.200" borderTopWidth="2.5rem" borderTopColor="brand.1000">
-      <Flex
-        direction={{ base: "column", md: "row" }}
-        boxShadow="0px 4px 30px 0px #C1BAF8B2"
-        borderRadius={"3rem"}
-      >
+      <Flex direction="column" align={"center"} justify={"center"}>
+        <Box>
+          <Image
+            src={authurImg}
+            alt="author's photo"
+            width={1000}
+            height={100}
+            unoptimized={true}
+            quality={100}
+            style={{
+              maxWidth: "100%",
+              objectFit: "cover",
+              objectPosition: "center",
+              borderRadius: "50%",
+              height: "15rem",
+              width: "15rem",
+            }}
+          />
+        </Box>
         <Flex
-          w={{ base: "100%", md: "55%" }}
+          align={"center"}
           justify={"center"}
           pt={{ base: "3rem", xl: "0rem" }}
           direction="column"
-          px={{ base: "2rem", xl: "7rem" }}
+          textAlign={"center"}
         >
-          <Text fontSize="1.8rem" fontWeight="bold" mb="1rem">
-            You saw the end of this project! 🥳
+          <Heading
+            mt={{ base: "0", xl: "2rem" }}
+            fontSize={{ base: "2.8rem", lg: "3.3rem" }}
+            fontWeight={"800"}
+            lineHeight={1.4}
+          >
+            This should be your cue to Hire Me!{" "}
+          </Heading>
+
+          <Text py="2rem" w={{ base: "100%", md: "70%" }} fontSize={"1.8rem"}>
+            I appreciate that you took your time to uncover insights about this
+            project. This is to hoping i get to work with you!
           </Text>
-          <Box position="relative" py="3rem">
-            <Heading
-              fontSize={{ base: "2.8rem", lg: "3.5rem" }}
-              fontWeight={"600"}
-              lineHeight={1.4}
-            >
-              Thank you! for sticking till the very end.
-            </Heading>
-            <Box pos={"absolute"} top="0" left={{ base: "-1rem", md: "-2rem" }}>
-              <Image src={vector} alt="text icon" height={40} width={40} />
-            </Box>
-          </Box>
 
-          <Text>Would you like to hire me?</Text>
-
-          <HStack spacing={6} flexWrap={"wrap"} mt="2rem" mb="3rem">
+          <HStack
+            spacing={6}
+            flexWrap={"wrap"}
+            mt="2rem"
+            mb="3rem"
+            justify={"center"}
+          >
             <Button
               path="/"
               isIcon
@@ -59,25 +74,9 @@ const Cta = () => {
             />
           </HStack>
         </Flex>
-        <Box w={{ base: "100%", md: "45%" }} p="3rem">
-          <Image
-            src={authurImg}
-            alt="author's photo"
-            width={1000}
-            height={100}
-            unoptimized={true}
-            quality={100}
-            style={{
-              maxWidth: "100%",
-              objectFit: "cover",
-              objectPosition: "center",
-            }}
-          />
-        </Box>
       </Flex>
     </Wrapper>
   );
 };
 
 export default Cta;
-

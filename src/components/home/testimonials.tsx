@@ -1,6 +1,6 @@
 "use client";
 
-import { testimonialData } from "@/utils/constants";
+import { testimonialData } from "@/utils/constants/home";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Slider from "react-slick";
@@ -134,13 +134,11 @@ const Testimonials = () => {
                      color: #ffffff;
                     font-size: 2rem;
                   }
-                
                    .slick-center {
                     transform: scale(1.15);
                     position: relative;
                     z-index: 1;
-                  } 
-                  
+                  }  
                 `}
                 </style>
                 <Flex justify={"center"}>

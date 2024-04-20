@@ -37,13 +37,20 @@ const Achievements = () => {
         </Box>
         <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
-            From my chat with the product owner, we zeroed in on a major success
-            metric: customer acquisition. Our target was to{" "}
-            <b>onboard the initial 100 Merchants</b> and{" "}
-            <b>80 Brands within the first two months post-implementation</b>.
-            Thanks to a solid marketing strategy, we nailed
-            <b>75%</b> of this goal, boasting an <b>80%</b> product acceptance
-            rate by businesses and an impressive 90% acceptance rate by brands
+            The primary business goal for this product was to attract talented
+            and experienced artisans, as the company believed that having
+            skilled artisans onboard would lead to increased user adoption and
+            revenue generation. <br /> <br /> To achieve the latter, I implemented the
+            recommended services feature, which highlights artisans on more
+            expensive payment plans. This feature resulted in a 30% increase in
+            visibility for artisans on the recommended list compared to those
+            who were not.  <br /> <br /> For the former goal, I focused on simplifying the
+            onboarding process and ensuring the product's aesthetic appeal. The
+            target was to onboard 50 artisans in the first month, and to achieve
+            this, the product was introduced to the Artisan Association before
+            the launch, resulting in an 85% product acceptance rate. <br /> <br /> Following
+            the product launch, the business successfully reached 65% of its
+            revenue goal from artisans subscribing to the app
           </Text>
           <Button
             path="/"

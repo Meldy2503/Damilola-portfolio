@@ -1,8 +1,6 @@
 "use client";
 
-import { stockButtonImg, stockIntroCards } from "@/utils/constants";
 import { Box, Flex, HStack, Heading, Text } from "@chakra-ui/react";
-import Image from "next/image";
 import { useState } from "react";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 import {
@@ -10,31 +8,17 @@ import {
   IoIosArrowUp,
   IoMdNotificationsOutline,
 } from "react-icons/io";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
+import { stockIntroCards } from "@/utils/constants/stock-button";
 
-const Introduction = () => {
+const Solution = () => {
   const [expandedIndex, setExpandedIndex] = useState(-1);
 
   const handleShowMore = (index: number) => {
     setExpandedIndex(index === expandedIndex ? -1 : index);
-  };
-
-  const settings = {
-    centerMode: true,
-    infinite: true,
-
-    centerPadding: "0px",
-    slidesToShow: 1,
-    speed: 500,
-    dots: true,
-    slidesToScroll: 1,
-    autoplay: true,
-    adaptiveHeight: true,
-    arrows: false,
   };
   return (
     <Wrapper
@@ -47,87 +31,33 @@ const Introduction = () => {
     >
       <Flex
         justify={"space-between"}
-        align={"center"}
-        gap="3rem"
+        gap="2rem"
         direction={{
-          base: "column-reverse",
+          base: "column",
           md: "row",
         }}
       >
-        <Box
-          w={{ base: "100%", md: "46%" }}
-          position={"relative"}
-          zIndex={"100"}
-        >
-          <Slider {...settings}>
-            {stockButtonImg.map((item, index) => {
-              return (
-                <Box key={index}>
-                  <style>
-                    {`
-                  .slick-dots li button:before {
-                    font-size: 1rem;
-                    color: #000;
-                     margin-top: -10rem;
-                }
-                .slick-dots li.slick-active button:before {
-                    color: #000;
-                    font-size: 2rem;    
-                  }
-
-                  .slick-center {
-                     transform: scale(1);
-                    
-                  }
-                
-                `}
-                  </style>
-                  <Flex justify={"center"}>
-                    <Image
-                      src={item}
-                      alt="reviewers image"
-                      height={1200}
-                      width={1200}
-                      unoptimized={true}
-                      quality={100}
-                      style={{
-                        maxWidth: "100%",
-                        objectFit: "cover",
-                        objectPosition: "center",
-                        width: "100%",
-                      }}
-                    />
-                  </Flex>
-                </Box>
-              );
-            })}
-          </Slider>
-        </Box>
-        <Box w={{ base: "100%", md: "47%" }}>
+        <Box w={{ base: "100%", md: "35%" }}>
           <Text
             fontSize={"2.8rem"}
             color="brand.480"
             fontWeight={"600"}
             mb="1rem"
           >
-            01
+            03
           </Text>
           <Heading fontSize={{ base: "3rem", xl: "4rem" }} fontWeight={"600"}>
-            Introduction
+            The Solution
           </Heading>
+        </Box>
 
+        <Box w={{ base: "100%", md: "60%" }}>
           <Text py="2rem">
-            Acknowledging the presence of a well-established e-commerce
-            software, The major challenge has been the <b>delayed awareness</b>{" "}
-            of stock levels for specific items which has resulted in{" "}
-            <b>inaccurate product demand forecasting</b> from suppliers,
-            occasionally leading to popular products running out of stock before
-            replenishment. Consequently, this situation had led to missed sales{" "}
-            <b>opportunities</b>, potential <b>customer dissatisfaction</b> and
-            a <b>decline in overall revenue generated</b>. In light of these
-            challenges, the project scope was delineated into four distinct
-            parts;
+            After conducting series of research, i was able to identify the core
+            features necessary to help eradicate the problem identified. These
+            features are delineated into four distinct parts;
           </Text>
+
           <Button
             path="/"
             isIcon
@@ -142,6 +72,7 @@ const Introduction = () => {
           />
         </Box>
       </Flex>
+
       <Box mt={{ base: "5rem", md: "7rem" }}>
         <Text color="brand.480" fontWeight={"600"} mb="1rem">
           Core Features Introduced{" "}
@@ -226,4 +157,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default Solution;

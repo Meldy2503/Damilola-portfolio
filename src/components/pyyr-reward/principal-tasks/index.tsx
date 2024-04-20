@@ -73,7 +73,7 @@ const PrincipalTasks = () => {
       </Flex>
       <Box mt="8rem">
         <Text fontWeight={"600"} mb="1.5rem">
-          Core routes i took{" "}
+          {isUserResearch ? 'Core routes i took' : 'Core Stops before Hi-Fi'}
         </Text>
         <Flex
           justify={"space-between"}

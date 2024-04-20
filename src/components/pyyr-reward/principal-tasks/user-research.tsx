@@ -6,10 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import userResearch1 from "../../../assets/images/pyyr-task1.webp";
 import userResearch2 from "../../../assets/images/pyyr-task2.webp";
-import userResearch3 from "../../../assets/images/pyyr-task3.webp";
 
 const UserResearch = () => {
-  const userResearchImg = [userResearch1, userResearch2, userResearch3];
+  const userResearchImg = [userResearch1, userResearch2];
   const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   const settings = {

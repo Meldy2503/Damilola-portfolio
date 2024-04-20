@@ -1,6 +1,6 @@
 "use client";
 
-import { stockHifiCards } from "@/utils/constants";
+import { stockHifiCards } from "@/utils/constants/stock-button";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { HiOutlineArrowSmUp } from "react-icons/hi";
@@ -31,7 +31,7 @@ const HifiDesigns = () => {
             fontWeight={"600"}
             mb="1rem"
           >
-            03
+            04
           </Text>
           <Heading fontSize={{ base: "3rem", xl: "4rem" }} fontWeight={"600"}>
             Hi-Fi Designs{" "}

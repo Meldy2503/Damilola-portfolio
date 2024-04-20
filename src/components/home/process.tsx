@@ -1,6 +1,6 @@
 "use client";
 
-import { processData } from "@/utils/constants";
+import { processData } from "@/utils/constants/home";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import textPattern from "../../assets/images/text-pattern.svg";

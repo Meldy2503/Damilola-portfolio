@@ -1,11 +1,14 @@
 "use client";
 
-import { pyyrIntroCards1, pyyrIntroCards2 } from "@/utils/constants";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 
+import {
+  pyyrIntroCards1,
+  pyyrIntroCards2,
+} from "@/utils/constants/pyyr-reward";
 import introImg from "../../assets/images/pyyr-intro.webp";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
@@ -35,7 +38,7 @@ const Introduction = () => {
             alt="reviewers image"
             height={1200}
             width={1200}
-               unoptimized={true}
+            unoptimized={true}
             quality={100}
             style={{
               maxWidth: "100%",
@@ -96,7 +99,7 @@ const Introduction = () => {
         </Box>
       </Flex>
       <Box mt={{ base: "5rem", md: "7rem" }}>
-        <Text color="brand.480" fontWeight={"600"} mb="1.5rem">
+        <Text color="brand.950" fontWeight={"600"} mb="1.5rem">
           For Merchants
         </Text>
         <Flex
@@ -146,7 +149,7 @@ const Introduction = () => {
         </Flex>
       </Box>
       <Box mt={{ base: "5rem", md: "8rem" }}>
-        <Text color="brand.480" fontWeight={"600"} mb="1rem">
+        <Text color="brand.950" fontWeight={"600"} mb="1rem">
           For Brands
         </Text>
         <Flex

@@ -51,17 +51,17 @@ const Hifi = () => {
         </Box>
         <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
-            Before i came up with the features stated above, I outlined key
-            objectives for the product and devised steps to achieve them. I
-            conducted a comprehensive competitive analysis, utilizing SWOT
-            analysis to pinpoint gaps where our product could excel.
+            Based on the sketches of the low-fidelity designs, I had a clear
+            vision of what I wanted the high-fidelity designs to look like.
+            Since the client emphasized visuals and wanted to see the end
+            results, the low-fi phase was more of a foundation rather than a
+            detailed focus.
           </Text>
           <Text pb="3rem">
-            Additionally, I held informal interviews with friends who fit our
-            target end-user profile. This allowed me to create two detailed User
-            Personas. I also analyzed the strengths and weaknesses of two major
-            competing brands, namely, &quot;Task Rabbit&quot; and &quot;Urban
-            Clap.&quot;
+            These sketches serve as the groundwork for what I built upon. The
+            high-fidelity designs feature closely knitted features(for both
+            artisans and end users) with distinct functionalities, ensuring a
+            cohesive yet versatile user experience.
           </Text>
           <Button
             path="/"

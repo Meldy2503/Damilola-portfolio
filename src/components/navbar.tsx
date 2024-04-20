@@ -1,6 +1,5 @@
 "use client";
 
-
 import {
   Box,
   Drawer,
@@ -15,8 +14,8 @@ import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "../assets/images/white-logo.svg";
-import { menuData } from "../utils/constants";
 import { Button } from "./button";
+import { menuData } from "@/utils/constants";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

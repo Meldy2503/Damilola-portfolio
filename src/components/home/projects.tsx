@@ -1,6 +1,6 @@
 "use client";
 
-import { projectData } from "@/utils/constants";
+import { projectData } from "@/utils/constants/home";
 import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";

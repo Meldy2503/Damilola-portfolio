@@ -1,6 +1,6 @@
 "use client";
 
-import { pyyrHifiBrandCards } from "@/utils/constants";
+import { pyyrHifiBrandCards } from "@/utils/constants/pyyr-reward";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 

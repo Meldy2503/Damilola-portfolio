@@ -1,6 +1,9 @@
 "use client";
 
-import { igetguyIntroCards1, igetguyIntroCards2 } from "@/utils/constants";
+import {
+  igetguyIntroCards1,
+  igetguyIntroCards2,
+} from "@/utils/constants/igetguy";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
@@ -57,11 +60,40 @@ const Introduction = () => {
           </Heading>
 
           <Text py="2rem">
-            <i>I get guy</i>, is a word derived from Nigerian&apos;s local
-            parlance called
-            <i>&quot;Pidgin&quot;</i> which means to{" "}
-            <i>&quot;Have a Guy&quot;</i> , also known as{" "}
-            <i>&quot;Have Someone&quot; </i>
+            <i
+              style={{
+                color: "#FFF",
+              }}
+            >
+              I get guy
+            </i>
+            , is a word derived from Nigerian&apos;s local parlance called
+            <i
+              style={{
+                color: "#FFF",
+                padding: "0 0.7rem",
+              }}
+            >
+              &quot;Pidgin&quot;
+            </i>
+            which means to
+            <i
+              style={{
+                color: "#FFF",
+                padding: "0 0.7rem",
+              }}
+            >
+              &quot;Have a Guy&quot;,
+            </i>
+            also known as
+            <i
+              style={{
+                color: "#FFF",
+                padding: "0 0.7rem",
+              }}
+            >
+              &quot;Have Someone&quot;
+            </i>
             trusted to get a job done. <br /> <br /> The aim of this project was
             to design a solution that offers local artisans an online platform,
             enabling customers within their vicinity to easily locate and
