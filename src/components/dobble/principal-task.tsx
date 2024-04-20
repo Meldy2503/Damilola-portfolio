@@ -1,14 +1,9 @@
 "use client";
 
-import { expertiseData } from "@/utils/constants/home";
+import { taskData } from "@/utils/constants/dobble";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import divider from "../../assets/images/line.svg";
-import textPattern4 from "../../assets/images/text-pattern4.svg";
-import Title from "../heading";
-import Tags from "../tags";
 import Wrapper from "../wrapper";
-import { taskData } from "@/utils/constants/dobble";
 
 const PrincipalTask = () => {
   return (

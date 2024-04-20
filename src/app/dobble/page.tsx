@@ -1,6 +1,7 @@
 "use client";
 import Achievements from "@/components/dobble/achievements";
 import Cta from "@/components/dobble/cta";
+import Introduction from "@/components/dobble/introduction";
 import LandingPage from "@/components/dobble/landing-page";
 import PrincipalTask from "@/components/dobble/principal-task";
 import Footer from "@/components/footer";
@@ -12,6 +13,7 @@ const Dobble = () => {
     <>
       <Navbar />
       <LandingPage />
+      <Introduction />
       <PrincipalTask />
       <Achievements />
       <Cta />
