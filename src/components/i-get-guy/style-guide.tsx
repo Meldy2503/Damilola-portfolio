@@ -42,10 +42,10 @@ const StyleGuide = () => {
         <Box w={{ base: "100%", md: "60%" }}>
           <Text pb="2rem">
             To design the mobile app, I adhered to a carefully crafted style
-            guide that served as the foundation for the app&apos;s visual and user
-            interface elements. The style guide outlined the consistent design
-            principles, color schemes, typography, and iconography to ensure a
-            cohesive and user-friendly experience.
+            guide that served as the foundation for the app&apos;s visual and
+            user interface elements. The style guide outlined the consistent
+            design principles, color schemes, typography, and iconography to
+            ensure a cohesive and user-friendly experience.
           </Text>
           <Button
             path="/"
@@ -82,6 +82,7 @@ const StyleGuide = () => {
               alt="stock button style guide"
               height={1000}
               width={1000}
+              placeholder="blur"
               unoptimized={true}
               quality={100}
               style={{
@@ -97,6 +98,7 @@ const StyleGuide = () => {
               alt="stock button style guide"
               height={1000}
               width={1000}
+              placeholder="blur"
               unoptimized={true}
               quality={100}
               style={{
@@ -115,6 +117,7 @@ const StyleGuide = () => {
             width={1000}
             unoptimized={true}
             quality={100}
+            placeholder="blur"
             style={{
               maxWidth: "100%",
               objectFit: "cover",
@@ -137,6 +140,7 @@ const StyleGuide = () => {
               width={1000}
               unoptimized={true}
               quality={100}
+              placeholder="blur"
               style={{
                 maxWidth: "100%",
                 objectFit: "cover",
@@ -150,6 +154,7 @@ const StyleGuide = () => {
               alt="stock button style guide"
               height={1000}
               width={1000}
+              placeholder="blur"
               unoptimized={true}
               quality={100}
               style={{

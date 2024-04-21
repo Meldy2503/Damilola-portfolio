@@ -14,6 +14,7 @@ const CompetitiveAnalysis = () => {
           height={1200}
           width={1200}
           unoptimized={true}
+          placeholder="blur"
           quality={100}
           style={{
             maxWidth: "100%",

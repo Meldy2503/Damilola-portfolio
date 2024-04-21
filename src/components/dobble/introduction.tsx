@@ -45,6 +45,7 @@ const Introduction = () => {
           alt="intro images"
           width={1200}
           height={1200}
+          placeholder="blur"
           unoptimized={true}
           quality={100}
           style={{

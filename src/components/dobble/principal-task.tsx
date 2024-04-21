@@ -60,6 +60,8 @@ const PrincipalTask = () => {
                   alt="expert images"
                   width={1200}
                   height={1200}
+                  placeholder="blur"
+                  blurDataURL={item.img.blurDataURL}
                   unoptimized={true}
                   quality={100}
                   style={{

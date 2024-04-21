@@ -67,6 +67,7 @@ const LandingPage = () => {
             <Image
               src={arthurImage}
               alt="author's photo"
+              placeholder="blur"
               width={1000}
               height={1000}
               unoptimized={true}

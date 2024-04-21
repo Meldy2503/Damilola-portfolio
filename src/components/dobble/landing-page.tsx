@@ -59,7 +59,9 @@ const LandingPage = () => {
             alt="dobble image"
             width={800}
             height={800}
+            placeholder="blur"
             unoptimized={true}
+            priority
             quality={100}
             style={{
               maxWidth: "100%",

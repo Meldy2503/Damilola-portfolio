@@ -78,6 +78,8 @@ const UserResearch = () => {
                   alt="reviewers image"
                   height={1200}
                   width={1200}
+                  placeholder="blur"
+                  blurDataURL={item.blurDataURL}
                   unoptimized={true}
                   quality={100}
                   style={{

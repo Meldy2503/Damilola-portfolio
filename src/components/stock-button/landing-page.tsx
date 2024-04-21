@@ -54,6 +54,7 @@ const LandingPage = () => {
                 width={1200}
                 height={800}
                 unoptimized={true}
+                placeholder="blur"
                 quality={100}
                 style={{
                   maxWidth: "100%",

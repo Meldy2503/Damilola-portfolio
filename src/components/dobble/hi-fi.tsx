@@ -1,14 +1,18 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Wrapper from "@/components/wrapper";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-
 import { Button } from "@/components/button";
 import { dobbleHifiCards } from "@/utils/constants/dobble";
 import Image from "next/image";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 
 const Hifi = () => {
+
+ 
+  
+
   return (
     <Wrapper bg="brand.1050">
       <Flex
@@ -99,7 +103,9 @@ const Hifi = () => {
                     alt="hi-fi images"
                     width={800}
                     height={800}
+                    placeholder="blur"
                     unoptimized={true}
+                    blurDataURL={items.img.blurDataURL}
                     quality={100}
                     style={{
                       maxWidth: "100%",

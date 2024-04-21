@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
 import { stockTaskCards } from "@/utils/constants/stock-button";
+
 const PrincipalTask = () => {
   const settings = {
     centerMode: true,
@@ -133,6 +134,8 @@ const PrincipalTask = () => {
                                 alt="task image"
                                 height={1000}
                                 width={1200}
+                                placeholder="blur"
+                                blurDataURL={images.blurDataURL}
                                 unoptimized={true}
                                 quality={100}
                                 style={{

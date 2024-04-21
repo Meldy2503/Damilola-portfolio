@@ -17,6 +17,7 @@ const Cta = () => {
             width={1000}
             height={100}
             unoptimized={true}
+            placeholder="blur"
             quality={100}
             style={{
               maxWidth: "100%",

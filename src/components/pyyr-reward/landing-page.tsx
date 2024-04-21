@@ -60,6 +60,7 @@ const LandingPage = () => {
             width={800}
             height={800}
             unoptimized={true}
+            priority
             quality={100}
             style={{
               maxWidth: "100%",

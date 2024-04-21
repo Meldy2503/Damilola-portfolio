@@ -29,6 +29,7 @@ const Introduction = () => {
             alt="intro image"
             height={1200}
             width={1200}
+            placeholder="blur"
             unoptimized={true}
             quality={100}
             style={{

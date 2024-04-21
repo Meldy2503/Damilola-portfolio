@@ -16,6 +16,7 @@ const Cta = () => {
             alt="author's photo"
             width={1000}
             height={100}
+            placeholder="blur"
             unoptimized={true}
             quality={100}
             style={{

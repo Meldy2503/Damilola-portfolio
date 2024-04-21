@@ -26,6 +26,8 @@ const Artisans = () => {
                 alt="Artisans"
                 width={800}
                 height={800}
+                placeholder="blur"
+                blurDataURL={items.img.blurDataURL}
                 unoptimized={true}
                 quality={100}
                 style={{

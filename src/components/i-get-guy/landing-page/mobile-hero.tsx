@@ -44,6 +44,7 @@ const MobileLandingPage = () => {
           width={1200}
           height={1200}
           unoptimized={true}
+          placeholder="blur"
           quality={100}
           style={{
             maxWidth: "100%",

@@ -87,6 +87,8 @@ const HifiDesigns = () => {
                       alt="stock button"
                       width={index === 3 ? 850 : 1050}
                       height={1000}
+                      placeholder="blur"
+                      blurDataURL={items.img.blurDataURL}
                       unoptimized={true}
                       quality={100}
                       style={{

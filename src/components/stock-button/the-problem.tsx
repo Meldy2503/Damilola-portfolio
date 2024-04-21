@@ -14,7 +14,6 @@ const Problem = () => {
   const settings = {
     centerMode: true,
     infinite: true,
-
     centerPadding: "0px",
     slidesToShow: 1,
     speed: 500,
@@ -76,6 +75,8 @@ const Problem = () => {
                       alt="reviewers image"
                       height={1200}
                       width={1200}
+                      placeholder="blur"
+                      blurDataURL={item.blurDataURL}
                       unoptimized={true}
                       quality={100}
                       style={{

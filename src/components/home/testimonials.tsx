@@ -147,6 +147,8 @@ const Testimonials = () => {
                     alt="reviewers image"
                     height={200}
                     width={200}
+                    placeholder="blur"
+                    blurDataURL={item.img.blurDataURL}
                     style={{
                       maxWidth: "100%",
                       objectFit: "cover",

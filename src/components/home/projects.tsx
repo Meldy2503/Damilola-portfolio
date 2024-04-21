@@ -69,6 +69,8 @@ const Projects = () => {
                       height={1200}
                       width={1200}
                       unoptimized={true}
+                      placeholder="blur"
+                      blurDataURL={project.img.blurDataURL}
                       quality={100}
                       style={{
                         maxWidth: "100%",
@@ -86,7 +88,7 @@ const Projects = () => {
                     >
                       <Image
                         src={project.icon}
-                        alt="project image"
+                        alt="project icon"
                         height={1000}
                         width={1000}
                         unoptimized={true}

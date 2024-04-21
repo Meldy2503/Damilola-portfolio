@@ -24,6 +24,7 @@ const MerchantView = () => {
             alt="Merchant image"
             width={1200}
             height={800}
+            placeholder="blur"
             unoptimized={true}
             quality={100}
             style={{
