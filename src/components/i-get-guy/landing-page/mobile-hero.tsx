@@ -7,7 +7,7 @@ import Back from "../../back";
 
 const MobileLandingPage = () => {
   return (
-    <Flex justify={"center"} align={"center"} direction="column" pt="12rem">
+    <Flex justify={"center"} align={"center"} direction="column" pt="12rem" id='igetguy-home'>
       <Box flex={1} width="90%" mx="auto">
         <Back name="I Get Guy" />
         <Heading fontSize={{base: '3.5rem', sm: '3.8rem'}} pb="2rem" fontWeight={600} lineHeight={1.4}>

@@ -12,7 +12,7 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
-import { HiOutlineArrowSmDown } from "react-icons/hi";
+import { HiOutlineArrowSmUp } from "react-icons/hi";
 import BrandView from "./brand-view";
 import MerchantView from "./merchant-view";
 
@@ -24,6 +24,7 @@ const HiFi = () => {
       borderTopColor="brand.1000"
       borderBottomWidth="2.5rem"
       borderBottomColor="brand.950"
+      id='pyyr-hifi'
     >
       <Flex
         justify={"space-between"}
@@ -58,16 +59,17 @@ const HiFi = () => {
           </Text>
 
           <Button
-            path="/"
+            href="#pyyr-home"
             isIcon
-            btnText="Scroll to Merchant View"
+            btnText="Back to Top"
             color="brand.200"
             borderRadius="1rem"
             bg="brand.100"
-            icon={HiOutlineArrowSmDown}
+            icon={HiOutlineArrowSmUp}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
       </Flex>

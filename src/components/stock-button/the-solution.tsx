@@ -59,7 +59,7 @@ const Solution = () => {
           </Text>
 
           <Button
-            path="/"
+            href="#hifi"
             isIcon
             btnText="View Hi-Fi"
             color="brand.200"
@@ -69,6 +69,7 @@ const Solution = () => {
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
       </Flex>

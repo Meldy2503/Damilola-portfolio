@@ -53,7 +53,7 @@ const LowFi = () => {
             into the High Fidelity design phase.
           </Text>
           <Button
-            path="/"
+            href="#igetguy-hifi"
             isIcon
             btnText="View Hi-Fi"
             borderRadius="1rem"
@@ -63,6 +63,7 @@ const LowFi = () => {
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
         <Box

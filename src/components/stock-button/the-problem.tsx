@@ -120,7 +120,7 @@ const Problem = () => {
             <b>decline in overall revenue generated.</b>
           </Text>
           <Button
-            path="/"
+            href="#hifi"
             isIcon
             btnText="View Hi-Fi"
             color="brand.200"
@@ -130,6 +130,7 @@ const Problem = () => {
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
       </Flex>

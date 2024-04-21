@@ -5,6 +5,7 @@ import Image from "next/image";
 import authurImg from "../../assets/images/authur2.webp";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
+import { handleCurrentMenu } from "@/utils/functions";
 
 const Cta = () => {
   return (
@@ -58,7 +59,10 @@ const Cta = () => {
             justify={"center"}
           >
             <Button
-              path="/"
+              path="/contact-me"
+              onClick={() => {
+                handleCurrentMenu('contact me');
+              }}
               isIcon
               btnText="Contact me"
               bg="brand.100"
@@ -67,7 +71,10 @@ const Cta = () => {
             />
             <Text>or</Text>
             <Button
-              path="/pyyr-reward"
+              path="/dobble"
+              onClick={() => {
+                handleCurrentMenu("Dobble");
+              }}
               isIcon
               boxShadow="0px 2px 25px 0px #0000001F"
               btnText="See Next Project"

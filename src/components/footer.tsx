@@ -8,6 +8,7 @@ import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import Logo from "../assets/images/black-logo.svg";
 import { Button } from "./button";
 import Wrapper from "./wrapper";
+import { handleCurrentMenu } from "@/utils/functions";
 
 const Footer = () => {
   const socials = ["Email", "Resume", "LinkedIn", "Twitter", "Medium"];
@@ -70,7 +71,9 @@ const Footer = () => {
             flexWrap={"wrap"}
           >
             <Text>Would you like to hire me?</Text>
-            <Button path="/" isIcon btnText="Contact me" btnGap="3rem" />
+            <Button path="/contact-me"  onClick={() => {
+              handleCurrentMenu('contact me');
+            }} isIcon btnText="Contact me" btnGap="3rem" />
           </Flex>
           <Box>
             <Flex

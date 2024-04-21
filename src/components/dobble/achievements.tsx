@@ -50,7 +50,7 @@ const Achievements = () => {
             lesser amount of time.
           </Text>
           <Button
-            path="/"
+            href="#dobble-home"
             isIcon
             btnText="Back to Top"
             color="brand.200"
@@ -60,6 +60,7 @@ const Achievements = () => {
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
       </Flex>

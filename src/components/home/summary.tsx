@@ -5,6 +5,7 @@ import Image from "next/image";
 import authurImg from "../../assets/images/summary.webp";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
+import { handleCurrentMenu } from "@/utils/functions";
 
 const Summary = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -35,7 +36,9 @@ const Summary = () => {
 
           <Text py="2rem">In that case;</Text>
 
-          <Button path="/" isIcon btnText="Hire me" btnGap="6rem" />
+          <Button path="/contact-me"  onClick={() => {
+              handleCurrentMenu('contact me');
+            }} isIcon btnText="Hire me" btnGap="6rem" />
         </Flex>
         <Box
           w={{ base: "100%", md: "50%" }}

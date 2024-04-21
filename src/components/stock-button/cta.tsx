@@ -6,6 +6,7 @@ import authurImg from "../../assets/images/authur2.webp";
 import vector from "../../assets/images/headerIcon.svg";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
+import { handleCurrentMenu } from "@/utils/functions";
 
 const Cta = () => {
   return (
@@ -42,7 +43,10 @@ const Cta = () => {
 
           <HStack spacing={6} flexWrap={"wrap"} mt="2rem" mb="3rem">
             <Button
-              path="/"
+              path="/contact-me"
+              onClick={() => {
+                handleCurrentMenu('contact me');
+              }}
               isIcon
               btnText="Contact me"
               bg="brand.100"
@@ -52,6 +56,9 @@ const Cta = () => {
             <Text>or</Text>
             <Button
               path="/pyyr-reward"
+              onClick={() => {
+                handleCurrentMenu("Pyyr Reward");
+              }}
               isIcon
               boxShadow="0px 2px 25px 0px #0000001F"
               btnText="See Next Project"

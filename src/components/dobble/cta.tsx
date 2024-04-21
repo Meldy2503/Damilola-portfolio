@@ -5,6 +5,7 @@ import Image from "next/image";
 import authurImg from "../../assets/images/authur2.webp";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
+import { handleCurrentMenu } from "@/utils/functions";
 
 const Cta = () => {
   return (
@@ -52,7 +53,10 @@ const Cta = () => {
 
           <HStack mt="2rem" mb="3rem" justify={"center"}>
             <Button
-              path="/"
+              path="/contact-me"
+              onClick={() => {
+                handleCurrentMenu('contact me');
+              }}
               isIcon
               btnText="Contact me"
               bg="brand.100"

@@ -58,9 +58,9 @@ const PrincipalTasks = () => {
             businesses to run reward programs.
           </Text>
           <Button
-            path="/"
+            href="#pyyr-hifi"
             isIcon
-            btnText="View  Hi-Fi"
+            btnText="View Hi-Fi"
             color="brand.200"
             borderRadius="1rem"
             bg="brand.100"
@@ -68,6 +68,7 @@ const PrincipalTasks = () => {
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
       </Flex>

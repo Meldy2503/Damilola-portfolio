@@ -51,7 +51,7 @@ const PrincipalTask = () => {
               }}
             >
               <Box
-                w={{ base: "100%", md: "40%" }}
+                w={{ base: "100%", md: "45%" }}
                 position={"relative"}
                 zIndex={"100"}
               >
@@ -71,7 +71,7 @@ const PrincipalTask = () => {
                   }}
                 />
               </Box>
-              <Box w={{ base: "100%", md: "40%" }}>
+              <Box w={{ base: "100%", md: "45%" }}>
                 <Text py="2rem">{item.subTitle}</Text>
 
                 <Heading

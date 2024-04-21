@@ -16,6 +16,7 @@ const DesktopLandingPage = () => {
       justify={"center"}
       h={{ base: "100%", lg: "100vh" }}
       color="brand.200"
+      id='igetguy-home'
     >
       <Flex
         justify={"space-between"}

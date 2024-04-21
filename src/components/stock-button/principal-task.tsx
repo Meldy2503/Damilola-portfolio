@@ -65,7 +65,7 @@ const PrincipalTask = () => {
             wireframe to visually represent these flows.
           </Text>
           <Button
-            path="/"
+            href="#hifi"
             isIcon
             btnText="View Hi-Fi"
             color="brand.200"
@@ -75,6 +75,7 @@ const PrincipalTask = () => {
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
       </Flex>

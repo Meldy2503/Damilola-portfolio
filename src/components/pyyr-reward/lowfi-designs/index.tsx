@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@/components/button";
 import Wrapper from "@/components/wrapper";
 import {
   Box,
@@ -11,8 +12,7 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
-import { Button } from "@/components/button";
-import { HiOutlineArrowSmRight } from "react-icons/hi";
+import { HiOutlineArrowSmDown } from "react-icons/hi";
 import BrandView from "./brand-view";
 import MerchantView from "./merchant-view";
 
@@ -61,16 +61,17 @@ const LowFi = () => {
             iterations and improvements
           </Text>
           <Button
-            path="/"
+            href="#pyyr-hifi"
             isIcon
-            btnText="Switch Screens"
+            btnText="View Hi-Fi"
             color="brand.200"
             borderRadius="1rem"
             bg="brand.100"
-            icon={HiOutlineArrowSmRight}
+            icon={HiOutlineArrowSmDown}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
       </Flex>

@@ -6,7 +6,8 @@ import React from "react";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 interface BtnProps {
-  path: string;
+  path?: any;
+  href?: any;
   children?: React.ReactNode;
   onClick?: () => void;
   py?: string;
@@ -25,6 +26,7 @@ interface BtnProps {
   icon?: any;
   boxShadow?: string;
   iconW?: string;
+  isAnchorBtn?: boolean;
 }
 
 export const Button = ({
@@ -35,11 +37,13 @@ export const Button = ({
   fontSize,
   ClassName,
   path,
+  href,
   borderRadius,
   color,
   bg,
   border,
   fontWeight,
+  isAnchorBtn,
   iconColor,
   isIcon,
   btnText,
@@ -67,22 +71,41 @@ export const Button = ({
       bg={bg ?? "brand.200"}
       border={border ?? "none"}
     >
-      <Link href={path}>
-        {children ?? (
-          <Flex gap={btnGap ?? "3rem"} align={"center"}>
-            <Text pl="1rem">{btnText}</Text>
+      {isAnchorBtn ? (
+        <a href={href}>
+          {children ?? (
+            <Flex gap={btnGap ?? "3rem"} align={"center"}>
+              <Text pl="1rem">{btnText}</Text>
 
-            {isIcon && (
-              <Icon
-                as={icon ?? BsFillArrowRightCircleFill}
-                w={iconW ?? 14}
-                h={14}
-                color={iconColor ?? "brand 250"}
-              />
-            )}
-          </Flex>
-        )}
-      </Link>
+              {isIcon && (
+                <Icon
+                  as={icon ?? BsFillArrowRightCircleFill}
+                  w={iconW ?? 14}
+                  h={14}
+                  color={iconColor ?? "brand 250"}
+                />
+              )}
+            </Flex>
+          )}
+        </a>
+      ) : (
+        <Link href={path}>
+          {children ?? (
+            <Flex gap={btnGap ?? "3rem"} align={"center"}>
+              <Text pl="1rem">{btnText}</Text>
+
+              {isIcon && (
+                <Icon
+                  as={icon ?? BsFillArrowRightCircleFill}
+                  w={iconW ?? 14}
+                  h={14}
+                  color={iconColor ?? "brand 250"}
+                />
+              )}
+            </Flex>
+          )}
+        </Link>
+      )}
     </Box>
   );
 };

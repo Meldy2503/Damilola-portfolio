@@ -5,6 +5,7 @@ import Image from "next/image";
 import arthurImage from "../../assets/images/hero-bg.webp";
 import textPattern3 from "../../assets/images/text-pattern3.svg";
 import { Button } from "../button";
+import { handleCurrentMenu } from "@/utils/functions";
 
 const LandingPage = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -110,7 +111,15 @@ const LandingPage = () => {
               minimalism, maximalism and people-centric design principles to
               develop high-end solutions that stands out from competition.
             </Text>
-            <Button path="/" isIcon btnText="Contact me" btnGap="5rem" />
+            <Button
+              path="/contact-me"
+              onClick={() => {
+                handleCurrentMenu("contact me");
+              }}
+              isIcon
+              btnText="Contact me"
+              btnGap="5rem"
+            />
           </Box>
         </Flex>
       </Flex>

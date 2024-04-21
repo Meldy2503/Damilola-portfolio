@@ -14,14 +14,14 @@ import {
 
 import { Button } from "@/components/button";
 import { useState } from "react";
-import { HiOutlineArrowSmDown } from "react-icons/hi";
+import { HiOutlineArrowSmUp } from "react-icons/hi";
 import Artisans from "./artisans";
 import EndUsers from "./end-users";
 
 const Hifi = () => {
   const [bgColor, setBgColor] = useState("brand.750");
   return (
-    <Wrapper bg={bgColor}>
+    <Wrapper bg={bgColor} id="igetguy-hifi">
       <Flex
         justify={"space-between"}
         gap="2rem"
@@ -64,16 +64,17 @@ const Hifi = () => {
             cohesive yet versatile user experience.
           </Text>
           <Button
-            path="/"
+            href="#igetguy-home"
             isIcon
-            btnText="View Hi-Fi"
+            btnText="Back to Top"
             color="brand.100"
             borderRadius="1rem"
             bg="brand.200"
-            icon={HiOutlineArrowSmDown}
+            icon={HiOutlineArrowSmUp}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
       </Flex>

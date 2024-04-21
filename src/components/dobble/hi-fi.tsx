@@ -1,18 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Wrapper from "@/components/wrapper";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { Button } from "@/components/button";
+import Wrapper from "@/components/wrapper";
 import { dobbleHifiCards } from "@/utils/constants/dobble";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import { HiOutlineArrowSmDown } from "react-icons/hi";
+import { HiOutlineArrowSmUp } from "react-icons/hi";
 
 const Hifi = () => {
-
- 
-  
-
   return (
     <Wrapper bg="brand.1050">
       <Flex
@@ -56,16 +51,17 @@ const Hifi = () => {
             cohesive yet versatile user experience.
           </Text>
           <Button
-            path="/"
+            href="#dobble-home"
             isIcon
-            btnText="View Hi-Fi"
+            btnText="Back to Top"
             color="brand.100"
             borderRadius="1rem"
             bg="brand.200"
-            icon={HiOutlineArrowSmDown}
+            icon={HiOutlineArrowSmUp}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
       </Flex>

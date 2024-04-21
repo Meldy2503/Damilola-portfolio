@@ -16,12 +16,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "../assets/images/white-logo.svg";
 import { Button } from "./button";
 import { menuData } from "@/utils/constants";
+import { handleCurrentMenu } from "@/utils/functions";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const handleCurrentMenu = (linkName: string) => {
-    sessionStorage.setItem("currentMenu", linkName);
-  };
   const selectedPage = sessionStorage.getItem("currentMenu") || "Home";
 
   return (
@@ -71,9 +69,12 @@ const Navbar = () => {
             );
           })}
           <Button
-            path="/"
-            color="brand.200"
-            bg="brand.100"
+            path="/contact-me"
+            onClick={() => {
+              handleCurrentMenu('contact me');
+            }}
+            color={selectedPage === 'contact me' ? 'brand.100' : "brand.200"}
+            bg={selectedPage === 'contact me' ? 'brand.200' : "brand.100"}
             px="2rem"
             py=".6rem"
             fontWeight="500"
@@ -110,7 +111,10 @@ const Navbar = () => {
               })}
 
               <Button
-                path="/"
+                path="/contact-me"
+                onClick={() => {
+                  handleCurrentMenu('contact me');
+                }}
                 color="brand.200"
                 bg="brand.100"
                 px="2.5rem"

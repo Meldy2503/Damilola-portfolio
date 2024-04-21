@@ -14,6 +14,7 @@ const LandingPage = () => {
       bgRepeat="no-repeat"
       color="brand.200"
       pt={{ base: "10rem", xl: "15rem" }}
+      id='dobble-home'
     >
       <Flex
         maxW={"1280px"}

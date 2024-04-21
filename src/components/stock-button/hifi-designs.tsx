@@ -15,6 +15,7 @@ const HifiDesigns = () => {
       borderBottomWidth="2.5rem"
       borderBottomColor="brand.600"
       bg="brand.200"
+      id='hifi'
     >
       <Flex
         justify={"space-between"}
@@ -48,7 +49,7 @@ const HifiDesigns = () => {
             user expectations.
           </Text>
           <Button
-            path="/"
+            href="#home"
             isIcon
             btnText="Back to Top"
             color="brand.200"
@@ -58,6 +59,7 @@ const HifiDesigns = () => {
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
+            isAnchorBtn
           />
         </Box>
       </Flex>
