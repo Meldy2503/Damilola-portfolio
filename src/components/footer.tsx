@@ -4,19 +4,42 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FiFacebook, FiLinkedin } from "react-icons/fi";
+
+import { handleCurrentMenu } from "@/utils/functions";
+import { FiLinkedin } from "react-icons/fi";
+import { MdOutlineEmail } from "react-icons/md";
+import { PiMediumLogoBold } from "react-icons/pi";
 import Logo from "../assets/images/black-logo.svg";
 import { Button } from "./button";
 import Wrapper from "./wrapper";
-import { handleCurrentMenu } from "@/utils/functions";
 
 const Footer = () => {
-  const socials = ["Email", "Resume", "LinkedIn", "Twitter", "Medium"];
   const icons = [
-    <FiFacebook key="facebook" size={18} />,
-    <FaInstagram key="instagram" size={18} />,
-    <FaXTwitter key="twitter" size={18} />,
-    <FiLinkedin key="linkedin" size={18} />,
+    {
+      name: "Email",
+      icon: <MdOutlineEmail key="email" size={18} />,
+      href: "mailto:damilolabamgbelu@gmail.com",
+    },
+    {
+      name: "Instagram",
+      icon: <FaInstagram key="instagram" size={18} />,
+      href: "https://www.instagram.com/dharmmey_bams?igsh=MXQ1ZjJyNzY0dnJpZQ%3D%3D&utm_source=qr",
+    },
+    {
+      name: "Twitter",
+      icon: <FaXTwitter key="twitter" size={18} />,
+      href: "https://x.com/damilolalice?s=21",
+    },
+    {
+      name: "LinkedIn",
+      icon: <FiLinkedin key="linkedin" size={18} />,
+      href: "https://www.linkedin.com/in/damilolabamgbelu",
+    },
+    {
+      name: "Medium",
+      icon: <PiMediumLogoBold key="Medium" size={18} />,
+      href: "https://medium.com/@damilolabamgbelu",
+    },
   ];
 
   return (
@@ -39,7 +62,7 @@ const Footer = () => {
           />
 
           <Flex align={"center"} gap="1rem">
-            {icons.map((icon, index) => (
+            {icons.map((items, index) => (
               <Flex
                 key={index}
                 h="3.7rem"
@@ -49,7 +72,9 @@ const Footer = () => {
                 align={"center"}
                 justify={"center"}
               >
-                <a href="http://">{icon}</a>
+                <a href={items.href} target="_blank">
+                  {items.icon}
+                </a>
               </Flex>
             ))}
           </Flex>
@@ -71,9 +96,15 @@ const Footer = () => {
             flexWrap={"wrap"}
           >
             <Text>Would you like to hire me?</Text>
-            <Button path="/contact-me"  onClick={() => {
-              handleCurrentMenu('contact me');
-            }} isIcon btnText="Contact me" btnGap="3rem" />
+            <Button
+              path="/contact-me"
+              onClick={() => {
+                handleCurrentMenu("contact me");
+              }}
+              isIcon
+              btnText="Contact me"
+              btnGap="3rem"
+            />
           </Flex>
           <Box>
             <Flex
@@ -82,10 +113,14 @@ const Footer = () => {
               justify={{ base: "flex-start", lg: "flex-end" }}
               flexWrap={"wrap"}
             >
-              {" "}
-              {socials.map((social, index) => (
-                <a href="http://" className="socials" key={index}>
-                  <li>{social}</li>
+              {icons.map((list, index) => (
+                <a
+                  href={list.href}
+                  target="_blank"
+                  className="socials"
+                  key={index}
+                >
+                  <li>{list.name}</li>
                 </a>
               ))}
             </Flex>
