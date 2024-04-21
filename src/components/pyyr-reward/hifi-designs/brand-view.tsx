@@ -26,12 +26,12 @@ const BrandView = () => {
             <Flex align={"center"} justify={"center"}>
               <Image
                 src={items.img}
-                alt="Artisans"
-                width={800}
-                height={800}
+                alt="Brand View"
+                width={1500}
+                height={1200}
                 placeholder="blur"
                 blurDataURL={items.img.blurDataURL}
-                unoptimized={true}
+                  //  unoptimized={true}
                 quality={100}
                 style={{
                   maxWidth: "100%",

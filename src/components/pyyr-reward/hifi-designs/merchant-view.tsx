@@ -26,12 +26,12 @@ const MerchantView = () => {
             <Flex align={"center"} justify={"center"}>
               <Image
                 src={items.img}
-                alt="Artisans"
-                width={800}
-                height={800}
+                alt="Merchant View"
+                width={1700}
+                height={1200}
                 placeholder="blur"
                 blurDataURL={items.img.blurDataURL}
-                unoptimized={true}
+                //  unoptimized={true}
                 quality={100}
                 style={{
                   maxWidth: "100%",
