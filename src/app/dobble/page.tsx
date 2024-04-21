@@ -21,7 +21,6 @@ const Dobble = () => {
       <Hifi />
       <Achievements />
       <Cta />
-
       <Footer />
     </>
   );

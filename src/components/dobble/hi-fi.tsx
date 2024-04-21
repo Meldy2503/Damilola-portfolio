@@ -96,7 +96,7 @@ const Hifi = () => {
                 <Flex align={"center"} justify={"center"}>
                   <Image
                     src={items.img}
-                    alt="Artisans"
+                    alt="hi-fi images"
                     width={800}
                     height={800}
                     unoptimized={true}

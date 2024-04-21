@@ -73,7 +73,7 @@ const PrincipalTask = () => {
                 <Text py="2rem">{item.subTitle}</Text>
 
                 <Heading
-                  fontSize={{ base: "3rem", md: "3.5rem" }}
+                  fontSize={{ base: "2.5rem", md: "3rem" }}
                   fontWeight={"600"}
                 >
                   <span> {item.title1}</span>

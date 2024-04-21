@@ -19,7 +19,7 @@ export const taskData = [
     text: "I had a lean timeframe provided for this project, and as such my first major task was to ensure the right features were fleshed out for the software within a stipulated period of time. ",
   },
   {
-    img: task2,
+    img: task3,
     subTitle: "RESEARCH METHODOLOGY",
     title1: "The major research technique adopted for this product was",
     title2: "Competitive Analysis",
@@ -28,7 +28,7 @@ export const taskData = [
   },
 
   {
-    img: task3,
+    img: task2,
     subTitle: "KEY TAKEAWAYS",
     title1: "I identified the  ",
     title2: "core features  ",
@@ -72,5 +72,37 @@ export const dobbleHifiCards = [
     title: "Marketplace",
     text: "The Marketplace module serves as an avenue for organisations to access vendors listed publicly who are necessarily not their internal vendors. Here, organisations ca request for quotation for POs that has been created by a procurement officer.",
     img: dobbleHifi7,
+  },
+];
+
+
+export const dobbleProductFeatures = [
+  {
+    title: "Dashboard System",
+    text: "The dashboard system captures and displays essential information and metrics related to request and procurement activities within the organization. allowing users such as procurement managers, finance teams, and executives to monitor and analyze metrics, make informed decisions, and ensure efficient operations.",
+  },
+  {
+    title: "Request Management",
+    text: "The requisition flow covers the entire process it’d require for a staff within the organisation to submit request for items they need. The requisition could be a cash or purchase request, it could also be a request for refund or reimbursement in cases whereby a requester spend above or below a stipulated amount.",
+  },
+  {
+    title: "Approval Workflow",
+    text: "Captures the entire process it would require to approve or decline a specific request that has been raised within ann organisation based on certain rules and policies.",
+  },
+  {
+    title: "Procurement",
+    text: "The procurement modules captures all that is required to purchase items requested by staffs from external vendors or from the items available in the inventory. ",
+  },
+  {
+    title: "Billing",
+    text: "The billing module processes payments for Items that has been purchased from vendors. An agreed payment term and due date would have been shared with the organisation via an invoice from the vendor which would be processed by the billing officer and sent in for approval.",
+  },
+  {
+    title: "Wallet",
+    text: "The wallet system helps to process bulk and individual payments to vendors after invoices has been processed and approved from the billing module",
+  },
+  {
+    title: "Marketplace",
+    text: "The Marketplace module serves as an avenue for organisations to access vendors listed publicly who are necessarily not their internal vendors. Here, organisations ca request for quotation for POs that has been created by a procurement officer.",
   },
 ];

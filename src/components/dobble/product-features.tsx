@@ -1,7 +1,17 @@
 "use client";
 
-import { Box, Heading, Text } from "@chakra-ui/react";
+import {
+  Accordion,
+  AccordionButton,
+  AccordionItem,
+  AccordionPanel,
+  Box,
+  Heading,
+  Text,
+} from "@chakra-ui/react";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import Wrapper from "../wrapper";
+import { dobbleProductFeatures } from "@/utils/constants/dobble";
 
 const ProductFeatures = () => {
   return (
@@ -30,6 +40,49 @@ const ProductFeatures = () => {
           for businesses selling items that organizations need, thereby making
           purchase orders faster and smoother
         </Text>
+      </Box>
+      <Box mt={{base: '5rem', md: '7rem'}}>
+        <Accordion allowMultiple>
+          {dobbleProductFeatures.map((items, index) => {
+            return (
+              <AccordionItem key={index}>
+                {({ isExpanded }) => (
+                  <>
+                    <h2>
+                      <AccordionButton p="1.7rem .5rem">
+                        <Box
+                          as="span"
+                          flex="1"
+                          textAlign="left"
+                          fontWeight={"bold"}
+                          fontSize={"1.7rem"}
+                        >
+                          {items.title}
+                        </Box>
+                        {isExpanded ? (
+                          <Box
+                            borderRadius={"50%"}
+                            bg="brand.100"
+                            color="white"
+                          >
+                            <MdKeyboardArrowUp fontSize="2.5rem" />
+                          </Box>
+                        ) : (
+                          <Box borderRadius={"50%"} bg="brand.550">
+                            <MdKeyboardArrowDown fontSize="2.5rem" />
+                          </Box>
+                        )}
+                      </AccordionButton>
+                    </h2>
+                    <AccordionPanel pb={"2rem"} px=".5rem" w='90%'>
+                      {items.text}
+                    </AccordionPanel>
+                  </>
+                )}
+              </AccordionItem>
+            );
+          })}
+        </Accordion>
       </Box>
     </Wrapper>
   );

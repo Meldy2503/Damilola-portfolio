@@ -7,8 +7,8 @@ import Wrapper from "../wrapper";
 
 const Introduction = () => {
   return (
-    <Wrapper bg="">
-      <Box>
+    <Wrapper bg='white'>
+      <Box zIndex={50}>
         <Text
           fontSize={"2.8rem"}
           color="brand.480"
