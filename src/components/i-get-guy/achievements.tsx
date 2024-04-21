@@ -45,7 +45,7 @@ const Achievements = () => {
             expensive payment plans. This feature resulted in a 30% increase in
             visibility for artisans on the recommended list compared to those
             who were not.  <br /> <br /> For the former goal, I focused on simplifying the
-            onboarding process and ensuring the product's aesthetic appeal. The
+            onboarding process and ensuring the product&apos;s aesthetic appeal. The
             target was to onboard 50 artisans in the first month, and to achieve
             this, the product was introduced to the Artisan Association before
             the launch, resulting in an 85% product acceptance rate. <br /> <br /> Following
