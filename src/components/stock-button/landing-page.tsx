@@ -52,8 +52,7 @@ const LandingPage = () => {
                 src={stockImg}
                 alt="stock button"
                 width={1200}
-                height={800}
-                unoptimized={true}
+                height={1200}
                 placeholder="blur"
                 quality={100}
                 style={{
@@ -61,6 +60,7 @@ const LandingPage = () => {
                   objectFit: "cover",
                   objectPosition: "top",
                 }}
+                priority
               />
             </Box>
           </Box>

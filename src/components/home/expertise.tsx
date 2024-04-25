@@ -79,7 +79,6 @@ const Expertise = () => {
                   alt="expert images"
                   width={1200}
                   height={1200}
-                  unoptimized={true}
                   placeholder="blur"
                   blurDataURL={item.img.blurDataURL}
                   quality={100}

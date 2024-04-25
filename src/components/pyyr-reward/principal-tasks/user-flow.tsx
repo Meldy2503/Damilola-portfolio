@@ -99,11 +99,8 @@ const UserFlows = () => {
                   <Image
                     src={item.img2}
                     alt="reviewers image"
-                    height={200}
-                    width={1000}
-                    placeholder="blur"
-                    blurDataURL={item.img2.blurDataURL}
-                    unoptimized={true}
+                    height={1500}
+                    width={1500}
                     quality={100}
                     style={{
                       maxWidth: "100%",
@@ -120,7 +117,6 @@ const UserFlows = () => {
                     width={1300}
                     placeholder="blur"
                     blurDataURL={item.img1.blurDataURL}
-                    unoptimized={true}
                     quality={100}
                     style={{
                       maxWidth: "100%",

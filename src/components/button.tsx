@@ -24,6 +24,7 @@ interface BtnProps {
   btnGap?: string;
   isIcon?: boolean;
   icon?: any;
+  hover?: any;
   boxShadow?: string;
   iconW?: string;
   isAnchorBtn?: boolean;
@@ -50,6 +51,7 @@ export const Button = ({
   icon,
   btnGap,
   boxShadow,
+  hover,
   iconW,
 }: BtnProps) => {
   return (
@@ -66,6 +68,7 @@ export const Button = ({
       py={py ?? ".4rem"}
       px={px ?? ".4rem"}
       onClick={onClick}
+      _hover={hover}
       w="fit-content"
       color={color ?? "brand.250"}
       bg={bg ?? "brand.200"}

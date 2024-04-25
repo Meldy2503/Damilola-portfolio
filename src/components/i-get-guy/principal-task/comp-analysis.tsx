@@ -11,9 +11,8 @@ const CompetitiveAnalysis = () => {
         <Image
           src={PersonaImg}
           alt="persona image"
-          height={1200}
-          width={1200}
-          unoptimized={true}
+          height={1500}
+          width={1500}
           placeholder="blur"
           quality={100}
           style={{

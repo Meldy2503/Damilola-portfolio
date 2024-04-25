@@ -40,48 +40,65 @@ const Navbar = () => {
         color="brand.200"
       >
         <Link href={"/"}>
-          <Image
-            src={Logo}
-            alt="logo"
-            height={35}
-            width={35}
-            unoptimized={true}
-          />
+          <Image src={Logo} alt="logo" height={35} width={35} />
         </Link>
         <Flex
-          gap="5rem"
           display={{ base: "none", lg: "flex" }}
           align={"center"}
+          gap="3rem"
         >
-          {menuData.map((link, index) => {
-            return (
-              <Box
-                key={index}
-                className={
-                  selectedPage === link.name ? "nav-active" : "nav-links"
-                }
-                onClick={() => {
-                  handleCurrentMenu(link.name);
-                }}
-              >
-                <Link href={link.path}>{link.name}</Link>
-              </Box>
-            );
-          })}
-          <Button
-            path="/contact-me"
-            onClick={() => {
-              handleCurrentMenu('contact me');
-            }}
-            color={selectedPage === 'contact me' ? 'brand.100' : "brand.200"}
-            bg={selectedPage === 'contact me' ? 'brand.200' : "brand.100"}
-            px="2rem"
-            py=".6rem"
-            fontWeight="500"
-            border="1.5px solid #ffffff"
-          >
-            Lets Talk
-          </Button>
+          <Flex gap="3.5rem">
+            {menuData.map((link, index) => {
+              return (
+                <Box
+                  key={index}
+                  className={
+                    selectedPage === link.name ? "nav-active" : "nav-links"
+                  }
+                  onClick={() => {
+                    handleCurrentMenu(link.name);
+                  }}
+                >
+                  <Link href={link.path}>{link.name}</Link>
+                </Box>
+              );
+            })}
+          </Flex>
+          <Flex gap="1rem">
+            <Button
+              path="/contact-me"
+              color={selectedPage === "contact me" ? "brand.200" : "brand.100"}
+              bg={selectedPage === "contact me" ? "brand.100" : "brand.200"}
+              hover={{
+                bg: "brand.200",
+                color: "brand.100",
+              }}
+              px="1.5rem"
+              py=".5rem"
+              fontWeight="500"
+              border="1.5px solid #ffffff"
+            >
+              Resume
+            </Button>
+            <Button
+              path="/contact-me"
+              onClick={() => {
+                handleCurrentMenu("contact me");
+              }}
+              color={selectedPage === "contact me" ? "brand.100" : "brand.200"}
+              bg={selectedPage === "contact me" ? "brand.200" : "brand.100"}
+              hover={{
+                bg: "brand.100",
+                color: "brand.200",
+              }}
+              px="1.5rem"
+              py=".5rem"
+              fontWeight="500"
+              border="1.5px solid #ffffff"
+            >
+              Lets Talk
+            </Button>
+          </Flex>
         </Flex>
         <Box onClick={onOpen} display={{ base: "block", lg: "none" }}>
           <Icon
@@ -112,13 +129,36 @@ const Navbar = () => {
 
               <Button
                 path="/contact-me"
-                onClick={() => {
-                  handleCurrentMenu('contact me');
+                color={
+                  selectedPage === "contact me" ? "brand.200" : "brand.100"
+                }
+                bg={selectedPage === "contact me" ? "brand.100" : "brand.200"}
+                hover={{
+                  bg: "brand.200",
+                  color: "brand.100",
                 }}
-                color="brand.200"
-                bg="brand.100"
-                px="2.5rem"
-                py=".6rem"
+                px="1.5rem"
+                py=".5rem"
+                fontWeight="500"
+                border="1.5px solid #ffffff"
+              >
+                Resume
+              </Button>
+              <Button
+                path="/contact-me"
+                onClick={() => {
+                  handleCurrentMenu("contact me");
+                }}
+                color={
+                  selectedPage === "contact me" ? "brand.100" : "brand.200"
+                }
+                bg={selectedPage === "contact me" ? "brand.200" : "brand.100"}
+                hover={{
+                  bg: "brand.100",
+                  color: "brand.200",
+                }}
+                px="1.5rem"
+                py=".5rem"
                 fontWeight="500"
                 border="1.5px solid #ffffff"
               >

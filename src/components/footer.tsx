@@ -58,7 +58,6 @@ const Footer = () => {
             alt="logo"
             height={50}
             width={50}
-            unoptimized={true}
           />
 
           <Flex align={"center"} gap="1rem">

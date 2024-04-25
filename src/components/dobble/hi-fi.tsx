@@ -97,10 +97,9 @@ const Hifi = () => {
                   <Image
                     src={items.img}
                     alt="hi-fi images"
-                    width={800}
-                    height={800}
+                    width={1500}
+                    height={1500}
                     placeholder="blur"
-                    unoptimized={true}
                     blurDataURL={items.img.blurDataURL}
                     quality={100}
                     style={{

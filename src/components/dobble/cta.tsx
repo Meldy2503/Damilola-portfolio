@@ -15,10 +15,9 @@ const Cta = () => {
           <Image
             src={authurImg}
             alt="author's photo"
-            width={1000}
-            height={100}
+            width={1200}
+            height={1200}
             placeholder="blur"
-            unoptimized={true}
             quality={100}
             style={{
               maxWidth: "100%",

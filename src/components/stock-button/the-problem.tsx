@@ -77,7 +77,6 @@ const Problem = () => {
                       width={1200}
                       placeholder="blur"
                       blurDataURL={item.blurDataURL}
-                      unoptimized={true}
                       quality={100}
                       style={{
                         maxWidth: "100%",

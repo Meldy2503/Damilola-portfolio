@@ -1,13 +1,15 @@
 "use client";
 
 import { stockHifiCards } from "@/utils/constants/stock-button";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import { HiOutlineArrowSmUp } from "react-icons/hi";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
 
 const HifiDesigns = () => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
     <Wrapper
       borderTopWidth="2.5rem"
@@ -87,14 +89,13 @@ const HifiDesigns = () => {
                     <Image
                       src={items.img}
                       alt="stock button"
-                      width={index === 3 ? 850 : 1050}
-                      height={1000}
+                      width={index === 3 ? 1000 : 1500}
+                      height={1500}
                       placeholder="blur"
                       blurDataURL={items.img.blurDataURL}
-                      unoptimized={true}
                       quality={100}
                       style={{
-                        maxWidth: "100%",
+                        maxWidth: isMobile ? '100%' : "80%",
                         objectFit: "cover",
                         objectPosition: "center",
                       }}

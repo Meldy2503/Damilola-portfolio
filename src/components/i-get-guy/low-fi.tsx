@@ -73,11 +73,10 @@ const LowFi = () => {
         >
           <Image
             src={introImg}
-            alt="intro image"
-            height={1200}
-            width={1200}
+            alt="lowfi image"
+            height={1300}
+            width={1300}
             placeholder="blur"
-            unoptimized={true}
             quality={100}
             style={{
               maxWidth: "100%",

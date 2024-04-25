@@ -58,11 +58,10 @@ const PrincipalTask = () => {
                 <Image
                   src={item.img}
                   alt="expert images"
-                  width={1200}
-                  height={1200}
+                  width={1500}
+                  height={1500}
                   placeholder="blur"
                   blurDataURL={item.img.blurDataURL}
-                  unoptimized={true}
                   quality={100}
                   style={{
                     maxWidth: "100%",

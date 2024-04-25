@@ -76,11 +76,10 @@ const UserResearch = () => {
                 <Image
                   src={item}
                   alt="reviewers image"
-                  height={1200}
-                  width={1200}
+                  height={1500}
+                  width={1500}
                   placeholder="blur"
                   blurDataURL={item.blurDataURL}
-                  unoptimized={true}
                   quality={100}
                   style={{
                     maxWidth: "100%",

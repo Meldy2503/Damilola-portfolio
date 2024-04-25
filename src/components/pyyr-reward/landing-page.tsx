@@ -1,11 +1,13 @@
 "use client";
 
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import bgImage from "../../assets/images/pyyrBg.webp";
 import HeroImg from "../../assets/images/pyyrHero.webp";
 
 const LandingPage = () => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
     <Box
       bgImage={`url(${bgImage.src})`}
@@ -15,6 +17,7 @@ const LandingPage = () => {
       color="brand.200"
       pt={{ base: "10rem", xl: "15rem" }}
       id='pyyr-home'
+      bgColor={"brand.950"}
     >
       <Flex
         maxW={"1280px"}
@@ -51,22 +54,22 @@ const LandingPage = () => {
         <Flex
           align={"center"}
           justify={"center"}
-          mt="5rem"
+          mt="7rem"
           overflow={"hidden"}
           mx="auto"
         >
           <Image
             src={HeroImg}
             alt="dobble image"
-            width={800}
-            height={800}
-            unoptimized={true}
+            width={1500}
+            height={1500}
             priority
             quality={100}
             style={{
-              maxWidth: "100%",
+              maxWidth: isMobile ? "100%" : "70%",
               objectFit: "cover",
               objectPosition: "top",
+
             }}
           />
         </Flex>

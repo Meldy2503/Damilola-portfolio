@@ -133,11 +133,10 @@ const PrincipalTask = () => {
                               <Image
                                 src={images}
                                 alt="task image"
-                                height={1000}
+                                height={1200}
                                 width={1200}
                                 placeholder="blur"
                                 blurDataURL={images.blurDataURL}
-                                unoptimized={true}
                                 quality={100}
                                 style={{
                                   maxWidth: "100%",

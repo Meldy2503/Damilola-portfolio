@@ -1,20 +1,24 @@
 "use client";
 
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import bgImage from "../../assets/images/dobbleBg.webp";
 import HeroImg from "../../assets/images/dobbleHero.webp";
 
 const LandingPage = () => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
     <Box
-      bgImage={`url(${bgImage.src})`}
+       bgImage={`url(${bgImage.src})`}
       bgSize="cover"
       bgPosition="top"
       bgRepeat="no-repeat"
       color="brand.200"
       pt={{ base: "10rem", xl: "15rem" }}
       id='dobble-home'
+      bgColor={"brand.1050"}
+
     >
       <Flex
         maxW={"1280px"}
@@ -58,14 +62,13 @@ const LandingPage = () => {
           <Image
             src={HeroImg}
             alt="dobble image"
-            width={800}
-            height={800}
+            width={1500}
+            height={1500}
             placeholder="blur"
-            unoptimized={true}
             priority
             quality={100}
             style={{
-              maxWidth: "100%",
+              maxWidth: isMobile ? "100%" : "70%",
               objectFit: "cover",
               objectPosition: "top",
             }}

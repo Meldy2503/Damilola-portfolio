@@ -50,7 +50,6 @@ const Summary = () => {
             width={1000}
             height={1000}
             placeholder="blur"
-            unoptimized={true}
             quality={100}
             style={{
               maxWidth: "100%",

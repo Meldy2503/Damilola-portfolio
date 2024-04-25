@@ -22,10 +22,9 @@ const MerchantView = () => {
           <Image
             src={merchantImg}
             alt="Merchant image"
-            width={1200}
-            height={800}
+            width={1500}
+            height={1500}
             placeholder="blur"
-            unoptimized={true}
             quality={100}
             style={{
               maxWidth: "100%",

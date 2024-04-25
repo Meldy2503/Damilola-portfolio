@@ -43,10 +43,9 @@ const Introduction = () => {
         <Image
           src={dobbleIntroImg}
           alt="intro images"
-          width={1200}
-          height={1200}
+          width={1500}
+          height={1500}
           placeholder="blur"
-          unoptimized={true}
           quality={100}
           style={{
             maxWidth: "100%",

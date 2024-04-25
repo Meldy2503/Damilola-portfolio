@@ -1,9 +1,4 @@
-
 export const menuData = [
-  {
-    name: "Home",
-    path: "/",
-  },
   {
     name: "Stock Button",
     path: "/stock-button",
@@ -22,5 +17,3 @@ export const menuData = [
     path: "/dobble",
   },
 ];
-
-

@@ -12,7 +12,6 @@ const LoadingIcon = () => {
         height={150}
         width={150}
         alt="loading icon"
-        unoptimized={true}
       />
     </Center>
   );

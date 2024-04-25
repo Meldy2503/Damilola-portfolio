@@ -17,6 +17,7 @@ const LandingPage = () => {
       align={"center"}
       justify={"center"}
       position={"relative"}
+      py='2rem'
     >
       <Image
         src={textPattern3}
@@ -69,9 +70,8 @@ const LandingPage = () => {
               src={arthurImage}
               alt="author's photo"
               placeholder="blur"
-              width={1000}
-              height={1000}
-              unoptimized={true}
+              width={1500}
+              height={1500}
               quality={100}
               style={{
                 maxWidth: "100%",

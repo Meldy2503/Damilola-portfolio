@@ -41,9 +41,8 @@ const MobileLandingPage = () => {
         <Image
           src={bgImage}
           alt="igetguy images"
-          width={1200}
-          height={1200}
-          unoptimized={true}
+          width={1500}
+          height={1500}
           placeholder="blur"
           quality={100}
           style={{

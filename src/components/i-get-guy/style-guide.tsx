@@ -81,10 +81,9 @@ const StyleGuide = () => {
             <Image
               src={styleGuide5}
               alt="stock button style guide"
-              height={1000}
-              width={1000}
+              height={1500}
+              width={1500}
               placeholder="blur"
-              unoptimized={true}
               quality={100}
               style={{
                 maxWidth: "100%",
@@ -97,10 +96,9 @@ const StyleGuide = () => {
             <Image
               src={styleGuide4}
               alt="stock button style guide"
-              height={1000}
-              width={1000}
+              height={1500}
+              width={1500}
               placeholder="blur"
-              unoptimized={true}
               quality={100}
               style={{
                 maxWidth: "100%",
@@ -114,9 +112,8 @@ const StyleGuide = () => {
           <Image
             src={styleGuide3}
             alt="stock button style guide"
-            height={1000}
-            width={1000}
-            unoptimized={true}
+            height={1500}
+            width={1500}
             quality={100}
             placeholder="blur"
             style={{
@@ -137,9 +134,8 @@ const StyleGuide = () => {
             <Image
               src={styleGuide2}
               alt="stock button style guide"
-              height={1000}
-              width={1000}
-              unoptimized={true}
+              height={1500}
+              width={1500}
               quality={100}
               placeholder="blur"
               style={{
@@ -153,10 +149,9 @@ const StyleGuide = () => {
             <Image
               src={styleGuide1}
               alt="stock button style guide"
-              height={1000}
-              width={1000}
+              height={1500}
+              width={1500}
               placeholder="blur"
-              unoptimized={true}
               quality={100}
               style={{
                 maxWidth: "100%",

@@ -27,11 +27,10 @@ const BrandView = () => {
               <Image
                 src={items.img}
                 alt="Brand View"
-                width={1000}
-                height={1000}
+                width={1500}
+                height={1500}
                 placeholder="blur"
                 blurDataURL={items.img.blurDataURL}
-                 unoptimized={true}
                 quality={100}
                 style={{
                   maxWidth: "100%",

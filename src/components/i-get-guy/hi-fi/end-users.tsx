@@ -1,10 +1,12 @@
 "use client";
 
 import { igetguyUsersCards } from "@/utils/constants/igetguy";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 
 const EndUsers = () => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
     <Flex mt="2.5rem" direction={"column"} gap="3rem">
       {igetguyUsersCards.map((items, index) => {
@@ -24,16 +26,17 @@ const EndUsers = () => {
               <Image
                 src={items.img}
                 alt="End Users"
-                width={800}
-                height={800}
+                width={1500}
+                height={1500}
                 placeholder="blur"
                 blurDataURL={items.img.blurDataURL}
-                unoptimized={true}
                 quality={100}
                 style={{
                   maxWidth: "100%",
                   objectFit: "cover",
                   objectPosition: "center",
+                  width: isMobile ? '100%' : "75%",
+
                 }}
               />
             </Flex>
