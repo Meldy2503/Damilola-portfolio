@@ -91,7 +91,7 @@ const Expertise = () => {
               </Box>
               <Box w={{ base: "100%", md: "40%" }}>
                 <Heading
-                  fontSize={{ base: "3rem", md: "3.5rem" }}
+                  fontSize={{ base: "2.8rem", md: "3rem" }}
                   fontWeight={"600"}
                 >
                   {item.title}

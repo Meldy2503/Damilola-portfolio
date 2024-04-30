@@ -1,11 +1,12 @@
 "use client";
 
+import { handleCurrentMenu } from "@/utils";
 import { Box, Flex, HStack, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import authurImg from "../../assets/images/dami-img.png";
 import { Button } from "../button";
+import ContactModal from "../contact-me-modal";
 import Wrapper from "../wrapper";
-import { handleCurrentMenu } from "@/utils/functions";
 
 const Cta = () => {
   return (
@@ -57,16 +58,11 @@ const Cta = () => {
             mb="3rem"
             justify={"center"}
           >
-            <Button
-              path="/contact-me"
-              onClick={() => {
-                handleCurrentMenu('contact me');
-              }}
-              isIcon
-              btnText="Contact me"
+            <ContactModal
+              text="Contact me"
+              btnGap="2rem"
               bg="brand.100"
               color="brand.200"
-              btnGap="2rem"
             />
             <Text>or</Text>
             <Button

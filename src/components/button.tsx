@@ -4,6 +4,7 @@ import { Box, Flex, Icon, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { Button as ChakraButton } from "@chakra-ui/react";
 
 interface BtnProps {
   path?: any;
@@ -28,6 +29,7 @@ interface BtnProps {
   boxShadow?: string;
   iconW?: string;
   isAnchorBtn?: boolean;
+  isBtn?: boolean;
 }
 
 export const Button = ({
@@ -53,11 +55,12 @@ export const Button = ({
   boxShadow,
   hover,
   iconW,
+  isBtn,
 }: BtnProps) => {
   return (
     <Box
       className={ClassName}
-      zIndex={100}
+      zIndex={200}
       cursor="pointer"
       textAlign="center"
       fontSize={fontSize ?? "1.6rem"}
@@ -75,11 +78,10 @@ export const Button = ({
       border={border ?? "none"}
     >
       {isAnchorBtn ? (
-        <a href={href}>
+        <a href={href} target="_blank" rel="noreferrer">
           {children ?? (
             <Flex gap={btnGap ?? "3rem"} align={"center"}>
               <Text pl="1rem">{btnText}</Text>
-
               {isIcon && (
                 <Icon
                   as={icon ?? BsFillArrowRightCircleFill}
@@ -91,6 +93,22 @@ export const Button = ({
             </Flex>
           )}
         </a>
+      ) : isBtn ? (
+        <Flex onClick={onClick}>
+          {children ?? (
+            <Flex gap={btnGap ?? "3rem"} align={"center"}>
+              <Text pl="1rem">{btnText}</Text>
+              {isIcon && (
+                <Icon
+                  as={icon ?? BsFillArrowRightCircleFill}
+                  w={iconW ?? 14}
+                  h={14}
+                  color={iconColor ?? "brand 250"}
+                />
+              )}
+            </Flex>
+          )}
+        </Flex>
       ) : (
         <Link href={path}>
           {children ?? (

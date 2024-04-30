@@ -16,7 +16,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "../assets/images/white-logo.svg";
 import { Button } from "./button";
 import { menuData } from "@/utils/constants";
-import { handleCurrentMenu } from "@/utils/functions";
+import { handleCurrentMenu } from "@/utils";
+import ContactModal from "./contact-me-modal";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -66,38 +67,28 @@ const Navbar = () => {
           </Flex>
           <Flex gap="1rem">
             <Button
-              path="/contact-me"
-              color={selectedPage === "contact me" ? "brand.200" : "brand.100"}
-              bg={selectedPage === "contact me" ? "brand.100" : "brand.200"}
+              href="/damilola-resume.pdf"
+              color="brand.200"
+              bg={"brand.100"}
               hover={{
                 bg: "brand.200",
                 color: "brand.100",
               }}
               px="1.5rem"
               py=".5rem"
+              isAnchorBtn
               fontWeight="500"
               border="1.5px solid #ffffff"
             >
               Resume
             </Button>
-            <Button
-              path="/contact-me"
-              onClick={() => {
-                handleCurrentMenu("contact me");
-              }}
-              color={selectedPage === "contact me" ? "brand.100" : "brand.200"}
-              bg={selectedPage === "contact me" ? "brand.200" : "brand.100"}
-              hover={{
-                bg: "brand.100",
-                color: "brand.200",
-              }}
-              px="1.5rem"
-              py=".5rem"
-              fontWeight="500"
-              border="1.5px solid #ffffff"
-            >
-              Lets Talk
-            </Button>
+            <ContactModal
+              ButtonCom={
+                <Button isBtn px="1.5rem" py=".6rem">
+                  Lets Talk
+                </Button>
+              }
+            />
           </Flex>
         </Flex>
         <Box onClick={onOpen} display={{ base: "block", lg: "none" }}>
@@ -129,10 +120,8 @@ const Navbar = () => {
 
               <Button
                 path="/contact-me"
-                color={
-                  selectedPage === "contact me" ? "brand.200" : "brand.100"
-                }
-                bg={selectedPage === "contact me" ? "brand.100" : "brand.200"}
+                color="brand.200"
+                bg={"brand.100"}
                 hover={{
                   bg: "brand.200",
                   color: "brand.100",
@@ -143,26 +132,6 @@ const Navbar = () => {
                 border="1.5px solid #ffffff"
               >
                 Resume
-              </Button>
-              <Button
-                path="/contact-me"
-                onClick={() => {
-                  handleCurrentMenu("contact me");
-                }}
-                color={
-                  selectedPage === "contact me" ? "brand.100" : "brand.200"
-                }
-                bg={selectedPage === "contact me" ? "brand.200" : "brand.100"}
-                hover={{
-                  bg: "brand.100",
-                  color: "brand.200",
-                }}
-                px="1.5rem"
-                py=".5rem"
-                fontWeight="500"
-                border="1.5px solid #ffffff"
-              >
-                Lets Talk
               </Button>
             </Flex>
           </DrawerBody>

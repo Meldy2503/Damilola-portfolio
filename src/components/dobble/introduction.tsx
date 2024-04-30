@@ -1,11 +1,13 @@
 "use client";
 
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import dobbleIntroImg from "../../assets/images/dobble-intro.webp";
 import Wrapper from "../wrapper";
 
 const Introduction = () => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
   return (
     <Wrapper bg='white'>
       <Box zIndex={50}>
@@ -48,7 +50,7 @@ const Introduction = () => {
           placeholder="blur"
           quality={100}
           style={{
-            maxWidth: "100%",
+            maxWidth: isMobile ? "100%" : "90%",
             objectFit: "cover",
             objectPosition: "center",
           }}

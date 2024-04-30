@@ -3,9 +3,8 @@
 import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 import authurImg from "../../assets/images/summary.webp";
-import { Button } from "../button";
+import ContactModal from "../contact-me-modal";
 import Wrapper from "../wrapper";
-import { handleCurrentMenu } from "@/utils/functions";
 
 const Summary = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
@@ -33,12 +32,8 @@ const Summary = () => {
             effectively conveyed that I possess the appropriate skill set to
             significantly boost your revenue{" "}
           </Heading>
-
           <Text py="2rem">In that case;</Text>
-
-          <Button path="/contact-me"  onClick={() => {
-              handleCurrentMenu('contact me');
-            }} isIcon btnText="Hire me" btnGap="6rem" />
+          <ContactModal text="Hire me" btnGap="5rem" />
         </Flex>
         <Box
           w={{ base: "100%", md: "50%" }}

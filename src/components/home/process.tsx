@@ -77,10 +77,10 @@ const Process = () => {
                 md: "0",
               }}
             >
-              <Heading color="brand.350" fontWeight={"600"} fontSize={"4rem"}>
+              <Heading color="brand.350" fontWeight={"600"} fontSize={"3.5rem"}>
                 0{index + 1}
               </Heading>
-              <Heading color="brand.200" mt="1.5rem" fontSize={"3rem"}>
+              <Heading color="brand.200" mt="1.5rem" fontSize={"2.8rem"}>
                 {list.title}
               </Heading>
               <Text my="1.5rem">{list.text1}</Text>

@@ -15,7 +15,7 @@ const Title = ({ children, color, textDecoration, textAlign }: TitleProps) => {
     <Heading
       color={color ?? "brand.250"}
       fontWeight={"thin"}
-      fontSize={{ base: "4rem", md: "4.5rem", xl: "5rem" }}
+      fontSize={{ base: "3.5rem", md: "4.5rem", xl: "5rem" }}
       mb={{ base: "4rem", md: "6rem", lg: "8rem" }}
       w="fit-content"
       borderBottomRadius={".15rem"}
