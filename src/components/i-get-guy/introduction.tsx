@@ -116,6 +116,10 @@ const Introduction = () => {
             px="1.2rem"
             btnGap="1rem"
             isAnchorBtn
+            hover={{
+              bg: "brand.200",
+              color: "brand.100",
+            }}
           />
         </Box>
       </Flex>

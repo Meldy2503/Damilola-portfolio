@@ -58,12 +58,13 @@ const LowFi = () => {
             btnText="View Hi-Fi"
             borderRadius="1rem"
             color="brand.100"
-            bg="brand.200"
+            bg=""
             icon={HiOutlineArrowSmDown}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
             isAnchorBtn
+            ClassName="slidebtn2"
           />
         </Box>
         <Box

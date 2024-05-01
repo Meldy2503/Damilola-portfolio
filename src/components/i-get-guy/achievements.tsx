@@ -40,30 +40,30 @@ const Achievements = () => {
             The primary business goal for this product was to attract talented
             and experienced artisans, as the company believed that having
             skilled artisans onboard would lead to increased user adoption and
-            revenue generation. <br /> <br /> To achieve the latter, I implemented the
-            recommended services feature, which highlights artisans on more
-            expensive payment plans. This feature resulted in a 30% increase in
-            visibility for artisans on the recommended list compared to those
-            who were not.  <br /> <br /> For the former goal, I focused on simplifying the
-            onboarding process and ensuring the product&apos;s aesthetic appeal. The
-            target was to onboard 50 artisans in the first month, and to achieve
-            this, the product was introduced to the Artisan Association before
-            the launch, resulting in an 85% product acceptance rate. <br /> <br /> Following
-            the product launch, the business successfully reached 65% of its
-            revenue goal from artisans subscribing to the app
+            revenue generation. <br /> <br /> To achieve the latter, I
+            implemented the recommended services feature, which highlights
+            artisans on more expensive payment plans. This feature resulted in a
+            30% increase in visibility for artisans on the recommended list
+            compared to those who were not. <br /> <br /> For the former goal, I
+            focused on simplifying the onboarding process and ensuring the
+            product&apos;s aesthetic appeal. The target was to onboard 50
+            artisans in the first month, and to achieve this, the product was
+            introduced to the Artisan Association before the launch, resulting
+            in an 85% product acceptance rate. <br /> <br /> Following the
+            product launch, the business successfully reached 65% of its revenue
+            goal from artisans subscribing to the app
           </Text>
           <Button
             href="#igetguy-home"
             isIcon
             btnText="Back to Top"
-            color="brand.200"
             borderRadius="1rem"
-            bg="brand.100"
             icon={HiOutlineArrowSmUp}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
             isAnchorBtn
+            ClassName="slidebtn"
           />
         </Box>
       </Flex>

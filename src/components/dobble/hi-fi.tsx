@@ -56,12 +56,13 @@ const Hifi = () => {
             btnText="Back to Top"
             color="brand.100"
             borderRadius="1rem"
-            bg="brand.200"
+            bg=""
             icon={HiOutlineArrowSmUp}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
             isAnchorBtn
+            ClassName="slidebtn2"
           />
         </Box>
       </Flex>

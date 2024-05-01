@@ -13,7 +13,7 @@ import {
   ModalHeader,
   ModalOverlay,
   Text,
-  useDisclosure
+  useDisclosure,
 } from "@chakra-ui/react";
 import { IoMdArrowForward } from "react-icons/io";
 import { MdLocalPhone } from "react-icons/md";
@@ -24,7 +24,10 @@ interface ContactModalProps {
   text?: string;
   btnGap?: string;
   bg?: string;
+  border?: string;
   color?: string;
+  py?: string;
+  ClassName?: string;
   ButtonCom?: any;
 }
 
@@ -33,7 +36,10 @@ const ContactModal = ({
   ButtonCom,
   btnGap,
   bg,
+  border,
   color,
+  ClassName,
+  py,
 }: ContactModalProps) => {
   const { isOpen, onOpen, onClose: onContactClose } = useDisclosure();
   return (
@@ -47,8 +53,11 @@ const ContactModal = ({
           btnText={text}
           isIcon
           btnGap={btnGap}
+          py={py}
+          border={border}
           bg={bg}
           color={color}
+          ClassName={ClassName ?? "btn-slide3"}
         />
       )}
 
@@ -110,7 +119,7 @@ const ContactModal = ({
                       label="Message"
                       as="textarea"
                       isRequired
-                      _placeholder={{ py: "1rem"}}
+                      _placeholder={{ py: "1rem" }}
                       placeholder="Type your message here"
                       // id="phone_number"
                       // register={register("phone_number")}

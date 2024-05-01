@@ -311,13 +311,11 @@ a {
   transform: scaleX(0.25);
   background-color: #fff;
   border-radius: 20%;
-
 }
 .nav-active:hover::before {
   transform: scaleX(1);
   background-color: #fff;
   border-radius: 20px;
-
 }
 .nav-links {
   padding-bottom: 0.5rem;
@@ -341,5 +339,145 @@ a {
   transform: scaleX(1);
   background-color: #fff;
   border-radius: 20px;
+}
 
+/* button hover effects */
+.btn-slide {
+  color: #fff;
+  border: 2px solid #3e99b7;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    #3e99b7 15.03%,
+    #3e99b7 34.34%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    150.31deg,
+    #3e99b7 15.03%,
+    #3e99b7 35.34%,
+    transparent 50%
+  );
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.btn-slide:hover {
+  background-position: 100%;
+  color: #3e99b7;
+}
+
+/* hover effect two */
+.slidebtn {
+  color: #fff;
+  border: 2px solid #000;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    #000 15.03%,
+    #000 34.34%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    150.31deg,
+    #000 15.03%,
+    #000 35.34%,
+    transparent 50%
+  );
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.slidebtn:hover {
+  background-position: 100%;
+  color: #000;
+}
+
+/* hover effect three */
+.slidebtn2 {
+  color: #000;
+  border: 2px solid #fff;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    #fff 15.03%,
+    #fff 34.34%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    150.31deg,
+    #fff 15.03%,
+    #fff 35.34%,
+    transparent 50%
+  );
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.slidebtn2:hover {
+  background-position: 100%;
+  color: #fff;
+}
+
+/* button slide3 */
+.btn-slide3 {
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  z-index: 1;
+}
+
+.btn-slide3::before {
+  border-radius: 3rem;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  background: linear-gradient(60deg, #1a1a1a 0%, #1a1a1a 100%);
+  top: 0;
+  left: -100%;
+  z-index: -1;
+}
+
+.btn-slide3:hover {
+  color: #fff;
+}
+
+.btn-slide3:hover::before {
+  left: 0;
+}
+
+/* button slide4 */
+.btn-slide4 {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  z-index: 1;
+}
+
+.btn-slide4::before {
+  border-radius: 3rem;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  background: linear-gradient(60deg, #fff 0%, #fff 100%);
+  top: 0;
+  left: -100%;
+  z-index: -1;
+}
+
+.btn-slide4:hover {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0px 2px 23px 0px #00000020;
+}
+
+.btn-slide4:hover::before {
+  left: 0;
 }

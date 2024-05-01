@@ -53,14 +53,13 @@ const Achievements = () => {
             href="#dobble-home"
             isIcon
             btnText="Back to Top"
-            color="brand.200"
             borderRadius="1rem"
-            bg="brand.100"
             icon={HiOutlineArrowSmUp}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
             isAnchorBtn
+            ClassName="slidebtn"
           />
         </Box>
       </Flex>

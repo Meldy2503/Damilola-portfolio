@@ -1,11 +1,12 @@
 "use client";
 
+import LoadingIcon from "@/components/loading-icon";
+import ScrollToTopButton from "@/components/scroll-to-top";
+import theme from "@/utils/theme";
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import theme from "@/utils/theme";
-import LoadingIcon from "@/components/loading-icon";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
@@ -44,6 +45,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
             </motion.div>
           )}
         </AnimatePresence>
+        {loading === false && <ScrollToTopButton />}
       </ChakraProvider>
     </CacheProvider>
   );

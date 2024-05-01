@@ -54,7 +54,7 @@ const Cta = () => {
               text="Contact me"
               btnGap="2rem"
               bg="brand.100"
-              color="brand.200"
+              ClassName="btn-slide4"
             />
           </HStack>
         </Flex>

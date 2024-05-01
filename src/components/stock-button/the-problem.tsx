@@ -119,12 +119,11 @@ const Problem = () => {
             <b>decline in overall revenue generated.</b>
           </Text>
           <Button
+            ClassName="btn-slide"
             href="#hifi"
             isIcon
             btnText="View Hi-Fi"
-            color="brand.200"
             borderRadius="1rem"
-            bg="brand.600"
             icon={HiOutlineArrowSmDown}
             iconW="8"
             px="1.2rem"

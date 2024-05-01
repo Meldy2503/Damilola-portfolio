@@ -110,7 +110,11 @@ const LandingPage = () => {
               minimalism, maximalism and people-centric design principles to
               develop high-end solutions that stands out from competition.
             </Text>
-            <ContactModal text="Contact me" btnGap="5rem" />
+            <ContactModal
+              text="Contact me"
+              btnGap="5rem"
+              border="1.5px solid white"
+            />
           </Box>
         </Flex>
       </Flex>

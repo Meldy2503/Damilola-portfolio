@@ -1,5 +1,6 @@
 "use client";
 
+import { stockIntroCards } from "@/utils/constants/stock-button";
 import { Box, Flex, HStack, Heading, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
@@ -12,7 +13,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
-import { stockIntroCards } from "@/utils/constants/stock-button";
 
 const Solution = () => {
   const [expandedIndex, setExpandedIndex] = useState(-1);
@@ -62,14 +62,13 @@ const Solution = () => {
             href="#hifi"
             isIcon
             btnText="View Hi-Fi"
-            color="brand.200"
             borderRadius="1rem"
-            bg="brand.600"
             icon={HiOutlineArrowSmDown}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
             isAnchorBtn
+            ClassName="btn-slide"
           />
         </Box>
       </Flex>

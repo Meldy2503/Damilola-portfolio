@@ -1,5 +1,6 @@
 "use client";
 
+import { stockTaskCards } from "@/utils/constants/stock-button";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
@@ -8,7 +9,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { Button } from "../button";
 import Wrapper from "../wrapper";
-import { stockTaskCards } from "@/utils/constants/stock-button";
 
 const PrincipalTask = () => {
   const settings = {
@@ -68,14 +68,13 @@ const PrincipalTask = () => {
             href="#hifi"
             isIcon
             btnText="View Hi-Fi"
-            color="brand.200"
             borderRadius="1rem"
-            bg="brand.600"
             icon={HiOutlineArrowSmDown}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
             isAnchorBtn
+            ClassName="btn-slide"
           />
         </Box>
       </Flex>

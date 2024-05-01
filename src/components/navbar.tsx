@@ -1,5 +1,7 @@
 "use client";
 
+import { handleCurrentMenu } from "@/utils";
+import { menuData } from "@/utils/constants";
 import {
   Box,
   Drawer,
@@ -15,14 +17,14 @@ import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "../assets/images/white-logo.svg";
 import { Button } from "./button";
-import { menuData } from "@/utils/constants";
-import { handleCurrentMenu } from "@/utils";
 import ContactModal from "./contact-me-modal";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const selectedPage = sessionStorage.getItem("currentMenu") || "Home";
-
+  const selectedPage = sessionStorage.getItem("currentMenu") || "";
+  const handleLogoClick = () => {
+    sessionStorage.clear();
+  };
   return (
     <Box
       w="100%"
@@ -40,7 +42,7 @@ const Navbar = () => {
         align={"center"}
         color="brand.200"
       >
-        <Link href={"/"}>
+        <Link href={"/"} onClick={handleLogoClick}>
           <Image src={Logo} alt="logo" height={35} width={35} />
         </Link>
         <Flex
@@ -119,7 +121,7 @@ const Navbar = () => {
               })}
 
               <Button
-                path="/contact-me"
+                href="/damilola-resume.pdf"
                 color="brand.200"
                 bg={"brand.100"}
                 hover={{
@@ -128,6 +130,9 @@ const Navbar = () => {
                 }}
                 px="1.5rem"
                 py=".5rem"
+                isAnchorBtn
+                target="_blank"
+                rel="noreferrer"
                 fontWeight="500"
                 border="1.5px solid #ffffff"
               >

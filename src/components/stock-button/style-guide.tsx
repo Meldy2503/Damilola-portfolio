@@ -55,14 +55,13 @@ const StyleGuide = () => {
             href="#home"
             isIcon
             btnText="Back to Top"
-            color="brand.200"
             borderRadius="1rem"
-            bg="brand.600"
             icon={HiOutlineArrowSmUp}
             iconW="8"
             px="1.2rem"
             btnGap="1rem"
             isAnchorBtn
+            ClassName="btn-slide"
           />
         </Box>
       </Flex>
@@ -128,7 +127,7 @@ const StyleGuide = () => {
                 src={styleGuide2}
                 alt="stock button style guide"
                 height={1500}
-              width={1500}
+                width={1500}
                 quality={100}
                 style={{
                   maxWidth: "100%",
@@ -142,7 +141,7 @@ const StyleGuide = () => {
                 src={styleGuide1}
                 alt="stock button style guide"
                 height={1500}
-              width={1500}
+                width={1500}
                 quality={100}
                 style={{
                   maxWidth: "100%",

@@ -62,7 +62,7 @@ const Cta = () => {
               text="Contact me"
               btnGap="2rem"
               bg="brand.100"
-              color="brand.200"
+              ClassName="btn-slide4"
             />
             <Text>or</Text>
             <Button
@@ -74,6 +74,7 @@ const Cta = () => {
               boxShadow="0px 2px 25px 0px #0000001F"
               btnText="See Next Project"
               btnGap="2rem"
+              ClassName="btn-slide3"
             />
           </HStack>
         </Flex>
