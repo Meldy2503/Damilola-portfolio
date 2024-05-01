@@ -79,6 +79,8 @@ const Navbar = () => {
               px="1.5rem"
               py=".5rem"
               isAnchorBtn
+              target="_blank"
+              rel="noreferrer"
               fontWeight="500"
               border="1.5px solid #ffffff"
             >
