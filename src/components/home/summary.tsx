@@ -11,15 +11,16 @@ const Summary = () => {
 
   return (
     <Wrapper bg="brand.200">
-      <Flex direction={{ base: "column", md: "row" }}>
+      <Flex direction={{ base: "column-reverse", md: "row" }}>
         <Flex
           w={{ base: "100%", md: "50%" }}
           className="linear-bg"
           justify={"center"}
           direction="column"
           px={{ base: "2rem", xl: "5rem" }}
-          py="2rem"
-          borderRadius={{ base: "3rem 3rem 0 0", md: "3rem 0 0 3rem" }}
+          pb="4rem"
+          pt="2rem"
+          borderRadius={{ base: "0 0 3rem 3rem", md: "3rem 0 0 3rem" }}
         >
           <Text py="2rem">Just before you go....</Text>
 
@@ -51,7 +52,7 @@ const Summary = () => {
               objectFit: "cover",
               objectPosition: "center",
               height: "100%",
-              borderRadius: isMobile ? "0 0 3rem 3rem" : "0 3rem 3rem 0",
+              borderRadius: isMobile ? "3rem 3rem 0 0" : "0 3rem 3rem 0",
             }}
           />
         </Box>

@@ -13,14 +13,15 @@ const Cta = () => {
   return (
     <Wrapper bg="brand.200" borderTopWidth="2.5rem" borderTopColor="brand.650">
       <Flex
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: "column-reverse", md: "row" }}
         boxShadow="0px 4px 30px 0px #C1BAF8B2"
         borderRadius={"3rem"}
+        py={{ base: "2rem", md: "0rem" }}
       >
         <Flex
           w={{ base: "100%", md: "55%" }}
           justify={"center"}
-          pt={{ base: "3rem", xl: "0rem" }}
+          pt={{ base: "1rem", md: "3rem", xl: "0rem" }}
           direction="column"
           px={{ base: "2rem", xl: "7rem" }}
         >
@@ -36,7 +37,7 @@ const Cta = () => {
               Thank you! for sticking till the very end.
             </Heading>
             <Box pos={"absolute"} top="0" left={{ base: "-1rem", md: "-2rem" }}>
-              <Image src={vector} alt="text icon" height={40} width={40} />
+              <Image src={vector} alt="text icon" height={35} width={35} />
             </Box>
           </Box>
 
