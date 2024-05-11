@@ -5,8 +5,8 @@ import { Providers } from "./provider";
 
 
 export const metadata: Metadata = {
-  title: "Damilola B",
-  description: "Welcome to my space",
+  title: "Damilola Bamgbelu",
+  description: "Best known for designing extremely clean interfaces.",
 };
 
 

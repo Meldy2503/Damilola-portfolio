@@ -92,7 +92,7 @@ const ContactModal = ({
                       <InputField
                         isRequired
                         label="First Name"
-                        placeholder="Edward"
+                        placeholder="Enter first name"
                         // register={register("first_name")}
                         // errorMessage={errors.first_name?.message}
                       />
@@ -100,7 +100,7 @@ const ContactModal = ({
                       <InputField
                         isRequired
                         label="Last Name"
-                        placeholder="Martins"
+                        placeholder="Enter last name"
                         // register={register("last_name")}
                         // errorMessage={errors.last_name?.message}
                       />
@@ -110,7 +110,7 @@ const ContactModal = ({
                       label="Email"
                       type="email"
                       isRequired
-                      placeholder="martinsedward@gmail.com"
+                      placeholder="Enter email address"
                       // register={register("email")}
                       // errorMessage={errors.email?.message}
                     />

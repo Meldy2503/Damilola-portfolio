@@ -61,8 +61,15 @@ const Projects = () => {
               }}
             >
               <Link href={project.path}>
-                <Box>
-                  <Box position={"relative"}>
+                <Box overflow="hidden">
+                  <Box
+                    position={"relative"}
+                    transition="transform .5s ease"
+                    _hover={{
+                      transform: "scale(1.15)",
+                      transition: "transform .5s ease",
+                    }}
+                  >
                     <Image
                       src={project.img}
                       alt="project image"

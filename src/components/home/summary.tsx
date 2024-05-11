@@ -11,7 +11,7 @@ const Summary = () => {
 
   return (
     <Wrapper bg="brand.200">
-      <Flex direction={{ base: "column-reverse", md: "row" }}>
+      <Flex direction={{ base: "column-reverse", md: "row" }} overflow={'hidden'}>
         <Flex
           w={{ base: "100%", md: "50%" }}
           className="linear-bg"
@@ -39,7 +39,13 @@ const Summary = () => {
         <Box
           w={{ base: "100%", md: "50%" }}
           borderRadius={{ base: "0 0 3rem 3rem", md: "0 3rem 3rem 0" }}
-        >
+          transition="transform .5s ease"
+          _hover={{
+            transform: "scale(1.05)",
+            transition: "transform .5s ease"
+
+          }}
+       >
           <Image
             src={authurImg}
             alt="author's photo"

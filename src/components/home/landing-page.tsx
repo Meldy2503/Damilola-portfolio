@@ -64,6 +64,12 @@ const LandingPage = () => {
             w={{ base: "100%", md: "40%" }}
             position={"relative"}
             zIndex={"100"}
+            transition="1s ease"
+            overflow="hidden"
+            _hover={{
+              borderRadius: '10rem',
+              transition: '1s ease'              
+             }}
           >
             <Image
               src={arthurImage}
