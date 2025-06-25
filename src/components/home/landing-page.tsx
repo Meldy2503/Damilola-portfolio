@@ -16,7 +16,8 @@ const LandingPage = () => {
       align={"center"}
       justify={"center"}
       position={"relative"}
-      py="2rem"
+      pt={{base:'2rem', md:'5rem'}}
+      p='2rem'
     >
       <Image
         src={textPattern3}
@@ -27,7 +28,7 @@ const LandingPage = () => {
           position: "absolute",
           bottom: isMobile ? "0" : "-5rem",
           left: "0",
-          opacity: isMobile ? "0.9" : "0.5",
+          opacity: "0.9",
           animation: "slide1 15s linear infinite",
         }}
       />
@@ -39,7 +40,7 @@ const LandingPage = () => {
         style={{
           position: "absolute",
           top: isMobile ? "5rem" : "0",
-          opacity: isMobile ? "0.9" : "0.5",
+          opacity: "0.9",
           left: "0",
           animation: "slide2 15s linear infinite",
         }}
@@ -67,9 +68,9 @@ const LandingPage = () => {
             transition="1s ease"
             overflow="hidden"
             _hover={{
-              borderRadius: '10rem',
-              transition: '1s ease'              
-             }}
+              borderRadius: "10rem",
+              transition: "1s ease",
+            }}
           >
             <Image
               src={arthurImage}

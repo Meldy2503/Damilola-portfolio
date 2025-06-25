@@ -17,7 +17,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "../assets/images/white-logo.svg";
 import { Button } from "./button";
-import ContactModal from "./contact-me-modal";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -28,7 +27,7 @@ const Navbar = () => {
   return (
     <Box
       w="100%"
-      py="1rem"
+      py="1.5rem"
       position={"fixed"}
       top={"0px"}
       bg="brand.100"
@@ -86,13 +85,11 @@ const Navbar = () => {
             >
               Resume
             </Button>
-            <ContactModal
-              ButtonCom={
-                <Button isBtn px="1.5rem" py=".6rem">
-                  Lets Talk
-                </Button>
-              }
-            />
+            <a href="https://dribbble.com/damilolaalice" target="_blank">
+              <Button isBtn px="1.5rem" py=".6rem">
+                Dribble
+              </Button>
+            </a>
           </Flex>
         </Flex>
         <Box onClick={onOpen} display={{ base: "block", lg: "none" }}>
