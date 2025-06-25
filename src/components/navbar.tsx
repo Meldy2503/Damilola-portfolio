@@ -123,20 +123,28 @@ const Navbar = () => {
                 href="/damilola-resume.pdf"
                 color="brand.200"
                 bg={"brand.100"}
-                hover={{
-                  bg: "brand.200",
-                  color: "brand.100",
-                }}
-                px="1.5rem"
-                py=".5rem"
                 isAnchorBtn
                 target="_blank"
                 rel="noreferrer"
                 fontWeight="500"
-                border="1.5px solid #ffffff"
+                fontSize="1.7rem"
               >
                 Resume
               </Button>
+              <a href="https://dribbble.com/damilolaalice" target="_blank">
+                <Button
+                  isBtn
+                  px="2rem"
+                  py=".6rem"
+                  border="1.5px solid #ffffff"
+                  hover={{
+                    bg: "brand.200",
+                    color: "brand.100",
+                  }}
+                >
+                  Dribble
+                </Button>
+              </a>
             </Flex>
           </DrawerBody>
         </DrawerContent>
